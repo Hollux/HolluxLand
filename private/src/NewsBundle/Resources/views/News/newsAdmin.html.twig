@@ -1,0 +1,39 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block titleBase %} News Create / Edit {% endblock %}
+
+{% block principal %}
+
+    {% for new in news %}
+
+        {% if loop.index0 == 0 %}
+            <div class="row">
+        {% endif %}
+
+        {% if loop.index0 % 3 == 0 and loop.index0 != 0 %}
+            </div>
+            <div class="row">
+        {% endif %}
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">{{ new.title }}</div>
+                <div class="panel-body">
+                    <h6>{{ new.date|date("m/d/Y") }}</h6>
+                    <p>{{ new.content }}</p>
+                    <a href="{{ path('newsCreateEdit', {'id' : new.id }) }}"
+                       class="btn btn-info">Edit</a>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+    </div>
+    <br>
+    <a href="{{ path('newsCreateEdit') }}" class="btn btn-primary">Create</a>
+    <br>
+
+{% endblock %}
+
+    {% block script %}
+        {{ parent() }}
+    {% endblock %}

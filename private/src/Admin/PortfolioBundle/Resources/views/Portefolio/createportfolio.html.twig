@@ -1,0 +1,50 @@
+{#
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":SolveigBase:base.html.twig" %}
+#}
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : "AdminUserBundle:Base:base.html.twig" %}
+
+{% block title %}CreatePortfolio{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>
+
+        tinymce.init({
+            selector: '.wysiwyg',
+            themes: "modern",
+            height: 500,
+            a_plugin_option: true,
+            plugins: 'advlist autolink table link image lists charmap preview textcolor colorpicker',
+            toolbar: "undo, redo, bold, italic, underline, strikethrough, alignleft, aligncenter, alignright, alignjustify, fontselect, fontsizeselect, bullist, numlist, outdent, indent, blockquote,forecolor, backcolor"
+
+        });
+    </script>
+{% endblock %}
+
+{% block principal %}
+    <h1>Create portfolio</h1>
+    <p>Hébergement provisoir : <a href="http://www.zupimages.net/" target="_blank">Zupimage</a></p>
+    {{ form_start(form) }}
+
+    {{ form_row(form.title) }}
+    {{ form_row(form.type) }}
+    {{ form_row(form.shortcontent) }}
+
+    {{ form_row(form.media.file) }}
+
+    {{ form_row(form.content) }}
+
+    {% do form.media.setRendered %}
+
+
+
+
+    {{ form_end(form) }}
+
+    {% include "MediaBundle:Media:createmedia.html.twig" %}
+
+
+    <div id="divOpenImage"></div>
+
+{% endblock %}

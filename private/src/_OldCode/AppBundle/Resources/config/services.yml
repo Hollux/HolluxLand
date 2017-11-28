@@ -1,0 +1,74 @@
+services:
+    appbundle.form.handler.forumhandler:
+        class: AppBundle\Form\Handler\ForumHandler
+        arguments: ['@request_stack', '@doctrine.orm.entity_manager', '@form.factory']
+    
+    appbundle.form.handler.holluxhandler:
+        class: AppBundle\Form\Handler\HolluxHandler
+        arguments:
+            - '@request_stack'
+            - '@doctrine.orm.entity_manager'
+            - '@form.factory'
+            - '@security.token_storage'
+    
+    appbundle.form.handler.smashuphandler:
+        class: AppBundle\Form\Handler\SmashUpHandler
+        arguments: ['@request_stack', '@form.factory', '@doctrine.orm.entity_manager']
+
+    appbundle.form.handler.userhandler:
+        class: AppBundle\Form\Handler\UserHandler
+        arguments:
+            - '@request_stack'
+            - '@doctrine.orm.entity_manager'
+            - '@form.factory'
+            - '@security.encoder_factory'
+            - '@app.brochure_uploader'
+            - '%upload_directory%'
+            - '@app.service.ResizeImage'
+
+    appbundle.form.jeuxtype:
+        class: AppBundle\Form\JeuxType
+        arguments: ["@doctrine.orm.entity_manager", '@security.token_storage']
+        tags:
+            - { name: form.type }
+
+    app.twig_extension:
+        class: AppBundle\Twig\RegexTwigExtension
+        public: false
+        tags:
+            - { name: twig.extension }
+
+#    login_listener:
+#            class: 'AppBundle\Listener\LoginListener'
+#            arguments: ['@security.authorization_checker', '@doctrine.orm.entity_manager']
+#            tags:
+#                - { name: 'kernel.event_listener', event: 'security.interactive_login' }
+
+    app.brochure_uploader:
+            class: AppBundle\Component\FileUploader
+            arguments: ['%upload_directory%']
+
+    app.service.getmedia:
+            class: AppBundle\Service\GetMedia
+            arguments: ['%upload_directory%']
+
+    app.service.ResizeImage:
+            class: AppBundle\Service\ResizeImage
+
+    appbundle.component.mailer:
+        class: AppBundle\Component\Mailer\MyCustomMailer
+        arguments:
+            - '@mailer'
+
+    appbundle.service.cache:
+        class: AppBundle\Service\CacheService
+        arguments:
+            - '@cache.system'
+
+    appbundle.recaptchaType:
+        class: AppBundle\Form\Tools\ReCaptchaType
+        arguments:
+            - '%recaptcha_public%'
+            - '%recaptcha_secret%'
+        tags:
+            - { name: form.type }

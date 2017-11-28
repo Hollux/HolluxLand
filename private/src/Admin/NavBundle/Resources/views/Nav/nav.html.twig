@@ -1,0 +1,64 @@
+{% extends"AdminUserBundle:Base:base.html.twig" %}
+
+{% block principal %}
+    <div class="row">
+        <div class="col-md-2 text-center">
+            Nom
+        </div>
+        <div class="col-md-2 text-center">
+            Url
+        </div>
+        <div class="col-md-2 text-center">
+            Ordre
+        </div>
+        <div class="col-md-1 text-center">
+            Visible
+        </div>
+        <div class="col-md-4 text-center">
+            Titre
+        </div>
+        <div class="col-md-1 text-center">
+            Modifier
+        </div>
+    </div>
+    {% for nav in navs %}
+        <div class="row">
+            <div class="col-md-2 text-center">
+                {{ nav.content }}
+            </div>
+            <div class="col-md-2 text-center">
+                /{{ nav.url }}
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="btn-group">
+                    <div class="btn btn-info btnOrdre">
+                        {{ nav.ordre }}
+                    </div>
+                    <a href="{{ path('navOrdre', {'id': nav.id, 'action': 'plus'}) }}" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                    <a href="{{ path('navOrdre', {'id': nav.id, 'action': 'moins'}) }}" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-md-1 text-center">
+                <a href="{{ path('navisVisible', {'id': nav.id}) }}">
+                    <div class="btn btn-{{ nav.isvisible == 1 ? 'success' : 'danger' }}">{{ nav.isvisible }}</div>
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                {{ nav.title|raw }}
+            </div>
+            <div class="col-md-1 text-center">
+                <a href="{{ path('navcreate', {'id': nav.id}) }}"><span class="glyphicon glyphicon-edit"></span></a>
+            </div>
+        </div>
+    {% endfor %}
+    <a href="{{ path('navcreate') }}" class="btn btn-primary">
+        Create
+    </a>
+
+
+{% endblock %}

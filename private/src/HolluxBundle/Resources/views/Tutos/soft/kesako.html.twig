@@ -1,0 +1,110 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block titleBase %} Bootstrap, Kesako {% endblock %}
+
+{% block principal %}
+    <h1 class="text-center"><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></h1>
+    <h2 class="text-center">Expliqué par un dev, pour des devs</h2>
+
+    <p>Bootsrap est un framework qui a pour but le développement responsive.</p>
+    <p>Quelques infos tiré d'internet.</p>
+    <div class="row">
+        <p class="col-sm-3">- Par qui ?</p>
+        <a class="col-sm-9" href="https://twitter.com/" target="_blank">Twitter</a>
+    </div>
+    <div class="row">
+        <p class="col-sm-3">- Oui mais par qui ?</p>
+        <p class="col-sm-9">Mark Otto et Jacob Thornton</p>
+    </div>
+    <div class="row">
+        <p class="col-sm-3">- Tenu par qui maintenant ?</p>
+        <p class="col-sm-9">GitHub, c'est devenu public depuis aout 2011</p>
+    </div>
+    <div class="row">
+        <p class="col-sm-3">- Créé quand ?</p>
+        <p class="col-sm-9">Milieu 2010</p>
+    </div>
+    <div c
+         lass="row">
+        <p class="col-sm-3">- Pourquoi "bootstrap" ?</p>
+        <p class="col-sm-9">Vient du terme "bootstrapé" ou "assemblage d'élément distincts"</p>
+    </div>
+    <h2 class="text-center">Bootstrap</h2>
+    <h3 class="text-center">Concrètement</h3>
+    <p>Il va fonctionner avec un CSS + un JS utilisant <a href="https://jquery.com/" target="_blank">Jquery</a></p>
+    <p>Et voici l'information la plus importante :</p>
+    <p class="strong">Bootstrap fonctionne essentiellement avec des classes.</p>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+                    <p class="text-center">Ce texte est centré grâce à bootstrap.</p>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <p>Comme je viens de vous le montrer, la class "text-center" de bootstrap à pour attribut css "text-align:
+        center".</p>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col1.jpg" alt="col1"></div>
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col2.jpg" alt="col2"></div>
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col3.jpg" alt="col3"></div>
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col4.jpg" alt="col4"></div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <p>Exemple de design responsive, 4 images, sur un écran de plus de 1200px elles sont l'une à coté des autres.</p>
+    <p>Sur un écran entre 1200px et 900px c'est 2 par 2 et sur un écran inférieur à 900px on est sur les images une par
+        une.</p>
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                                      data-target="#myModal">
+                Modal Bootstrap
+            </button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Titre du modal</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Contenu du modal</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div></code>
+
+            </pre>
+        </div>
+    </div>
+    <p>Voila, trois petites exemples, on voit bien que les classes précises de bootstrap mettent tout en place.</p>
+    <br>
+    <p>De nombreuses choses sont à disposition, il faut aller fouiller et tester pour commencer à utiliser tout le
+    potentiel de bootstrap.</p>
+    <p>j'aime aussi beaucoup utiliser ds cheat sheet tel que :
+        <a href="http://bootstrap-doc.prauds.fr/index3.php" target="_blank">index3</a>,
+        <a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank">cheatV4</a>.</p>
+    <p>Bon courage.</p>
+
+
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

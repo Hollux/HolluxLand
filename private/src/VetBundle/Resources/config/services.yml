@@ -1,0 +1,45 @@
+services:
+    anabelHandler:
+        class: VetBundle\Component\AnabelHandler
+        arguments:
+           - '@doctrine.orm.entity_manager'
+#          - '@formFactory.anabel'
+           - '@form.factory'
+
+    formFactory.anabel:
+        class: VetBundle\Component\FormFactory
+        arguments:
+          - '@form.factory'
+
+    VetCommandHandler:
+        class: VetBundle\Command\Handler\VetCommandHandler
+        arguments:
+            - '@vetCommandEntity'
+            - '@vetCommandRepository'
+            - '@vetCommandForm'
+            - '@vetCommandTwig'
+            - '@vetCommandView'
+
+    VetCommandCreate:
+        class: VetBundle\Command\Handler\VetCommandCreate
+
+    vetCommandEntity:
+        class: VetBundle\Command\Handler\VetCommandEntity
+
+    vetCommandRepository:
+        class: VetBundle\Command\Handler\VetCommandRepository
+
+    vetCommandForm:
+        class: VetBundle\Command\Handler\VetCommandForm
+
+    vetCommandTwig:
+        class: VetBundle\Command\Handler\VetCommandTwig
+
+    vetCommandView:
+        class: VetBundle\Command\Handler\VetCommandView
+
+    VetOtherListener:
+        class: VetBundle\EventListener\OtherListener
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }

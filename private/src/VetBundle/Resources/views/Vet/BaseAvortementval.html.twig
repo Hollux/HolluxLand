@@ -1,0 +1,33 @@
+
+<h3>BaseAvortement</h3>
+ 
+    {% if val.baseavortementdateavortement and val.baseavortementdateavortement != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>date avortement</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.baseavortementdateavortement }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.baseavortementtypedeprelevement and val.baseavortementtypedeprelevement != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>type de prelevement</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.baseavortementtypedeprelevement }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.baseavortementlesionsautopsie and val.baseavortementlesionsautopsie != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>lésions autopsie</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.baseavortementlesionsautopsie }}
+            </div>
+        </div>
+    {% endif %}

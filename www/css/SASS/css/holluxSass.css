@@ -1,0 +1,493 @@
+/* ====================
+//       RESET       //
+==================== */
+/* Internet Explorer 10 doesn't differentiate device width from viewport width,
+and thus doesn't properly apply the media queries in Bootstrap's CSS.
+Normally you'd just add a quick snippet of CSS to fix this:*/
+@-webkit-viewport {
+  width: device-width; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+@media print {
+  .bg-danger {
+    background-color: #f2dede !important; } }
+/* Special smartphone */
+@media (max-width: 767px) {
+  .container {
+    width: auto; }
+
+  h3, .h3 {
+    font-size: 18px;
+    margin-top: 10px; } }
+/* Prevent scroll on narrow devices */
+/* html,body { overflow-x: hidden;} */
+blockquote {
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px !important; }
+
+h2 {
+  font-size: 16px;
+  font-weight: bold; }
+
+h3 {
+  padding-top: 0px; }
+
+a {
+  outline: 0 !important; }
+
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* ====================
+//       TEST        //
+==================== */
+.mailCss {
+  background-color: #449d44; }
+
+.imgTEST {
+  max-width: 200px; }
+
+/* ====================
+//       BASE        //
+==================== */
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.avatar {
+  max-width: 100px; }
+
+.m0auto {
+  display: block;
+  margin: 0 auto; }
+
+.dNone {
+  display: none; }
+
+.flex {
+  display: flex; }
+
+.flex-center {
+  display: flex;
+  justify-content: center; }
+
+@media (min-width: 1200px) {
+  .md-flex-center {
+    display: flex;
+    justify-content: center; } }
+.display {
+  display: inline-block; }
+
+.fLeft {
+  float: left; }
+
+.strong {
+  font-weight: bold; }
+
+/* 	Marge */
+/* 	Marge */
+.marginL20px {
+  margin-left: 20px; }
+
+.marginR20px {
+  margin-right: 20px; }
+
+.marginL20px {
+  margin: 20px; }
+
+.marginT10px {
+  margin-top: 10px; }
+
+.marginB10px {
+  margin-bottom: 10px; }
+
+.h10px {
+  height: 10px; }
+
+.w25 {
+  width: 25%; }
+
+.w50 {
+  width: 50%; }
+
+.h4 {
+  font-size: 18px; }
+
+/* 	Color */
+/* 	Color */
+.bg-black {
+  background-color: black; }
+
+.bg-white {
+  background-color: white; }
+
+.bg-green {
+  background-color: green; }
+
+.bg-red {
+  background-color: red; }
+
+.white {
+  color: white; }
+
+.black {
+  color: black; }
+
+.bg-222222 {
+  background-color: #222222; }
+
+.flash-bg-24bd24 {
+  background-color: #24bd24; }
+  .flash-bg-24bd24 p {
+    margin: 0 5px 10px;
+    padding: 2px 0; }
+
+.flash-bg-red {
+  background-color: red; }
+  .flash-bg-red p {
+    margin: 0 5px 10px;
+    padding: 2px 0; }
+
+/* ====================
+//	 BASE HOLLUX     //
+==================== */
+body {
+  background: url("/img/BG3.jpg"); }
+.container {
+  background-color: white;
+  min-height: calc(100vh - 50px);
+}
+
+.btn:hover {
+  background-color: #9F9F9F; }
+
+.logo {
+  margin: -10px 0 0 -4px;
+  height: 45px; }
+
+.navbar-nav > li > a {
+  line-height: 25px;
+  font-size: 18px; }
+
+.barre {
+  text-decoration: line-through; }
+
+/* ====================
+//	     TEST        //
+==================== */
+.test .imgSites .imgSite {
+  text-align: center; }
+  .test .imgSites .imgSite .site1, .test .imgSites .imgSite .site2, .test .imgSites .imgSite .site3 {
+    position: relative;
+    margin: 5px; }
+  .test .imgSites .imgSite .site1:hover, .test .imgSites .imgSite .site2:hover, .test .imgSites .imgSite .site3:hover {
+    opacity: 0.5; }
+  .test .imgSites .imgSite .imgHover {
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    /* display:none; */ }
+  .test .imgSites .imgSite .imgeHover {
+    /* display: block; */ }
+  .test .imgSites .imgSite .site1:hover .imgHover {
+    display: block; }
+
+/* ====================
+	LISTBUILDER
+==================== */
+.btn-figurine {
+  color: black;
+  background-color: #f0ead8;
+  border-color: #f1b288;
+  width: 100%; }
+  .btn-figurine .figName {
+    text-align: left; }
+  .btn-figurine .figCost {
+    text-align: right; }
+
+.btn-figurine2 {
+  color: black;
+  background-color: #f0ead8;
+  border-color: #f1b288;
+  width: 100%; }
+
+.btn-list {
+  color: blue;
+  background-color: lightgrey;
+  border-color: dimgrey;
+  width: 100%;
+  magin: 10px; }
+
+/* ====================
+	POST OVERLAY
+==================== */
+.post {
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+  .post .post-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .2s ease-in; }
+    .post .post-content .post-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all .5s ease-in-out; }
+      .post .post-content .post-overlay .post-title {
+        position: absolute;
+        width: 100%;
+        top: 37.5%;
+        right: -100%;
+        transition: all .6s ease-in-out .2s; }
+  .post .post-content1 {
+    background-image: url("/img/ludoWp.jpg"); }
+  .post .post-content2 {
+    background-image: url("/img/haricotfr.jpg"); }
+  .post .post-content3 {
+    background-image: url("/img/solveigdcfr.jpg"); }
+  .post .post-content4 {
+    background-image: url("/img/chroniquesfr.jpg"); }
+  .post .post-content5 {
+    background-image: url("/img/site1.jpg"); }
+  .post .post-content6 {
+    background-image: url("/img/wonder2.jpg"); }
+
+.post:hover .post-content {
+  transform: scale(1.1); }
+
+.post:hover .post-overlay {
+  opacity: 1; }
+
+.post:hover .post-title {
+  transform: translatex(-100%); }
+
+/* ====================
+//	     HOME        //
+==================== */
+.home .imgSites .post {
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+  .home .imgSites .post .post-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .2s ease-in; }
+    .home .imgSites .post .post-content .post-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all .5s ease-in-out; }
+      .home .imgSites .post .post-content .post-overlay .post-title {
+        position: absolute;
+        width: 100%;
+        top: 37.5%;
+        right: -100%;
+        transition: all .6s ease-in-out .2s; }
+/*  .home .imgSites .post .post-content1 {
+    background-image: url("/img/site1.jpg"); }
+  .home .imgSites .post .post-content2 {
+    background-image: url("/img/wonder2.jpg"); }
+  .home .imgSites .post .post-content3 {
+    background-image: url("/img/ludoWp.jpg"); }*/
+.home .imgSites .post:hover .post-content {
+  transform: scale(1.1); }
+.home .imgSites .post:hover .post-overlay {
+  opacity: 1; }
+.home .imgSites .post:hover .post-title {
+  transform: translatex(-100%); }
+
+/* ====================
+//	 COMPETENCES     //
+==================== */
+.competences img {
+  margin: 15px 20px;
+  max-height: 100px;
+  width: auto; }
+.competences .border {
+  border: 1px dashed black; }
+
+/* ====================
+//	     CV          //
+==================== */
+.CV {
+  background-color: #F4EBC3;
+  padding: 10px;
+  border-radius: 10px; }
+  .CV p {
+    line-height: 13px; }
+  .CV div {
+    line-height: 18px; }
+  .CV .infoComp {
+    font-weight: bold;
+    text-decoration: underline; }
+
+/* ====================
+//	  INFOS PERSO    //
+==================== */
+/* ====================
+//	    FOOTER       //
+==================== */
+footer {
+  background-color: #222222;
+  color: white;
+ /* min-height: 5%;
+  width: 100%; }
+  @media (max-width: 768px) {
+    footer .w25 {
+      width: 50%; } }
+  footer .footerA {
+    overflow: hidden; }
+  footer .footerB {
+    vertical-align: top; */}
+
+/* SCROLLUP */
+/* SCROLLUP */
+.scrollup {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 15%;
+  right: 15%;
+  display: none;
+  color: #C815D7;
+  background: url(/img/fleche_haut_blanc.png);
+  background-size: 100%;
+  border: 1px solid #3a3f51;
+  font-size: 20px;
+  text-align: center;
+  line-height: 37px; }
+
+.scrollup:hover {
+  background-color: #F30505; }
+
+/* SCROLLbot */
+/* SCROLLbot */
+.scrollbot {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 15%;
+  right: 20%;
+  /* display: none; */
+  color: #C815D7;
+  background: url(/img/fleche_bas_blanc.png);
+  background-size: 100%;
+  border: 1px solid #3a3f51;
+  font-size: 20px;
+  text-align: center;
+  line-height: 37px; }
+
+.scrollbot:hover {
+  background-color: #F30505; }
+
+/* ====================
+	TEL
+==================== */
+/* .flex
+{
+	p
+	{
+		width: 9%;
+		margin:10px;
+	}
+} */
+/* ====================
+	SMASH UP
+==================== */
+.faction {
+  padding: 5px;
+  background-color: #C9C9C9; }
+
+.faction:nth-child(2n+1) {
+  background-color: #D7D7D7; }
+
+span {
+  width: 20px; }
+
+/* ====================
+		CHAT
+==================== */
+@media (min-width: 1100px) {
+  #chat {
+    height: 500px;
+    overflow: auto;
+    width: 100%;
+    border: 2px solid black;
+    padding: 3px 2px 3px 5px; } }
+textarea#textarea {
+  border: 1px solid black;
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 55px; }
+
+/* ====================
+		JEUX 1
+==================== */
+.minima .reponse-valide {
+  background-color: rgba(102, 255, 102, 0.2); }
+.minima .reponse-invalide {
+  background-color: rgba(255, 26, 26, 0.2); }
+
+/* ====================
+//       BASE        //
+==================== */
+
+/*# sourceMappingURL=holluxSass.css.map */

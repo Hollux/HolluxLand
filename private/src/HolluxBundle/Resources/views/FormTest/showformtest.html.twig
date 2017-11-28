@@ -1,0 +1,38 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    <h1>Veto list</h1>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Ville</th>
+            <th>Departement</th>
+            <th>Region</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        {% for veto in vetos %}
+            <tr>
+                <td>{{ veto.name }}</td>
+                <td>{{ veto.ville.name }}</td>
+                <td>{{ veto.ville.departement.name }}</td>
+                <td>{{ veto.ville.departement.region.name }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('editformtest', {'id' : veto.id}) }}">Edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

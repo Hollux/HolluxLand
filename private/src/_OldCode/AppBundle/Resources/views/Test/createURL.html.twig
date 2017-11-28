@@ -1,0 +1,16 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    {{ form_start(form) }}
+    <div class="form-group">
+        {{ form_label(form.text) }}
+        {{ form_widget(form.text) }}
+    </div>
+    {{ form_end(form) }}
+
+    {% block ajax %}
+        {{ resp }}
+    {% endblock %}
+
+{% endblock %}

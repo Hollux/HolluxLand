@@ -1,0 +1,52 @@
+<?php
+
+namespace VetBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * BaseAvortement
+ * @ORM\Table(name="vet_anabel_baseavortement")
+ * @ORM\Entity(repositoryClass="VetBundle\Repository\BaseAvortementRepository")
+ */
+class BaseAvortement
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="Avortement", mappedBy="baseavortement", cascade={"persist", "remove"})
+     */
+    private $avortement;
+
+    /**
+     * @var \datetime
+     *
+     * @ORM\Column(name="baseavortementdateavortement", type="date", nullable=true)
+     */
+    private $baseavortementdateavortement;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="baseavortementtypedeprelevement", type="string", length=255, nullable=true)
+     */
+    private $baseavortementtypedeprelevement;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="baseavortementlesionsautopsie", type="string", length=255, nullable=true)
+     */
+    private $baseavortementlesionsautopsie;
+    
+}

@@ -1,0 +1,7 @@
+services:
+    admin.portfoliobundle.type.portfolio:
+         class: Admin\PortfolioBundle\Form\PortfolioType
+         arguments:
+           - '@doctrine.orm.entity_manager'
+         tags:
+           - { name: form.type }

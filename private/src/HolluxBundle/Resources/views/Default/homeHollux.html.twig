@@ -1,0 +1,55 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block head %}{% endblock %}
+
+{% block principal %}
+    <H1>HOME HOLLUX</H1>
+    <p>Bundle avec les éléments qui ne seront présent que sur ce site.</p>
+    <p>De nombreuses pages et controleurs peuple ce bundle.</p>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <p>- Base</p>
+            <p>Les Url fix et simple que contient le site Hollux, le site vitrine(Tout n'est pas forcément à jour).</p>
+            <p>
+                <a href="{{ path('home') }}" target="_blank">Home</a> ,
+                <a href="{{ path('competences') }}" target="_blank">competences</a> ,
+                <a href="{{ path('CV') }}" target="_blank">le CV</a> ,
+                <a href="{{ path('infoPerso') }}" target="_blank">des info Perso</a> ,
+                <a href="{{ path('mentionslegales') }}" target="_blank">les mentions legales</a> ,
+                <a href="{{ path('meContacter') }}" target="_blank">Form pour me contacter</a>.
+            </p>
+        </li>
+        <li class="list-group-item">
+            <p>- FormTest</p>
+            <p>Un Controller créé uniquement pour tester certaines action des
+            formulaires symfony.</p>
+            <p><a href="{{ path('formimbriqueCreate') }}" target="_blank">Ici</a>
+                , Un formulaire sympa avec l'utilisation des form event,
+                <a href="{{ path('showformtest') }}" target="_blank">le résultat</a>,
+                l'edition.</p>
+        </li>
+        <li class="list-group-item">
+            <p>- Jeux</p>
+            <p>Un petit délire, un jeu basé sur les films.</p>
+            <p><a href="{{ path('jeux') }}" target="_blank">Le jeux</a>
+                , attention, il faut être log pour pouvoir y jouer.</p>
+        </li>
+        <li class="list-group-item">
+            <p>- SmashUp</p>
+            <a href="{{ path('smashUp') }}" target="_blank">Petite appli pour générer des partie de smash up aléatoire.</a>
+        </li>
+        <li class="list-group-item">
+            <p>- Tutos</p>
+            <p>Des tutos pour partager un peu ce que j'ai pu apprendre et pourquoi pas, partager et avoir des retour pour m'améliorer.</p>
+            <p>Ils seront écris avec version hard et soft(géré avec la Session).</p>
+            <p>ATTENTION uniquement la version hard existe pour le moment, humour assez spécial du type tuto Jerome Niel / desencyclopédie.</p>
+            <a href="{{ path('indexTutos') }}" target="_blank">Site Des tutos</a>
+        </li>
+    </ul>
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends "VetBundle:Base:base.html.twig" %}
+
+{% block titleBase %}edit{% endblock %}
+
+{% block principal %}
+
+    <div class="panel panel-default panel-primary">
+        <div class="panel-heading">
+            <h4>Anabel - Saisir un dossier</h4>
+        </div>
+
+        <p>FORM</p>
+        <div id="ajax">
+            <div id="form">
+
+            {{ form_start(formanabel) }}
+            <div class="bs-example bs-example-tabs padding15">
+
+                <div class="table-responsive clearfix">
+
+                    {% for key,section in sections %}
+                        <div class="panel panel-default panel-primary">
+                            <div class="panel-heading">
+                                <p>{{ section }}</p>
+                            </div>
+                            <div class="panel-body">
+                                {{ include('VetBundle:Anabel/Sections:'~ key ~'.html.twig', { 'formanabel': formanabel }) }}
+                            </div>
+                        </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            {{ form_end(formanabel) }}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+
+    <script>
+        // fais apparaitre string du select Autre
+        var autoShowHideOtherInput = function () {
+            jQuery('select[class~="select-autre"]').each(function() {
+                jQuery(this).on('change', function () {
+                    if (jQuery(this).val() == 'Other')
+                        jQuery('#anabel_' + jQuery(this).data('other')).show();
+                    else
+                        jQuery('#anabel_' + jQuery(this).data('other')).hide();
+                });
+
+                jQuery(this).change();
+            });
+        };
+        autoShowHideOtherInput();
+
+        // gère le choix Lot d'animaux oui / non
+        var lotanimauxResult = function () {
+            jQuery('select[class~="select-lotanimaux"]').each(function() {
+                jQuery(this).on('change', function () {
+                    if (jQuery(this).val() == 'oui')
+                    {
+                        console.log( jQuery('#anabel_nanimal'));
+                        jQuery('#anabel_nanimal').hide();
+                        jQuery("label[for='anabel_nanimal']").hide();
+                        jQuery('#anabel_nbranimaux').show();
+                        jQuery("label[for='anabel_nbranimaux']").show();
+
+                    } else {
+                        jQuery('#anabel_nanimal').show();
+                        jQuery("label[for='anabel_nanimal']").show();
+                        jQuery('#anabel_nbranimaux').hide();
+                        jQuery("label[for='anabel_nbranimaux']").hide();
+                    }
+                });
+
+                jQuery(this).change();
+            });
+        };
+        lotanimauxResult();
+
+
+
+    </script>
+
+{% endblock %}

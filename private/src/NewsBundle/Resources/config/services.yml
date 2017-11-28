@@ -1,0 +1,10 @@
+services:
+    NewsHandler:
+        class: NewsBundle\Controller\Handler\NewsHandler
+        arguments:
+            - '@doctrine.orm.entity_manager'
+            - '@form.factory'
+            - '@router'
+#    news.example:
+#        class: NewsBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

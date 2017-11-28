@@ -1,0 +1,81 @@
+html {
+    height : 100%;
+}
+
+body {
+    height      : 100%;
+    font-family : 'Open Sans', sans-serif;
+    background  : url('/web/img/BG3.jpg');
+}
+
+img {
+    max-width : 100%;
+}
+
+.container {
+    background-color : white;
+    min-height       : 94.9%;
+}
+
+.center {
+    text-align : center;
+}
+
+.espace {
+    margin-left : 20px;
+}
+
+.barre {
+    text-decoration : line-through;
+}
+
+.logo {
+    margin : -10px 0 0 -4px;
+    height : 45px;
+}
+
+.10
+px {
+    height : 10px;
+}
+
+.checkboxFac {
+    margin-left : 20px;
+}
+
+.btn:hover {
+    background-color : #9F9F9F;
+}
+
+/* .display
+{
+	display: inline-block;
+} */
+.dNone {
+    display : none;
+}
+
+.navbar-nav > li > a {
+    line-height : 25px;
+    font-size   : 18px;
+}
+
+/* .test{
+	background-color: green;
+}
+.imgSites{
+padding: 100px;
+}
+.imgSite{
+border: 15px solid black;
+}
+.site1{
+display: none;
+}
+img:hover{
+display:none;
+opacity:0.5;
+}
+img:hover p{
+display:inherit;
+}	 */

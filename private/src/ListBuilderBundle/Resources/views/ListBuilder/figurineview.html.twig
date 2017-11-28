@@ -1,0 +1,23 @@
+{% set point = 0 %}
+{% for listFigurine in  list.figurines %}
+        <a class="modalCar btn btn-figurine2" href="{{ path('listbuilder_modallist_fig',{
+            "idlistfig": listFigurine.id}) }}">
+
+            <p class="h4">
+                {{ listFigurine.figurine.name }}
+                <span>{{ listFigurine.figurine.cost }}</span>
+            </p>
+
+            {% set point = point + listFigurine.figurine.cost %}
+        {% for optionSelect in  listFigurine.options %}
+            <span>{{ optionSelect.name }}:{{ optionSelect.cost }}</span>
+            {% set point = point + optionSelect.cost %}
+        {% endfor %}
+
+        {% for option in  listFigurine.figurine.figurineoptions %}
+
+
+        {% endfor %}
+        </a>
+{% endfor %}
+Point Total : {{ point }}

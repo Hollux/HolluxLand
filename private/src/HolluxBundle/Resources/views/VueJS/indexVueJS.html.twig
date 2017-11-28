@@ -1,0 +1,37 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block head %}
+    <link  href="{{ asset('/library/Semantic-UI-CSS-master/semantic.css') }}"
+           media="print,screen" rel="stylesheet"/>
+
+{% endblock %}
+
+{% block principal %}
+    <h1>Test VueJS</h1>
+
+    <p>{{ toto }}</p>
+    <p id="vue2"><$ message $></p>
+
+
+
+    <div id="vue1" class="ui main">
+
+        <message type="error" :message="message" header="Attention" v-if="alert"></message>
+        <button @click="showAlert" v-if="!alert">Alerter</button>
+        <counter></counter>
+        <counter :start="3"></counter>
+
+    </div>
+
+
+
+
+{% endblock %}
+
+{% block script %}
+    parent()
+   {# <script type="text/javascript" src="
+{{ asset('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/accordion.js') }}"></script>#}
+    <script type="text/javascript" src="{{ asset('/library/VueJS/vue.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/scripts/vueJS.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,34 @@
+services:
+    listhelper.component.listhelper_factory:
+        class: ListHelperBundle\Component\Factory
+        arguments:
+            - '@listhelper.component.listhelper_registry'
+            - '@listhelper.component.listhelper_dataresolver'
+            - '@form.factory'
+
+    listhelper.component.listhelper_registry:
+        class: ListHelperBundle\Component\Registry
+        public: false
+
+    listhelper.component.listhelper_dataresolver:
+        class: ListHelperBundle\Component\DataResolver
+        public: false
+        calls:
+            - ["addSupport", ["@listhelper.component.listhelper_doctrinesupport"]]
+            - ["addSupport", ["@listhelper.component.listhelper_arraysupport"]]
+
+
+    listhelper.component.listhelper_twig_extension:
+        class: ListHelperBundle\Twig\ListHelper
+        public: false
+        arguments: [":ListHelperBundle:listhelper_layout.html.twig"]
+        tags:
+            - { name: twig.extension }
+
+    listhelper.component.listhelper_doctrinesupport:
+        class: ListHelperBundle\Component\Data\DoctrineSupport
+        public: false
+
+    listhelper.component.listhelper_arraysupport:
+        class: ListHelperBundle\Component\Data\ArraySupport
+        public: false

@@ -1,0 +1,48 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/book/security.html
+security:
+
+    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
+    encoders:
+        HolluxBundle\Entity\User: bcrypt
+    providers:
+        main:
+            entity: { class:  HolluxBundle\Entity\User, property: login }
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            anonymous: ~
+            form_login:
+                login_path: login
+                check_path: login
+
+
+            logout:
+                path:   /logout
+                target: /
+
+    role_hierarchy:
+        ROLE_ADMIN:      [ROLE_ORGANIZER, ROLE_USER]
+        ROLE_SUPERADMIN: [ROLE_ADMIN]
+    access_control:
+        - { path: ^/croton, roles: ROLE_ADMIN }
+        - { path: ^/poney, roles: ROLE_ADMIN }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/chat, roles: ROLE_ADMIN }
+        - { path: ^/forum, roles: ROLE_ADMIN }
+        - { path: ^/jeux, roles: ROLE_USER }
+        - { path: ^/jeuxBase, roles: ROLE_USER }
+        - { path: ^/profil, roles: ROLE_USER }
+            # activate different ways to authenticate
+
+            # http_basic: ~
+            # http://symfony.com/doc/current/book/security.html#a-configuring-how-your-users-will-authenticate
+
+            # form_login: ~
+            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html

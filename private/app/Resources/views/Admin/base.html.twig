@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>{% block titleBase %}{% endblock %}HoLLuX</title>
+
+    <meta charset="UTF-8">
+
+    {% block head %}{% endblock %}
+    <!--    BOOTSTRAP -->
+    <link href="{{ asset('/bootstrap/css/bootstrap.min.css') }}" media="print,screen" rel="stylesheet"/>
+    <!--   SASS -->
+    <!-- !!!modif Sass.MIn -->
+    <link  href="{{ asset('/css/SASS/css/holluxSass.min.css') }}" media="print,screen" rel="stylesheet"/>
+    <!--   viewport, pas de zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <!--    JQUERY -->
+    <script type="text/javascript" src="{{ asset('/scripts/jquery-3.1.1.min.js') }}"></script>
+    <!-- Google Analytic -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-99323749-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body>
+<a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
+{{ include('Admin/nav.html.twig') }}
+<div class="container">
+
+    {% for flash_message in app.session.flashBag.get('error') %}
+        <div class="flash-notice flash-bg-red">
+            <p>{{ flash_message }}</p>
+        </div>
+    {% endfor %}
+    {% for flash_message in app.session.flashBag.get('success') %}
+        <div class="flash-notice flash-bg-24bd24">
+            <p>{{ flash_message }}</p>
+        </div>
+    {% endfor %}
+
+
+    {% block principal %}{% endblock %}
+    <br>
+</div>
+<div class="container2">
+    {{ include('Admin/footer.html.twig') }}
+</div>
+{#<link  href="https://1808919680.rsc.cdn77.org/css/SASS/css/holluxSass.min.css" media="print,screen" rel="stylesheet"/>#}
+<!--    POLICE -->
+<link  href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic') }}" rel='stylesheet' type='text/css'>
+{#<link href="https://1808919680.rsc.cdn77.org/bootstrap/css/bootstrap.min.css" media="print,screen" rel="stylesheet"/>#}
+<!-- DATATABLE CSS -->
+<link rel="stylesheet" href="{{ asset('/css/dataTable.min.css') }}">
+{#<link rel="stylesheet" href="https://1808919680.rsc.cdn77.org/css/dataTable.min.css">#}
+<!-- BOOTSTRAP TOGGLE CSS -->
+<link href="{{ asset('/bootstrap/css/bootstrap-toggle.min.css') }}" rel="stylesheet">
+<!-- Captcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% block script %}
+    <!-- DATATABLE JS -->
+
+    <script type="text/javascript" src="{{ asset('/scripts/dataTable.min.js') }}"></script>
+   {# <script type="text/javascript" src="https://1808919680.rsc.cdn77.org/scripts/dataTable.min.js"></script>#}
+    <!-- CHAT JS -->
+    <script type="text/javascript" src="{{ asset('/scripts/chat.js') }}"></script>
+   {# <script type="text/javascript" src="https://1808919680.rsc.cdn77.org/scripts/chat.js"></script>#}
+
+    <script type="text/javascript" src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
+    {#<script type="text/javascript" src="https://1808919680.rsc.cdn77.org/bootstrap/js/bootstrap.min.js"></script>#}
+
+    <script type="text/javascript" src="{{ asset('/scripts/hollux.js') }}"></script>
+   {# <script type="text/javascript" src="https://1808919680.rsc.cdn77.org/scripts/hollux.js"></script>#}
+
+{% endblock %}
+</body>
+
+</html>
+
+
+

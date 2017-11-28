@@ -1,0 +1,252 @@
+<?php
+
+namespace VetBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * PCR
+ * @ORM\Table(name="vet_anabel_pcr")
+ * @ORM\Entity(repositoryClass="VetBundle\Repository\PCRRepository")
+ */
+class PCR
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="Avortement", mappedBy="pcr", cascade={"persist", "remove"})
+     */
+    private $avortement;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrbrucella", type="string", length=255, nullable=true)
+     */
+    private $pcrbrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodebrucella", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodebrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcridentificationbrucella", type="string", length=255, nullable=true)
+     */
+    private $pcridentificationbrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifbrucella", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifbrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrbvd", type="string", length=255, nullable=true)
+     */
+    private $pcrbvd;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodebvd", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodebvd;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifbvd", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifbvd;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrchlamydia", type="string", length=255, nullable=true)
+     */
+    private $pcrchlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodechlamydia", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodechlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcridentificationchlamydia", type="string", length=255, nullable=true)
+     */
+    private $pcridentificationchlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifchlamydia", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifchlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrcoxiellaburnetii", type="string", length=255, nullable=true)
+     */
+    private $pcrcoxiellaburnetii;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodecoxiellaburnetii", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodecoxiellaburnetii;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifcoxiellaburnetii", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifcoxiellaburnetii;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcribr", type="string", length=255, nullable=true)
+     */
+    private $pcribr;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodeibr", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodeibr;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifibr", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifibr;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrleptospira", type="string", length=255, nullable=true)
+     */
+    private $pcrleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodeleptospira", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodeleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcridentificationleptospira", type="string", length=255, nullable=true)
+     */
+    private $pcridentificationleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifleptospira", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrleucose", type="string", length=255, nullable=true)
+     */
+    private $pcrleucose;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodeleucose", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodeleucose;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifleucose", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifleucose;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrneospora", type="string", length=255, nullable=true)
+     */
+    private $pcrneospora;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrmethodeneospora", type="string", length=255, nullable=true)
+     */
+    private $pcrmethodeneospora;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrresultatquantitatifneospora", type="string", length=255, nullable=true)
+     */
+    private $pcrresultatquantitatifneospora;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pcrautrepcr", type="string", length=255, nullable=true)
+     */
+    private $pcrautrepcr;
+    
+}

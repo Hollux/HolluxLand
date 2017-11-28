@@ -1,0 +1,125 @@
+<?php
+
+namespace UserBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
+
+/**
+ * User
+ * @ORM\Table(name="user2")
+ * @ORM\Entity(repositoryClass="HolluxBundle\Repository\UserRepository")
+ * @ORM\HasLifecycleCallbacks
+ */
+class SuperUser implements UserInterface
+{
+    use TimestampableEntity;
+
+    public function __construct(){
+        $this->roles     = "ROLE_USER";
+    }
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="login", type="string", length=255)
+     */
+    protected $login;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=255)
+     */
+    protected $password;
+
+    /**
+     * @var string
+     * @ORM\Column(name="email", type="string", length=255)
+     */
+    private $email;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="roles", type="string", length=255, nullable=true)
+     */
+    protected $roles;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tokenPassword", type="string", length=255, nullable=true)
+     */
+    protected $tokenPassword;
+
+
+    /**
+     * Get roles
+     *
+     * @return string
+     */
+    public function getRoles()
+    {
+        return is_array($this->roles) ? $this->roles : [$this->roles];
+    }
+
+    public function getSalt()
+    {
+        // Chaque utilisateur va se voir attribuer une clé permettant
+        // de saler son mot de passe. Cela n'est pas obligatoire,
+        // on pourrait retourner null
+        return base_convert(sha1($this->getName()), 16, 36);
+    }
+
+    public function getPassword()
+    {
+        
+    }
+
+    public function getUsername()
+    {
+        return $this->getName();
+    }
+
+    public function eraseCredentials()
+    {
+        // Ici nous n'avons rien à effacer.
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     *
+     * @return SuperUser
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+}

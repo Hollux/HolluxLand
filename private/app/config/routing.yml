@@ -1,0 +1,73 @@
+edouard:
+    resource: "@EdouardBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+list_helper:
+    resource: "@ListHelperBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+admin_admin:
+    resource: "@AdminAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /admin/
+
+news:
+    resource: "@NewsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+vet:
+    resource: "@VetBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+list_builder:
+    resource: "@ListBuilderBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+admin_user:
+    resource: "@AdminUserBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
+admin_nav:
+    resource: "@AdminNavBundle/Controller/"
+    type:     annotation
+    prefix:   /admin/nav
+
+admin_portfolio:
+    resource: "@PortfolioBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
+admin_product:
+    resource: "@AdminProductBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+ecom:
+    resource: "@EcomBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+media:
+    resource: "@MediaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+hollux:
+    resource: "@HolluxBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

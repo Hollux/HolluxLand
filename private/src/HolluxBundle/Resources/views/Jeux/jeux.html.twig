@@ -1,0 +1,119 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    <h1>Jeux en test</h1>
+    <p>Jeux en phase de test</p>
+    <p>Il faut deviner quel sont les titres des films présent sur les Minima</p>
+    <p>Attention aux couleurs et à tout le peu d'éléments présent sur les images, rien n'est mis au hasard</p>
+    <br>
+    <p>Petite règle, aucun accent et seul les noms de base en cas de multiple série est attendu.</p>
+    <p>ex: star wars , et non star wars un nouvel espoir ! Bon courrage !</p>
+    {# dump(data) #}
+    <div class="minima" id="minima">
+        {% block ajax %}
+            {{ form_start(form) }}
+            <div class="row">
+                <div class="col-md-4">
+                    <img src='/img/minima/{{ form.question.number.vars.value }}.jpg'>
+
+                </div>
+                <div class="col-md-2">
+                    {{ form_widget(form.response) }}
+                    {{ form_widget(form.question) }}
+                    {{ form_widget(form.tokenJeux) }}
+                    <br>
+                    {% if data['post'] is defined %}
+                        {% if data['post'] == 'post OK' %}
+                            {{ data[0] }}
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <div class="col-md-2">
+                    <button data-type="submit-form" class="btn btn-primary"
+                            {% if data['post'] is defined %}disabled{% endif %}>
+                        VALIDER
+                    </button>
+
+                    {% if data['post'] is defined %}
+                        {% if data['post'] == 'post OK' %}
+                            <br><br>
+                            <button data-type="jeux-next-form" class="btn btn-primary">
+                                Question suivante
+                            </button>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <div class="col-md-4 note">
+                    <p>{{ form.tokenJeux.responseTrue.vars.value }} / {{ form.tokenJeux.nbrAnswered.vars.value }}</p>
+                </div>
+            </div>
+            {{ form_end(form) }}
+
+        {% endblock %}
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            //SUBMIT
+            var submitForm = function () {
+                var btn = jQuery('button[data-type="submit-form"]');
+                btn.click(function (event) {
+                    event.preventDefault();
+                    var form = jQuery('#minima form');
+                    jQuery.ajax({
+                        url: "{{ path('jeux') }}",
+                        data: form.serialize(),
+                        type: 'POST',
+                        success: function (msg) {
+                            jQuery('#minima').html(msg);
+                            jeuxNext();
+
+                        }
+                    });
+                });
+            };
+
+            var jeuxNext = function () {
+                var btn = jQuery('button[data-type="jeux-next-form"]');
+                btn.click(function (event) {
+                    event.preventDefault();
+                    jQuery.ajax({
+                        url: "{{ path('jeuxNext') }}",
+                        type: 'GET',
+                        success: function (msg) {
+                            jQuery('#minima').html(msg);
+                            submitForm();
+                            jeuxNext();
+
+                        }
+                    });
+                });
+            };
+
+            var nextJeuxSubmit = function (event) {
+                event.preventDefault();
+                jQuery.ajax({
+                    url: "{{ path('jeuxNext') }}",
+                    type: 'GET',
+                    success: function (msg) {
+                        jQuery('#minima').html(msg);
+                        submitForm();
+                        jeuxNext();
+                    }
+                });
+            };
+
+
+            submitForm();
+            jeuxNext();
+
+        });
+
+    </script>
+
+
+
+
+{% endblock %}

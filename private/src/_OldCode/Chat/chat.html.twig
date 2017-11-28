@@ -1,0 +1,115 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    <h1>Bienvenu sur le Chat</h1>
+
+    <div id="chat">
+
+        {{ message.code }}
+        if message.code
+         {
+        client = payer
+        message.validCode = 1
+        }
+
+    </div>
+    <br>
+    <div action="message" method="post">
+        <div class="row">
+            <div class="col-md-11">
+                <textarea placeholder="Message" id="textarea" name="message"></textarea>
+            </div>
+            <div class="col-md-1">
+                <button type="submit" id="envoi">Envoyer</button>
+            </div>
+        </div>
+
+        {# form(form) #}
+    </div>
+
+    <script>
+        // LES VAR
+        var routeAjax = "{{ path('ajaxMessageChat') }}";
+        var dateD = "{{ date().timestamp * 1000 }}";
+        var timedecalage = new Date().getTime() - dateD;
+        var arrayId = [];
+
+
+        //BASE ET CDN
+        $(document).ready(function () {
+            $('#textarea').keydown(function (e) {
+                if (e.keyCode == 13 && !e.shiftKey) {
+                    dispatch('post');
+                    return false;
+                }
+                return true;
+            });
+
+            // LES TOUCHES
+            $('#envoi').click(function () {
+                dispatch('post');
+            });
+
+            dispatch();
+            setInterval(function () {
+                dispatch()
+            }, 2000);
+        });
+
+        // dispatch
+        function dispatch($base = '') {
+
+            if ($base == 'post') {
+                // POST
+                var message = $('#textarea').val();
+                messages('post', message);
+                $('#textarea').val('');
+            } else if ($base == '') {
+                // UPDATE
+                messages('maj', new Date().getTime() + timedecalage);
+            }
+        }
+
+
+        //REQUETE
+        function messages($type, $data) {
+            $.ajax({
+                url: routeAjax,
+                data: {type: $type, data: $data},//, data: new Date().getTime() + timedecalage },
+                type: 'POST',
+                dataType: 'json',
+                success: function (json) {
+                    // UPDATE MESSAGE
+                    $.each(json.success, function () { // et  boucle sur la réponse contenu dans la variable passé à la function du success "json"
+
+                        if (!inArray(this.id, arrayId)) {
+
+                            $('#chat').last().append('<p>' + this.time + ' [' + this.user + ']: ' + this.content +
+                                    '</p>');
+                            arrayId.push(this.id);
+
+                            element = document.getElementById('chat');
+                            element.scrollTop = element.scrollHeight;
+                        }
+                    });
+
+                    $.each(json.error, function () {
+                        alert(this);
+                    });
+                }
+            });
+        }
+
+        // fais le tour des ID
+        function inArray(needle, haystack) {
+            var length = haystack.length;
+            for (var i = 0; i < length; i++) {
+                if (haystack[i] == needle)
+                    return true;
+            }
+            return false;
+        }
+    </script>
+
+{% endblock %}

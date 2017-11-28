@@ -1,0 +1,557 @@
+/* 	RESET CSS *//*	RESET CSS *//*	RESET CSS *//*	RESET CSS *//*	RESET CSS */
+/*	RESET CSS *//* 	RESET CSS *//*	RESET CSS *//*	RESET CSS *//*	RESET CSS */
+/*	RESET CSS *//* 	RESET CSS *//*	RESET CSS *//*	RESET CSS *//*	RESET CSS */
+/*	RESET CSS *//* 	RESET CSS *//*	RESET CSS *//*	RESET CSS *//*	RESET CSS */
+/*	RESET CSS *//*	RESET CSS *//*	RESET CSS *//*	RESET CSS *//*	RESET CSS */
+
+/* Internet Explorer 10 doesn't differentiate device width from viewport width,
+and thus doesn't properly apply the media queries in Bootstrap's CSS.
+Normally you'd just add a quick snippet of CSS to fix this:*/
+@-webkit-viewport {
+  width : device-width;
+}
+
+@-moz-viewport {
+  width : device-width;
+}
+
+@-ms-viewport {
+  width : device-width;
+}
+
+@-o-viewport {
+  width : device-width;
+}
+
+@viewport {
+  width : device-width;
+}
+
+@media print {
+  .bg-danger { background-color : #f2dede !important; }
+}
+
+/* Special smartphone */
+@media (max-width : 767px) {
+  .container {
+    width : auto;
+  }
+  h3, .h3 {
+    font-size  : 18px;
+    margin-top : 10px;
+  }
+}
+
+/* Prevent scroll on narrow devices */
+/* html,body { overflow-x: hidden;} */
+blockquote { font-size : 15px; margin : 10px; padding : 5px !important; }
+
+h2 { font-size : 16px; font-weight : bold; }
+
+h3 { padding-top : 0px; }
+
+a { outline : 0 !important; }
+
+/* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS */
+/*	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS */
+/*	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS */
+/*	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS */
+/*	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS *//* 	FIN RESET CSS */
+
+/* 	TEST *//* 	TEST *//* 	TEST *//* 	TEST */
+/* 	TEST *//* 	TEST *//* 	TEST *//* 	TEST */
+.mailCss {
+  background-color : #449d44;
+}
+.imgTEST {
+  max-width: 200px;
+}
+
+/* 	/TEST *//* 	/TEST *//* 	/TEST *//* 	/TEST */
+/* 	/TEST *//* 	/TEST *//* 	/TEST *//* 	/TEST */
+
+/* 	BASE *//* 	BASE *//* 	BASE *//* 	BASE */
+/* 	BASE *//* 	BASE *//* 	BASE *//* 	BASE */
+html {
+  height : 100%;
+}
+
+body {
+  height      : 100%;
+  font-family : 'Open Sans', sans-serif;
+}
+
+img {
+  max-width : 100%;
+}
+
+.avatar {
+  max-width : 100px;
+}
+
+.m0auto {
+  display : block;
+  margin  : 0 auto;
+}
+
+.dNone {
+  display : none;
+}
+
+.flex {
+  display : flex;
+}
+
+.flex-center {
+  display : flex;
+  justify-content: center;
+}
+
+@media (min-width : 1200px) {
+  .md-flex-center {
+    display         : flex;
+    justify-content : center;
+  }
+}
+
+.display {
+  display : inline-block;
+}
+
+.fLeft {
+  float : left;
+}
+
+.strong {
+  font-weight : bold;
+}
+
+/* 	Marge *//* 	Marge */
+.marginL20px {
+  margin-left : 20px;
+}
+
+.marginR20px {
+  margin-right : 20px;
+}
+
+.marginL20px {
+  margin : 20px;
+}
+
+.marginT10px {
+  margin-top : 10px;
+}
+
+.marginB10px {
+  margin-bottom : 10px;
+}
+
+.h10px {
+  height : 10px;
+}
+
+.w25 {
+  width : 25%;
+}
+
+.w50 {
+  width : 50%;
+}
+
+/* 	Color *//* 	Color */
+.bg-black {
+  background-color : black;
+}
+
+.bg-white {
+  background-color : white;
+}
+
+.bg-green {
+  background-color : green;
+}
+
+.bg-red {
+  background-color : red;
+}
+
+.white {
+  color : white;
+}
+
+.black {
+  color : black;
+}
+
+.bg-222222 {
+  background-color : #222222;
+}
+
+.flash-bg-24bd24 {
+  background-color : #24bd24;
+  p {
+    margin  : 0 5px 10px;
+    padding : 2px 0;
+  }
+}
+
+.flash-bg-red {
+  background-color : red;
+  p {
+    margin  : 0 5px 10px;
+    padding : 2px 0;
+  }
+}
+
+/* 	DeTout *//* 	DeTout */
+
+/* 	/BASE *//* 	/BASE *//* 	/BASE *//* 	/BASE */
+/* 	/BASE *//* 	/BASE *//* 	/BASE *//* 	/BASE */
+
+/* BASEHollux *//* BASEHollux *//* BASEHollux *//* BASEHollux */
+/* BASEHollux *//* BASEHollux *//* BASEHollux *//* BASEHollux */
+body {
+  background : url('/img/BG3.jpg');
+}
+
+.container {
+  background-color : white;
+  min-height       : 94.3%;
+}
+
+.btn:hover {
+  background-color : #9F9F9F;
+}
+
+.logo {
+  margin : -10px 0 0 -4px;
+  height : 45px;
+}
+
+.navbar-nav > li > a {
+  line-height : 25px;
+  font-size   : 18px;
+}
+
+.barre {
+  text-decoration : line-through;
+}
+
+/* 	BASEHollux *//* BASEHollux *//* BASEHollux *//* BASEHollux */
+/* 	BASEHollux *//* BASEHollux *//* BASEHollux *//* BASEHollux */
+
+/* 	TEST */
+/* 	TEST */
+.test {
+  .imgSites {
+    .imgSite {
+      text-align : center;
+      .site1, .site2, .site3 {
+        position : relative;
+        margin   : 5px;
+      }
+      .site1:hover, .site2:hover, .site3:hover {
+        opacity : 0.5;
+      }
+      .imgHover {
+        position : absolute;
+        top      : 50%;
+        width    : 80%;
+        /* display:none; */
+      }
+      .imgeHover {
+        /* display: block; */
+      }
+      .site1:hover .imgHover {
+        display : block;
+      }
+    }
+  }
+}
+
+/* ====================
+	POST OVERLAY
+==================== */
+.post {
+  width    : 100%;
+  height   : 200px;
+  overflow : hidden;
+
+  .post-content {
+    position                : relative;
+    width                   : 100%;
+    height                  : 100%;
+    -webkit-background-size : cover;
+    background-size         : cover;
+    background-position     : center center;
+    background-repeat       : no-repeat;
+    transition              : all .2s ease-in;
+
+    .post-overlay {
+      background : rgba(0, 0, 0, .5);
+      /* position: absolute; */
+      top        : 0;
+      left       : 0;
+      width      : 100%;
+      height     : 100%;
+      opacity    : 0;
+      transition : all .5s ease-in-out;
+
+      .post-title {
+        position   : absolute;
+        width      : 100%;
+        top        : 37.5%;
+        right      : -100%;
+        transition : all .6s ease-in-out .2s;
+      }
+    }
+  }
+  .post-content1 {
+    background-image : url("/img/site1.jpg");
+  }
+  .post-content2 {
+    background-image : url("/img/wonder2.jpg");
+  }
+  .post-content3 {
+    background-image : url("/img/ludoWp.jpg");
+  }
+}
+
+.post:hover .post-content {
+  transform : scale(1.1);
+}
+
+.post:hover .post-overlay {
+  opacity : 1;
+}
+
+.post:hover .post-title {
+  transform : translatex(-100%);
+}
+
+/* HOME */
+/* HOME */
+
+.home {
+  .imgSites {
+    .post {
+      width    : 100%;
+      height   : 200px;
+      overflow : hidden;
+
+      .post-content {
+        position                : relative;
+        width                   : 100%;
+        height                  : 100%;
+        -webkit-background-size : cover;
+        background-size         : cover;
+        background-position     : center center;
+        background-repeat       : no-repeat;
+        transition              : all .2s ease-in;
+
+        .post-overlay {
+          background : rgba(0, 0, 0, .5);
+          /* position: absolute; */
+          top        : 0;
+          left       : 0;
+          width      : 100%;
+          height     : 100%;
+          opacity    : 0;
+          transition : all .5s ease-in-out;
+
+          .post-title {
+            position   : absolute;
+            width      : 100%;
+            top        : 37.5%;
+            right      : -100%;
+            transition : all .6s ease-in-out .2s;
+          }
+        }
+      }
+      .post-content1 {
+        background-image : url("/img/site1.jpg");
+      }
+      .post-content2 {
+        background-image : url("/img/wonder2.jpg");
+      }
+      .post-content3 {
+        background-image : url("/img/ludoWp.jpg");
+      }
+    }
+    .post:hover .post-content {
+      transform : scale(1.1);
+    }
+    .post:hover .post-overlay {
+      opacity : 1;
+    }
+    .post:hover .post-title {
+      transform : translatex(-100%);
+    }
+  }
+}
+
+/* COMPETENCES */
+/* COMPETENCES */
+
+.competences {
+  img {
+    margin : 15px 20px;
+    max-height: 100px;
+    width: auto;
+  }
+  .border {
+    border : 1px dashed black;
+  }
+}
+
+/* CV */
+/* CV */
+.CV {
+  background-color : #F4EBC3;
+  padding          : 10px;
+  border-radius    : 10px;
+  p {
+    line-height : 13px;
+  }
+  div {
+    line-height : 18px;
+  }
+  .infoComp {
+    font-weight     : bold;
+    text-decoration : underline;
+  }
+}
+
+/* INFOS PERSO */
+/* INFOS PERSO */
+.infoPerso {
+}
+
+/* 	FOOTER */
+/* 	FOOTER */
+footer {
+  min-height       : 5%;
+  background-color : #222222;
+  color            : white;
+  width            : 100%;
+  @media (max-width : 768px) {
+    .w25 {
+      width : 50%;
+    }
+  }
+  .footerA {
+    overflow : hidden
+  }
+  .footerB {
+    vertical-align : top;
+  }
+}
+
+/* SCROLLUP */
+/* SCROLLUP */
+.scrollup {
+  z-index         : 1;
+  width           : 40px;
+  height          : 40px;
+  position        : fixed;
+  bottom          : 15%;
+  right           : 15%;
+  display         : none;
+  color           : #C815D7;
+  background      : url(/img/fleche_haut_blanc.png);
+  background-size : 100%;
+  border          : 1px solid #3a3f51;
+  font-size       : 20px;
+  text-align      : center;
+  line-height     : 37px;
+}
+
+.scrollup:hover {
+  background-color : #F30505;
+}
+
+/* SCROLLbot */
+/* SCROLLbot */
+.scrollbot {
+  z-index         : 1;
+  width           : 40px;
+  height          : 40px;
+  position        : fixed;
+  bottom          : 15%;
+  right           : 20%;
+  /* display: none; */
+  color           : #C815D7;
+  background      : url(/img/fleche_bas_blanc.png);
+  background-size : 100%;
+  border          : 1px solid #3a3f51;
+  font-size       : 20px;
+  text-align      : center;
+  line-height     : 37px;
+}
+
+.scrollbot:hover {
+  background-color : #F30505;
+}
+
+/* ====================
+	TEL
+==================== */
+
+/* .flex
+{
+	p
+	{
+		width: 9%;
+		margin:10px;
+	}
+} */
+
+/* ====================
+	SMASH UP
+==================== */
+
+.faction {
+  padding          : 5px;
+  background-color : #C9C9C9;
+}
+
+.faction:nth-child(2n+1) {
+  background-color : #D7D7D7;
+}
+
+span { width : 20px; }
+
+/* ====================
+		CHAT
+==================== */
+
+@media (min-width : 1100px) {
+  #chat {
+    height   : 500px;
+    overflow : auto;
+    width    : 100%;
+    border   : 2px solid black;
+    padding  : 3px 2px 3px 5px;
+  }
+}
+
+textarea#textarea {
+  border  : 1px solid black;
+  resize  : none;
+  outline : none;
+  width   : 100%;
+  height  : 55px;
+}
+
+/* ====================
+		JEUX 1
+==================== */
+.minima {
+  .reponse-valide {
+    background-color : rgba(102, 255, 102, 0.2)
+  }
+  .reponse-invalide {
+    background-color : rgba(255, 26, 26, 0.2)
+  }
+}

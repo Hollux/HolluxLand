@@ -1,0 +1,34 @@
+services:
+    mediabundle.mediacontroller:
+        class: MediaBundle\Controller\MediaController
+        arguments:
+            - '@form.factory'
+            - '@media.brochure_uploader'
+            - '%upload_directory%'
+            - '@doctrine.orm.entity_manager'
+            - '@router'
+            - '%media_class_fqn%'
+            - '%media_type_fqn%'
+
+    media.brochure_uploader:
+        class: MediaBundle\Component\FileUploader
+        arguments: ['%upload_directory%']
+
+    media.service.fileuploader:
+            class: MediaBundle\Service\FileUploader
+            arguments: [ '%upload_directory%']
+
+    media.service.stringcleader:
+            class: MediaBundle\Service\StringCleaner
+
+    eventlistener.media.orm.upload:
+            class: MediaBundle\EventListener\ORM\UploadListener
+            arguments:
+                - '@media.service.fileuploader'
+                - '@media.service.stringcleader'
+                - '%upload_directory%'
+            tags:
+                 - { name: doctrine.event_listener, event: prePersist }
+                 - { name: doctrine.event_listener, event: preUpdate }
+                 - { name: doctrine.event_listener, event: postLoad }
+

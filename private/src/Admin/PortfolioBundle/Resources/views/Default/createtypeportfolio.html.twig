@@ -1,0 +1,18 @@
+{% extends"AdminUserBundle:Base:base.html.twig" %}
+
+{% block title %}CreatePortfolio{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}
+
+{% block principal %}
+    <h1>Create Type</h1>
+    {{ form_start(form) }}
+
+    {{ form(form) }}
+
+    {{ form_end(form) }}
+
+{% endblock %}
+

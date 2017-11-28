@@ -1,0 +1,32 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block titleBase %}ListBuilder - {% endblock %}
+
+{% block principal %}
+    <h1>ListBuilder</h1>
+
+    <p>Version test d'un liste builder.</p>
+    <p>Seul le prètre mage-slann et le sang ancien saurus des hommes-lezard ont des options rempli.</p>
+    <br>
+    <div class="row text-center">
+        <div class="col-md-4">Titre de la liste</div>
+        <div class="col-md-4">Créateur</div>
+        <div class="col-md-2">Quote</div>
+        <div class="col-md-2">Date</div>
+    </div>
+        {% for list in lists %}
+            <a class="btn btn-list" href="{{ path('listbuilder_edit', { 'idlist': list.id }) }}">
+                <div class="row">
+                    <div class="col-md-4">{{ list.title }}</div>
+                    <div class="col-md-4">{{ list.author }}</div>
+                    <div class="col-md-2">-</div>
+                    <div class="col-md-2">{{ list.updatedAt|date }}</div>
+                </div>
+            </a>
+        {% endfor %}
+
+    <a href="{{ path('listbuilder_create') }}">
+        <button type="button" class="btn btn-primary">Créer une Liste</button>
+    </a>
+
+{% endblock %}

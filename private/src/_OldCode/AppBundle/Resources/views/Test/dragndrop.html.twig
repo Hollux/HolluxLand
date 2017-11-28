@@ -1,0 +1,18 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <H1>DragNDrop</H1>
+
+    <div id="draggable" class="ui-widget-content" style="width: 150px; height: 150px; padding: 0.5em; background-color: lightgrey;">
+        <p>Drag me if you can.</p>
+    </div>
+    <script>
+        $(function () {
+            $("#draggable").draggable();
+        });
+    </script>
+
+
+{% endblock %}

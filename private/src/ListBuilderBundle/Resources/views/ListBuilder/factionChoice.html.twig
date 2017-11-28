@@ -1,0 +1,6 @@
+{% for figurine in figurines %}
+    <a data-id="{{ figurine.id }}" class="add btn btn-figurine"  href="#">
+        <span class="figName">{{ figurine.name }}</span>
+        <span class="figCost">{{ figurine.cost }}</span>
+    </a>
+{% endfor %}

@@ -1,0 +1,23 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    <h1>De retour sur le jeux ?</h1>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <a class="btn btn-primary" href="{{ path('jeux') }}">
+                Continue
+            </a>
+            <p>Pour Continuer la partie précédente la ou vous en étiez</p>
+        </div>
+        <div class="col-md-6">
+            <a class="btn btn-danger" href="{{ path('jeuxDestroy') }}">
+                Recommencer
+            </a>
+            <p>Pour Recommencer une nouvelle partie</p>
+            <p>Vos anciennes reponses seront supprimé</p>
+        </div>
+    </div>
+
+{% endblock %}

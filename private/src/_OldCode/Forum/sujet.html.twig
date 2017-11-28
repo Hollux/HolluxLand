@@ -1,0 +1,41 @@
+{% extends":ForumBase:base.html.twig" %}
+
+{% block principal %}
+
+
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <p>{{ sujet.author.name }}</p>
+            <p>{{ sujet.date|date("m/d/Y") }}</p>
+        </div>
+        <div class="col-md-10">
+            <h2>{{ sujet.title }}</h2>
+            <p>{{ sujet.content }}</p>
+        </div>
+    </div>
+    {% for child in sujet.childs %}
+        <div class="row">
+            <div class="col-md-2">
+                <p>{{ child.author.name }}</p>
+                <p>{{ child.date|date("m/d/Y") }}</p>
+            </div>
+            <div class="col-md-10">
+                <p>{{ sujet.content }}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <br>
+
+        {# form(form) #}
+    {% else %}
+    {% endif %}
+
+
+
+{% endblock %}

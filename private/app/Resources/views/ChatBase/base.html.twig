@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hollux, Chat Alors {% block titleBase %}{% endblock %}</title>
+    <meta charset="UTF-8">
+
+    <!--    POLICE -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic'
+          rel='stylesheet' type='text/css'>
+    <!--   viewport, pas de zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <!--    BOOTSTRAP -->
+    <link href="/bootstrap/css/bootstrap.min.css" media="print,screen" rel="stylesheet"/>
+    <!--   SASS -->
+    <link href="/css/SASSChat/css/chatSass.css" media="print,screen" rel="stylesheet"/>
+    <!--    JQUERY -->
+    <script type="text/javascript" src="/scripts/jquery-3.1.1.min.js"></script>
+    <!-- DATATABLE CSS -->
+    <link rel="stylesheet" href="/css/dataTable.min.css">
+    <!-- DATATABLE JS -->
+    <script type="text/javascript" src="/scripts/dataTable.min.js"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div class="container">
+    <br>
+    {{ include('ChatBase/nav.html.twig') }}
+
+    {% for flash_message in app.session.flashBag.get('error') %}
+        <div class="flash-notice flash-bg-red">
+            <p>{{ flash_message }}</p>
+        </div>
+    {% endfor %}
+    {% for flash_message in app.session.flashBag.get('success') %}
+        <div class="flash-notice flash-bg-24bd24">
+            <p>{{ flash_message }}</p>
+        </div>
+    {% endfor %}
+
+    {% block principal %}{% endblock %}
+</div>
+<div class="container2">
+    {{ include('ChatBase/footer.html.twig') }}
+</div>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/hollux.js"></script>
+{% block script %}{% endblock %}
+</body>
+</html>
+

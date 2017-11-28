@@ -1,0 +1,17 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":HolluxBase:base.html.twig" %}
+
+{% block titleBase %}{{ list.title }} {% endblock %}
+
+{% block principal %}
+
+    <p>{{ list.title }}</p>
+    <p>{{ list.author }}</p>
+    {% for list.figurines in figurine %}
+        <p>{{ figurine.name }}</p>
+    {% endfor %}
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

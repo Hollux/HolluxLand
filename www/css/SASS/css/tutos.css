@@ -1,0 +1,317 @@
+/* ====================
+//       RESET       //
+==================== */
+/* Internet Explorer 10 doesn't differentiate device width from viewport width,
+and thus doesn't properly apply the media queries in Bootstrap's CSS.
+Normally you'd just add a quick snippet of CSS to fix this:*/
+@-webkit-viewport {
+  width: device-width; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+@media print {
+  .bg-danger {
+    background-color: #f2dede !important; } }
+/* Special smartphone */
+@media (max-width: 767px) {
+  .container {
+    width: auto; }
+
+  h3, .h3 {
+    font-size: 18px;
+    margin-top: 10px; } }
+/* Prevent scroll on narrow devices */
+/* html,body { overflow-x: hidden;} */
+blockquote {
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px !important; }
+
+h2 {
+  font-size: 16px;
+  font-weight: bold; }
+
+h3 {
+  padding-top: 0px; }
+
+a {
+  outline: 0 !important; }
+
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/*	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* 	FIN RESET CSS */
+/* ====================
+//       TEST        //
+==================== */
+/* ====================
+//       BASE        //
+==================== */
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.avatar {
+  max-width: 100px; }
+
+.m0auto {
+  display: block;
+  margin: 0 auto; }
+
+.dNone {
+  display: none; }
+
+.flex {
+  display: flex; }
+
+.flex-center {
+  display: flex;
+  justify-content: center; }
+
+@media (min-width: 1200px) {
+  .md-flex-center {
+    display: flex;
+    justify-content: center; } }
+.display {
+  display: inline-block; }
+
+.fLeft {
+  float: left; }
+
+.strong {
+  font-weight: bold; }
+
+/* 	Marge */
+/* 	Marge */
+.marginL20px {
+  margin-left: 20px; }
+
+.marginR20px {
+  margin-right: 20px; }
+
+.marginL20px {
+  margin: 20px; }
+
+.marginT10px {
+  margin-top: 10px; }
+
+.marginB10px {
+  margin-bottom: 10px; }
+
+.h10px {
+  height: 10px; }
+
+.w25 {
+  width: 25%; }
+
+.w50 {
+  width: 50%; }
+
+.h4 {
+  font-size: 18px; }
+
+/* 	Color */
+/* 	Color */
+.bg-black {
+  background-color: black; }
+
+.bg-lightgrey {
+  background-color: lightgrey; }
+
+.bg-white {
+  background-color: white; }
+
+.bg-green {
+  background-color: green; }
+
+.bg-red {
+  background-color: red; }
+
+.white {
+  color: white; }
+
+.black {
+  color: black; }
+
+.bg-222222 {
+  background-color: #222222; }
+
+.flash-bg-24bd24 {
+  background-color: #24bd24; }
+  .flash-bg-24bd24 p {
+    margin: 0 5px 10px;
+    padding: 2px 0; }
+
+.flash-bg-red {
+  background-color: red; }
+  .flash-bg-red p {
+    margin: 0 5px 10px;
+    padding: 2px 0; }
+
+.barre {
+  text-decoration: line-through; }
+
+/* ====================
+//	 BASE TUTO     //
+==================== */
+body {
+  background: url("/img/tutos/tutosbg.png"); }
+.container {
+  background-color: white;
+  min-height: calc(100vh - 50px);
+}
+
+.panel-code {
+  border-color: #272822; }
+
+.panel-code > .panel-heading {
+  color: #ffffff;
+  background-color: #272822;
+  border-color: #272822; }
+
+.panel-code > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #272822; }
+
+.panel-code > .panel-heading .badge {
+  color: #272822;
+  background-color: #ffffff; }
+
+.panel-code > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #323232; }
+
+code {
+  display: block; }
+
+/* ====================
+//	     TEST        //
+==================== */
+/* ====================
+//	     TUTO        //
+==================== */
+.pimpmyride
+{
+  font-family: 'Molle'; color: #FCCA09;
+  text-shadow:0 5px 4px #1b1c39,
+  2px 10px 6px #292A6D;
+"
+}
+.activetutotype {
+  background-color: #00b3ee;
+}
+.tutotype, tutotype:hover{
+  color: black;
+  text-decoration:none;
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+/* ====================
+//	     /TUTO        //
+==================== */
+
+/* ====================
+//	     HOME        //
+==================== */
+/* ====================
+//	     NAV         //
+==================== */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    height: 50px !important;
+  }
+}
+
+@media (min-width: 920px) {
+  .imgNav {
+    display: none; } }
+@media (max-width: 920px) {
+  .espaceNav {
+    height: 50px; } }
+@media (max-width: 920px) {
+  .espaceNav {
+    display: none; } }
+.imglogo {
+  width: 200px;
+  margin: -60px 0 0 0; }
+
+.logoHollux {
+  margin: -10px 0 0 -4px;
+  height: 45px; }
+
+/* ====================
+//	    FOOTER       //
+==================== */
+footer {
+  min-height: 5%;
+  background-color: #222222;
+  color: white;
+  width: 100%; }
+  @media (max-width: 768px) {
+    footer .w25 {
+      width: 50%; } }
+  footer .footerA {
+    overflow: hidden; }
+  footer .footerB {
+    vertical-align: top; }
+
+/* SCROLLUP */
+/* SCROLLUP */
+.scrollup {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 15%;
+  right: 15%;
+  display: none;
+  color: #C815D7;
+  background: url(/img/fleche_haut_blanc.png);
+  background-size: 100%;
+  border: 1px solid #3a3f51;
+  font-size: 20px;
+  text-align: center;
+  line-height: 37px; }
+
+.scrollup:hover {
+  background-color: #F30505; }
+
+/*# sourceMappingURL=tutos.css.map */

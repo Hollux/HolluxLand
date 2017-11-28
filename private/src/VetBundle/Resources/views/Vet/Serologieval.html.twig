@@ -1,0 +1,625 @@
+
+<h3>Serologie</h3>
+ 
+    {% if val.serologieadenovirus and val.serologieadenovirus != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>adénovirus</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieadenovirus }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodeadenovirus and val.serologiemethodeadenovirus != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodeadenovirus }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologietypageadenovirus and val.serologietypageadenovirus != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>typage</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologietypageadenovirus }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifadenovirus and val.serologieresultatquantitatifadenovirus != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifadenovirus }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieanaplasma and val.serologieanaplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>anaplasma</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieanaplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodeanaplasma and val.serologiemethodeanaplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodeanaplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieidentificationanaplasma and val.serologieidentificationanaplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieidentificationanaplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifanaplasma and val.serologieresultatquantitatifanaplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifanaplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiebesnoitiabesnoiti and val.serologiebesnoitiabesnoiti != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>besnoitia besnoiti</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiebesnoitiabesnoiti }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodebesnoitiabesnoiti and val.serologiemethodebesnoitiabesnoiti != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodebesnoitiabesnoiti }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifbesnoitiabesnoiti and val.serologieresultatquantitatifbesnoitiabesnoiti != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifbesnoitiabesnoiti }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiebrucella and val.serologiebrucella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>brucella</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiebrucella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodebrucella and val.serologiemethodebrucella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodebrucella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieidentificationbrucella and val.serologieidentificationbrucella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieidentificationbrucella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifbrucella and val.serologieresultatquantitatifbrucella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifbrucella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiebvd and val.serologiebvd != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>BVD</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiebvd }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodebvd and val.serologiemethodebvd != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodebvd }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifbvd and val.serologieresultatquantitatifbvd != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifbvd }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiechlamydia and val.serologiechlamydia != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>chlamydia</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiechlamydia }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodechlamydia and val.serologiemethodechlamydia != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodechlamydia }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieidentificationchlamydia and val.serologieidentificationchlamydia != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieidentificationchlamydia }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifchlamydia and val.serologieresultatquantitatifchlamydia != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifchlamydia }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiechlamydophila and val.serologiechlamydophila != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>chlamydophila</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiechlamydophila }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodechlamydophila and val.serologiemethodechlamydophila != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodechlamydophila }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieidentificationchlamydophila and val.serologieidentificationchlamydophila != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieidentificationchlamydophila }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifchlamydophila and val.serologieresultatquantitatifchlamydophila != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifchlamydophila }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiecoxiellaburnetii and val.serologiecoxiellaburnetii != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>coxiella burnetii (Fièvre Q)</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiecoxiellaburnetii }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodecoxiellaburnetii and val.serologiemethodecoxiellaburnetii != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodecoxiellaburnetii }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifcoxiellaburnetii and val.serologieresultatquantitatifcoxiellaburnetii != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifcoxiellaburnetii }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieerlichia and val.serologieerlichia != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>erlichia</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieerlichia }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodeerlichia and val.serologiemethodeerlichia != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodeerlichia }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatiferlichia and val.serologieresultatquantitatiferlichia != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatiferlichia }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiefco and val.serologiefco != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>FCO</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiefco }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodefco and val.serologiemethodefco != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodefco }}
+            </div>
+        </div>
+    {% endif %}
+    	RAJOUTER TITRE
+    
+    {% if val.serologietypage1fco and val.serologietypage1fco != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>typage n°1</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologietypage1fco }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatif1fco and val.serologieresultatquantitatif1fco != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif n°1</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatif1fco }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologietypage2fco and val.serologietypage2fco != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>typage n°2</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologietypage2fco }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatif2fco and val.serologieresultatquantitatif2fco != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif n°2</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatif2fco }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieibr and val.serologieibr != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>IBR</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieibr }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodeibr and val.serologiemethodeibr != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodeibr }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifibr and val.serologieresultatquantitatifibr != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifibr }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieleptospira and val.serologieleptospira != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>leptospira</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieleptospira }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodeleptospira and val.serologiemethodeleptospira != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodeleptospira }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieidentificationleptospira and val.serologieidentificationleptospira != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieidentificationleptospira }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifleptospira and val.serologieresultatquantitatifleptospira != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifleptospira }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemycoplasma and val.serologiemycoplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>mycoplasma</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiemycoplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodemycoplasma and val.serologiemethodemycoplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodemycoplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieidentificationmycoplasma and val.serologieidentificationmycoplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieidentificationmycoplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifmycoplasma and val.serologieresultatquantitatifmycoplasma != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifmycoplasma }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieneospora and val.serologieneospora != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>neospora</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieneospora }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodeneospora and val.serologiemethodeneospora != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodeneospora }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifneospora and val.serologieresultatquantitatifneospora != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifneospora }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieparainfluenzapi3 and val.serologieparainfluenzapi3 != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>parainfluenza PI3</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieparainfluenzapi3 }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodeparainfluenzapi3 and val.serologiemethodeparainfluenzapi3 != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodeparainfluenzapi3 }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifparainfluenzapi3 and val.serologieresultatquantitatifparainfluenzapi3 != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifparainfluenzapi3 }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiersv and val.serologiersv != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>RSV</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologiersv }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodersv and val.serologiemethodersv != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodersv }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifrsv and val.serologieresultatquantitatifrsv != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifrsv }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologievisnamaedi and val.serologievisnamaedi != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>Visna maëdi</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologievisnamaedi }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologiemethodevisnamaedi and val.serologiemethodevisnamaedi != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>méthode</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologiemethodevisnamaedi }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieresultatquantitatifvisnamaedi and val.serologieresultatquantitatifvisnamaedi != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.serologieresultatquantitatifvisnamaedi }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.serologieautrepcr and val.serologieautrepcr != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>autre</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.serologieautrepcr }}
+            </div>
+        </div>
+    {% endif %}

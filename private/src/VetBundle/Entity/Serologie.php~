@@ -1,0 +1,524 @@
+<?php
+
+namespace VetBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Serologie
+ * @ORM\Table(name="vet_anabel_serologie")
+ * @ORM\Entity(repositoryClass="VetBundle\Repository\SerologieRepository")
+ */
+class Serologie
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="Avortement", mappedBy="serologie", cascade={"persist", "remove"})
+     */
+    private $avortement;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieadenovirus", type="string", length=255, nullable=true)
+     */
+    private $serologieadenovirus;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodeadenovirus", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodeadenovirus;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologietypageadenovirus", type="string", length=255, nullable=true)
+     */
+    private $serologietypageadenovirus;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifadenovirus", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifadenovirus;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieanaplasma", type="string", length=255, nullable=true)
+     */
+    private $serologieanaplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodeanaplasma", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodeanaplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieidentificationanaplasma", type="string", length=255, nullable=true)
+     */
+    private $serologieidentificationanaplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifanaplasma", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifanaplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiebesnoitiabesnoiti", type="string", length=255, nullable=true)
+     */
+    private $serologiebesnoitiabesnoiti;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodebesnoitiabesnoiti", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodebesnoitiabesnoiti;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifbesnoitiabesnoiti", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifbesnoitiabesnoiti;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiebrucella", type="string", length=255, nullable=true)
+     */
+    private $serologiebrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodebrucella", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodebrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieidentificationbrucella", type="string", length=255, nullable=true)
+     */
+    private $serologieidentificationbrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifbrucella", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifbrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiebvd", type="string", length=255, nullable=true)
+     */
+    private $serologiebvd;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodebvd", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodebvd;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifbvd", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifbvd;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiechlamydia", type="string", length=255, nullable=true)
+     */
+    private $serologiechlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodechlamydia", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodechlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieidentificationchlamydia", type="string", length=255, nullable=true)
+     */
+    private $serologieidentificationchlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifchlamydia", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifchlamydia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiechlamydophila", type="string", length=255, nullable=true)
+     */
+    private $serologiechlamydophila;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodechlamydophila", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodechlamydophila;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieidentificationchlamydophila", type="string", length=255, nullable=true)
+     */
+    private $serologieidentificationchlamydophila;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifchlamydophila", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifchlamydophila;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiecoxiellaburnetii", type="string", length=255, nullable=true)
+     */
+    private $serologiecoxiellaburnetii;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodecoxiellaburnetii", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodecoxiellaburnetii;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifcoxiellaburnetii", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifcoxiellaburnetii;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieerlichia", type="string", length=255, nullable=true)
+     */
+    private $serologieerlichia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodeerlichia", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodeerlichia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatiferlichia", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatiferlichia;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiefco", type="string", length=255, nullable=true)
+     */
+    private $serologiefco;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodefco", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodefco;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologietypage1fco", type="string", length=255, nullable=true)
+     */
+    private $serologietypage1fco;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatif1fco", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatif1fco;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologietypage2fco", type="string", length=255, nullable=true)
+     */
+    private $serologietypage2fco;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatif2fco", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatif2fco;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieibr", type="string", length=255, nullable=true)
+     */
+    private $serologieibr;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodeibr", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodeibr;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifibr", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifibr;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieleptospira", type="string", length=255, nullable=true)
+     */
+    private $serologieleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodeleptospira", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodeleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieidentificationleptospira", type="string", length=255, nullable=true)
+     */
+    private $serologieidentificationleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifleptospira", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifleptospira;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemycoplasma", type="string", length=255, nullable=true)
+     */
+    private $serologiemycoplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodemycoplasma", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodemycoplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieidentificationmycoplasma", type="string", length=255, nullable=true)
+     */
+    private $serologieidentificationmycoplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifmycoplasma", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifmycoplasma;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieneospora", type="string", length=255, nullable=true)
+     */
+    private $serologieneospora;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodeneospora", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodeneospora;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifneospora", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifneospora;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieparainfluenzapi3", type="string", length=255, nullable=true)
+     */
+    private $serologieparainfluenzapi3;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodeparainfluenzapi3", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodeparainfluenzapi3;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifparainfluenzapi3", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifparainfluenzapi3;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiersv", type="string", length=255, nullable=true)
+     */
+    private $serologiersv;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodersv", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodersv;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifrsv", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifrsv;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologievisnamaedi", type="string", length=255, nullable=true)
+     */
+    private $serologievisnamaedi;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologiemethodevisnamaedi", type="string", length=255, nullable=true)
+     */
+    private $serologiemethodevisnamaedi;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieresultatquantitatifvisnamaedi", type="string", length=255, nullable=true)
+     */
+    private $serologieresultatquantitatifvisnamaedi;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="serologieautrepcr", type="string", length=255, nullable=true)
+     */
+    private $serologieautrepcr;
+    
+}

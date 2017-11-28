@@ -1,0 +1,52 @@
+<?php
+
+namespace VetBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Mycologie
+ * @ORM\Table(name="vet_anabel_mycologie")
+ * @ORM\Entity(repositoryClass="VetBundle\Repository\MycologieRepository")
+ */
+class Mycologie
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="Avortement", mappedBy="mycologie", cascade={"persist", "remove"})
+     */
+    private $avortement;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mycologiemycologie", type="string", length=255, nullable=true)
+     */
+    private $mycologiemycologie;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mycologieidentificationmycologie", type="string", length=255, nullable=true)
+     */
+    private $mycologieidentificationmycologie;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mycologieresultatquantitatifmycologie", type="string", length=255, nullable=true)
+     */
+    private $mycologieresultatquantitatifmycologie;
+    
+}

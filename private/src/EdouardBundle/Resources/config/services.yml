@@ -1,0 +1,4 @@
+services:
+#    edouard.example:
+#        class: EdouardBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

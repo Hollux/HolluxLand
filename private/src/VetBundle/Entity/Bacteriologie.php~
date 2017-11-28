@@ -1,0 +1,84 @@
+<?php
+
+namespace VetBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Bacteriologie
+ * @ORM\Table(name="vet_anabel_bacteriologie")
+ * @ORM\Entity(repositoryClass="VetBundle\Repository\BacteriologieRepository")
+ */
+class Bacteriologie
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="Avortement", mappedBy="bacteriologie", cascade={"persist", "remove"})
+     */
+    private $avortement;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bacteriologiebrucella", type="string", length=255, nullable=true)
+     */
+    private $bacteriologiebrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bacteriologieidentificationbrucella", type="string", length=255, nullable=true)
+     */
+    private $bacteriologieidentificationbrucella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bacteriologielisteria", type="string", length=255, nullable=true)
+     */
+    private $bacteriologielisteria;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bacteriologieidentificationlisteria", type="string", length=255, nullable=true)
+     */
+    private $bacteriologieidentificationlisteria;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bacteriologiesalmonella", type="string", length=255, nullable=true)
+     */
+    private $bacteriologiesalmonella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bacteriologieidentificationsalmonella", type="string", length=255, nullable=true)
+     */
+    private $bacteriologieidentificationsalmonella;
+    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bacteriologieautrebacteriologie", type="string", length=255, nullable=true)
+     */
+    private $bacteriologieautrebacteriologie;
+    
+}

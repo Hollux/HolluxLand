@@ -1,0 +1,132 @@
+<nav class="navbar navbar-default navbar-inverse">
+
+    <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <div class="divLogo">
+
+                <a class="navbar-brand" href="{{ path('home') }}">
+
+                    {#<img class="logo" src="/img/logoHollux3blanc.png" alt="logo">#}
+                    <img class="logo" src="/img/logoHollux3blanc.png" alt="logo">
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+
+                <li class="{% if app.request.attributes.get('_route') == 'home' %}active{% endif %}"><a
+                            href="{{ path('home') }}">Accueil<span class="sr-only">(current)</span></a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Bundles <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('homeApp') }}">App</a></li>
+                        <li><a href="{{ path('homeEcom') }}">Ecom</a></li>
+                        <li><a href="{{ path('homeHollux') }}">Hollux</a></li>
+                        <li class="barre"><a href="{{ path('homeListBuilder') }}">ListBuilder</a></li>
+                        <li class="barre"><a href="{{ path('homeListHelper') }}">ListHelper</a></li>
+                        <li class="barre"><a href="{{ path('homeMedia') }}">Media</a></li>
+                        <li class="barre"><a href="{{ path('homeNews') }}">News</a></li>
+                        <li class="barre"><a href="{{ path('homeUser') }}">User</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="{% if app.request.attributes.get('_route') == 'CV' %}active{% endif %}"><a data-link="CV"
+                                                                                                      href="{{ path('CV') }}">CV</a>
+                </li>
+
+
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Mes réalisations <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+
+                        <li><a href="https://www.solveigdc.fr/" target="_blank">Solveig De Cuyper</a></li>
+                        <li><a href="http://www.haricotdecastelnaudary.fr/" target=_blank>Haricot</a></li>
+                        <li><a href="http://www.ludotheque-horbourg-wihr.net/" target=_blank>Ludo</a></li>
+                        <li><a href="https://www.chroniquesdewaral.fr/" target="_blank">Chroniques de Waral</a></li>
+
+                        <li role="separator" class="divider"></li>
+
+                        <li><a href="{{ path('smashUp') }}">Random Smash Up</a></li>
+
+                        <li class="barre"><a href="#">Chat alors</a></li>
+
+                        <li class="barre"><a href="#">Forum ipsum</a></li>
+
+                        <li  class="barre"><a href="#">List Builder</a></li>
+
+                        <li><a href="{{ path('jeux') }}">Mini jeux</a></li>
+                    </ul>
+
+                </li>
+
+
+                <li class="{% if app.request.attributes.get('_route') == 'infoPerso' %}active{% endif %}"><a
+                            data-link="infoPerso" class="bouton" href="{{ path('infoPerso') }}">Infos perso</a></li>
+
+
+                <li class="{% if app.request.attributes.get('_route') == 'meContacter' %}active{% endif %}"><a
+                            href="{{ path('meContacter') }}">Me contacter</a></li>
+
+
+                {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+
+                    <li class="{% if app.request.attributes.get('_route') == 'profil' %}active{% endif %}"><a
+                                href="{{ path('profil') }}">{{ app.user.username }}</a></li>
+
+                    <li class="{% if app.request.attributes.get('_route') == 'logout' %}active{% endif %}"><a
+                                href="{{ path('logout') }}">Logout</a></li>
+
+                {% else %}
+
+                    <li class="{% if app.request.attributes.get('_route') == 'login' %}active{% endif %}"><a
+                                href="{{ path('login') }}">Login</a></li>
+
+                    <li class="{% if app.request.attributes.get('_route') == 'register' %}active{% endif %}"><a
+                                href="{{ path('register') }}">Register</a></li>
+
+                {% endif %}
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
+</nav>

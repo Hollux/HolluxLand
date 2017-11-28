@@ -1,0 +1,22 @@
+{% extends"AdminUserBundle:Base:base.html.twig" %}
+
+{% block principal %}
+    {{ form(form) }}
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>
+
+        tinymce.init({
+            selector: '.wysiwyg',
+            themes: "modern",
+            height: 500,
+            a_plugin_option: true,
+            plugins: 'advlist autolink table link image lists charmap preview textcolor colorpicker',
+            toolbar: "undo, redo, bold, italic, underline, strikethrough, alignleft, aligncenter, alignright, alignjustify, fontselect, fontsizeselect, bullist, numlist, outdent, indent, blockquote,forecolor, backcolor"
+
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,116 @@
+html {
+    height : 100%; }
+
+body {
+    height      : 100%;
+    font-family : 'Open Sans', sans-serif;
+    background  : url("/sfn/web/img/BG2chat.jpg"); }
+
+img {
+    max-width : 100%; }
+
+.container {
+    background-color : white;
+    min-height       : 100%; }
+
+.center {
+    text-align : center; }
+
+.espace {
+    margin-left : 20px; }
+
+.barre {
+    text-decoration : line-through; }
+
+.logo {
+    margin : -10px 0 0 -4px;
+    height : 45px; }
+
+.checkboxFac {
+    margin-left : 20px; }
+
+.btn:hover {
+    background-color : #9F9F9F; }
+
+/* .display
+{
+	display: inline-block;
+} */
+.dNone {
+    display : none; }
+
+.navbar-nav > li > a {
+    line-height : 25px;
+    font-size   : 18px; }
+
+/* .test{
+	background-color: green;
+}
+.imgSites{
+padding: 100px;
+}
+.imgSite{
+border: 15px solid black;
+}
+.site1{
+display: none;
+}
+img:hover{
+display:none;
+opacity:0.5;
+}
+img:hover p{
+display:inherit;
+}	 */
+.tab {
+    border : 2px solid black; }
+
+.tableau {
+    border : 5px solid black; }
+
+textarea {
+    border  : 1px solid #999999;
+    width   : 100%;
+    margin  : 5px 0;
+    padding : 3px; }
+
+.jsTchat {
+    display        : flex;
+    flex-direction : column-reverse; }
+
+@media screen and (min-width : 1100px) {
+    .jsTchat {
+        height   : 700px;
+        overflow : auto; }
+
+    .chat .col-sm-2, .chat .col-sm-10 {
+        margin : 0 -15px 0 -15px; }
+}
+
+.chat {
+    border-bottom : 1px dotted black; }
+
+.chat p {
+    margin-left : 1%; }
+
+.chat a {
+    margin-left : 1%; }
+
+.chat .flex {
+    display : flex;
+    margin  : 1%; }
+
+.chat .flex img {
+    width  : 40%;
+    height : 40%; }
+
+@media screen and (max-width : 767px) {
+    .chat .flex img {
+        width : 10%; }
+}
+
+.chat .flex .flex {
+    display        : flex;
+    flex-direction : column; }
+
+/*# sourceMappingURL=chatSass.css.map */

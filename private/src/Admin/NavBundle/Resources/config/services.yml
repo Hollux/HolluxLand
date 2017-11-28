@@ -1,0 +1,5 @@
+services:
+    admin.navbundle.ordrenav:
+        class: Admin\NavBundle\Service\OrdreNav
+        arguments:
+            - '@doctrine.orm.entity_manager'

@@ -1,0 +1,35 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block principal %}
+
+        <h1>Boite à idée !</h1>
+
+        <p>Vous avez envi/besoin d'un petit Tuto ? N'hésitez pas à me le soumettre, si votre idée est très interessante ou complètement stupide j'essaierais surement de le faire !</p>
+        <br>
+
+        <!--   ERREUR-->
+        <div style="background-color:red;"><?=$errors?></div>
+
+
+        {{ form_start(form) }}
+
+        <div class="form-group">
+            {{ form_label(form.email, null, {'label_attr' : { 'class' : ( app.user ? 'hidden' : '' ) } }) }}
+            {{ form_widget(form.email,
+            {'value' : app.user.mail|default(''),
+                'attr' : { 'class' :
+                ( app.user ? 'hidden' : 'form-control' )
+            }
+            }
+            ) }}
+            {{ form(form) }}
+            {#{{ form_row(form.content) }}
+            <br/>
+            <div class="g-recaptcha" data-sitekey="6Ld5Dh4UAAAAAD_thz4nnO0liB3TISRmsSDE7svZ"></div>#}
+
+        </div>
+
+        {{ form_end(form) }}
+
+
+{% endblock %}

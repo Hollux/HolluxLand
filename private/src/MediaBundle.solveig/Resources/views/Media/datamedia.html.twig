@@ -1,0 +1,40 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":SolveigBase:base.html.twig" %}
+
+{% block principal %}
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(function () {
+            $('#media-list').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "{{ path('paginatemedia') }}",
+                "sAjaxDataProp": "data",
+                "pageLength": 10,
+                "columns": [
+                    {"data": "id"},
+                    {"data": "file"},
+                    {"data": "filename"},
+                    {"data": "createdat"}
+                ]
+            });
+        });
+    </script>
+
+    <table id="media-list">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>File</th>
+            {#<a href="{{  path('getMedia', {'url' : file}) }}">file</a>#}
+            <th>filename</th>
+            <th>Crée le</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+{% endblock %}

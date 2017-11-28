@@ -1,0 +1,31 @@
+services:
+  userbundle.form.handler.userhandler:
+        class: UserBundle\Form\Handler\UserHandler
+        arguments:
+            - '@request_stack'
+            - '@doctrine.orm.entity_manager'
+            - '@form.factory'
+            - '@security.encoder_factory'
+            - '@media.brochure_uploader'
+            - '%upload_directory%'
+            - '@app.service.ResizeImage'
+            - '@templating'
+            - '@appbundle.component.mailer'
+            - '%user_class_fqn%'
+            - '%user_register_type_fqn%'
+            - '%user_login_type_fqn%'
+            - '%user_profil_type_fqn%'
+            - '@event_dispatcher'
+
+  DisplayNameSubscriber:
+      class: UserBundle\Event\DisplayNameSubscriber
+      tags:
+        - { name: kernel.event_listener, event: EchoGetname, method: afficheUser }
+
+  userbundle.listener.orm.authoreventlistener:
+      class: UserBundle\Event\ORM\AuthorEventListener
+      arguments: ['@security.token_storage']
+      tags:
+        - { name: doctrine.event_listener, event: prePersist }
+        - { name: doctrine.event_listener, event: preUpdate }
+

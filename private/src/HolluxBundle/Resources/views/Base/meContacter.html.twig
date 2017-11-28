@@ -1,0 +1,55 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    <div class="meContacter">
+        <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
+        <h1>Me contacter</h1>
+
+        <p>Pour me contacter, n'hésitez pas à m'envoyer un email à l'adresse <a href="mailto:hollux@hotmail.fr"><b>hollux@hotmail.fr</b></a>
+        </p>
+        <p>Je vous répondrai au plus vite.</p>
+        <br>
+        <p>Vous pouvez également me laisser un message directement sur ce site :</p>
+
+        <!--   ERREUR-->
+        <div style="background-color:red;"><?=$errors?></div>
+
+
+        {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_label(form.email, null, {'label_attr' : { 'class' : ( app.user ? 'hidden' : '' ) } }) }}
+            {{ form_widget(form.email,
+            {'value' : app.user.mail|default(''),
+                'attr' : { 'class' :
+                ( app.user ? 'hidden' : 'form-control' )
+            }
+            }
+            )
+            }}
+            {{ form(form) }}
+        </div>
+        {#
+                {{ if app.user  app.user.email|default('')}}
+        #}
+
+        {{ form_end(form) }}
+
+        {#<form action="{{ path('meContacter') }}" method="post">
+
+            {% if not app.user %}
+                <p><b>Votre email</b></p>
+                <input name="email" required type="email" class="form-info" >
+                <br>
+            {% else %}
+                <input name="email" required type="email" class="form-info hidden" value="{{ app.user.mail }}" >
+            {% endif %}
+
+            <p><b>Votre message</b></p>
+            <textarea name="content" required id="textar" cols="100" rows="10" type="text"></textarea>
+            <br>
+            <button type="submit" class="btn btnMeContacter ">Envoyer</button>
+        </form>#}
+    </div>
+
+{% endblock %}

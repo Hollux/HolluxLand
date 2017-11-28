@@ -1,0 +1,31 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+
+{% block title %}Profil{% endblock %}
+
+{% block principal %}
+
+    <h1>{{ user.name }}</h1>
+
+
+    <br>
+    {{ form_start(form) }}
+
+    <img class="avatar" src="{{  path('getMedia', {'url' : user.avatar.file}) }}" alt="avatar">
+       <div class="flex">
+           <p>Modifier votre avatar : </p>
+           {{ form_widget(form.avatar.file) }}
+       </div>
+    <div class="flex">
+        <p>Modifier votre login : </p>
+        {{ form_widget(form.login) }}
+    </div>
+    {% do form.avatar.setrendered %}
+
+    <button class="btn btn-primary" type="submit">modifier</button>
+
+    {{ form_end(form) }}
+
+
+
+{% endblock %}

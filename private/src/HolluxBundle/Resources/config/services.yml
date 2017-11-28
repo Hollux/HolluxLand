@@ -1,0 +1,107 @@
+services:
+    hollux.doctrineprefix_subscriber:
+        class: HolluxBundle\DoctrineExtensions\TablePrefixSubscriber
+        arguments: [%hollux_doctrine_prefix%]
+        tags:
+            - { name: doctrine.event_subscriber }
+
+    hollux.controller.jeuxcontroller:
+        class: HolluxBundle\Controller\JeuxController
+        arguments:
+            - '@request_stack'
+            - '@doctrine.orm.entity_manager'
+            - '@form.factory'
+            - '@security.token_storage'
+            - '@router'
+
+    hollux.controller.smashup:
+        class: HolluxBundle\Controller\SmashUpController
+        arguments:
+            - '@hollux.form.handler.smashuphandler'
+            - '@appbundle.service.cache'
+
+    hollux.form.handler.smashuphandler:
+        class: HolluxBundle\Form\Handler\SmashUpHandler
+        arguments: ['@request_stack', '@form.factory', '@doctrine.orm.entity_manager']
+
+    form.formsoft1:
+        class: HolluxBundle\Form\Handler\Formsoft1Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formsoft2:
+        class: HolluxBundle\Form\Handler\Formsoft2Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formsoft3:
+        class: HolluxBundle\Form\Handler\Formsoft3Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formsoft6:
+        class: HolluxBundle\Form\Handler\Formsoft6Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formsoft7:
+        class: HolluxBundle\Form\Handler\Formsoft7Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formsoft8:
+        class: HolluxBundle\Form\Handler\Formsoft8Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formhard1:
+        class: HolluxBundle\Form\Handler\Formhard1Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formhard2:
+        class: HolluxBundle\Form\Handler\Formhard2Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formhard3:
+        class: HolluxBundle\Form\Handler\Formhard3Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formhard6:
+        class: HolluxBundle\Form\Handler\Formhard6Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formhard7:
+        class: HolluxBundle\Form\Handler\Formhard7Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    form.formhard8:
+        class: HolluxBundle\Form\Handler\Formhard8Handler
+        arguments:
+             - '@doctrine.orm.entity_manager'
+             - '@form.factory'
+
+    GetTypeOfTuto:
+        class: HolluxBundle\Service\GetTypeOfTuto
+        arguments:
+            - '@session'
+
+    test2.service:
+        class: HolluxBundle\Service\Test2
+        arguments:
+            - '@doctrine.orm.entity_manager'

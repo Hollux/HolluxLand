@@ -1,0 +1,62 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+    <h1>Smash Up</h1>
+    <p>Rapide appli pour le jeu Smash Up. Séléctionnez le nombre de joueurs (penser a définir le nombre de chaque joueur
+        avant, vous ne pouvez pas tous être le joueur 1 !). Sélectionnez vos extensions et Hop ! Vous aurrez votre
+        séléction aléatoire de factions pour une partie de SmashUp total random !</p>
+    <div id="ajax">
+        {% block ajax %}
+            {% include "HolluxBundle:SmashUp:smashUpReroll.html.twig" %}
+        {% endblock %}
+    </div>
+    <div id="form">
+
+
+        {{ form_start(form) }}
+        <div class="row">
+            <div class="col-md-2">
+                {{ form_label(form.nbrJoueurs) }}
+            </div>
+            <div class="col-md-10">
+                {{ form_widget(form.nbrJoueurs) }}
+            </div>
+        </div>
+        {{ form_row(form.nbrJoueurs) }}
+        <br>
+        <div class="row">
+            {% for boite in form.boites %}
+                <div class="col-sm-3">
+
+                    {#                TODO: Trouver Comment Mettre en Gras avec Twig#}
+                    {{ form_widget(boite.name) }}
+                    <p>{{ form_widget(boite.select) }} {{ boite.name.vars.value|upper }}</p>
+                    {% for faction in boite.faction %}
+                        {{ form_widget(faction.name) }}
+                        <p>
+                            <span class="marginR20px"></span>{{ form_widget(faction.select) }} {{ faction.name.vars.value }}
+                        </p>
+                    {% endfor %}
+                    {% do boite.setRendered %}
+                </div>
+                <br>
+            {% endfor %}
+            <div class="col-md-3">
+                <p><input type="checkbox" id="selectAll" checked="">Check All</p>
+                {{ form_widget(form.submit) }}
+            </div>
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+
+
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+    {% include "HolluxBundle:SmashUp:smashupJS.html.twig" with { 'boites' : form.boites } %}
+    {#<script type="text/javascript" src="{{ asset('/scripts/smashup.js.twig', {'boites' : form.boites}) }}"></script>#}
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "VetBundle:Base:base.html.twig" %}
+
+{% block titleBase %}Avortement{% endblock %}
+
+{% block principal %}
+Avortement
+        <div class='parentVet'>
+
+            <div class='enfantVet'>   
+                {{ include('VetBundle:Vet:BaseAvortementval.html.twig', {'val' : val.baseavortement }) }}
+            </div>
+            <div class='enfantVet'>   
+                {{ include('VetBundle:Vet:Bacteriologieval.html.twig', {'val' : val.bacteriologie }) }}
+            </div>
+            <div class='enfantVet'>   
+                {{ include('VetBundle:Vet:PCRval.html.twig', {'val' : val.pcr }) }}
+            </div>
+            <div class='enfantVet'>   
+                {{ include('VetBundle:Vet:Mycologieval.html.twig', {'val' : val.mycologie }) }}
+            </div>
+            <div class='enfantVet'>   
+                {{ include('VetBundle:Vet:Serologieval.html.twig', {'val' : val.serologie }) }}
+            </div>
+            </div>
+            <div class='informationsComplementaires'>
+                <h3>Commentaire</h3>
+                {{ val.informationcomplementaire }}
+            </div>
+        </div>
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

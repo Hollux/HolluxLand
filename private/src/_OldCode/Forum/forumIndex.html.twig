@@ -1,0 +1,98 @@
+{% extends":ForumBase:base.html.twig" %}
+
+{% block principal %}
+
+    <h2>Bienvenu sur le Forum Ipsum version test</h2>
+
+    <p>Je suis en cour de finalisation de ce petit forum, il n'est présent que pour montrer ma capacité a en faire un et
+        pour m'entrainer a la programmation objet.
+
+        Des elements important sont en cour de réalisation ( disign, responsive (bientot réglé), supression/edition des
+        post, mp etc).
+
+        Les éléments seront rajouté en fonction de mon temps de programmation sur le sujet.
+
+        N'hésitez pas à vous incrire, à le tester, à me donner vos avis. C'est la pour ca !</p>
+
+    {% for post in posts %}
+        {% if post.depth < 2 %}
+
+            <div class="forumChef row">
+                <div class="col-md-8">
+                    <a href="{{ path('forum', {'id' : post.id }) }} ">{{ post.title|upper }}</a>
+                    <p>{{ post.content }}</p>
+                </div>
+                <div class="col-md-1 text-center">Réponses</div>
+                <div class="col-md-1 text-center">Auteur</div>
+                <div class="col-md-2 text-center">Derniers Messages</div>
+            </div>
+        {% else %}
+            <div class="sujetChef">
+                <h2 class="text-center">{{ post.title }}</h2>
+                <div class="row">
+                    <div class="col-md-2">
+                        <p class='text-center'>{{ post.author.name }}</p>
+                        <p class='text-center'>avatar</p>
+                        <p class='text-center'>messages : x</p>
+                        <p class='text-center'>date d'inscription</p>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ post.content }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% for child in post.childs %}
+            {% if post.depth < 2 %}
+                <div class="forumChild row">
+                    <div class="col-md-1">
+                        <p>IMG</p>
+                    </div>
+                    <div class="col-md-7">
+                        <a href="{{ path('forum', {'id' : child.id }) }} ">{{ child.title|upper }}</a>
+                        <p>{{ child.content }}</p>
+                    </div>
+                    <div class="col-md-1 text-center">XX</div>
+                    <div class="col-md-1 text-center"><p>{{ child.author.name }}</p></div>
+                    <div class="col-md-2 text-center"><p> pasbon{{ child.date|date("m/d/Y") }}</p></div>
+
+                    <div class="col-md-2">
+
+
+                    </div>
+                    <div class="col-md-10">
+                        {% if child.depth > 2 %}
+                            <a href="{{ path('forum', {'id' : child.id }) }} "><h2>{{ child.title }}</h2></a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% else %}
+                <div class="sujetChild row">
+                    <div class="col-md-2">
+                        <p class='text-center'>{{ child.author.name }}</p>
+                        <p class='text-center'>avatar</p>
+                        <p class='text-center'>messages : x</p>
+                        <p class='text-center'>date d'inscription</p>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ child.content }}</p>
+                    </div>
+                </div>
+            {% endif %}
+
+        {% endfor %}
+
+
+    {% endfor %}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <br>
+
+        {{ form(form) }}
+    {% else %}
+    {% endif %}
+
+
+
+{% endblock %}

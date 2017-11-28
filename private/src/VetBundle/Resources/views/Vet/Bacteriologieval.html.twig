@@ -1,0 +1,73 @@
+
+<h3>Bacteriologie</h3>
+ 
+    {% if val.bacteriologiebrucella and val.bacteriologiebrucella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>brucella</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.bacteriologiebrucella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.bacteriologieidentificationbrucella and val.bacteriologieidentificationbrucella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.bacteriologieidentificationbrucella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.bacteriologielisteria and val.bacteriologielisteria != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>listeria</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.bacteriologielisteria }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.bacteriologieidentificationlisteria and val.bacteriologieidentificationlisteria != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.bacteriologieidentificationlisteria }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.bacteriologiesalmonella and val.bacteriologiesalmonella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>salmonella</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.bacteriologiesalmonella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.bacteriologieidentificationsalmonella and val.bacteriologieidentificationsalmonella != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.bacteriologieidentificationsalmonella }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.bacteriologieautrebacteriologie and val.bacteriologieautrebacteriologie != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>autre</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.bacteriologieautrebacteriologie }}
+            </div>
+        </div>
+    {% endif %}

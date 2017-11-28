@@ -1,0 +1,36 @@
+services:
+    listbuilderbundle.type.listbuilderlist:
+         class: ListBuilderBundle\Form\ListBuilderType
+         arguments:
+           - '@doctrine.orm.entity_manager'
+         tags:
+           - { name: form.type }
+
+    listbuilder.component.listbuilder.listbuilder:
+        class: ListBuilderBundle\Component\ListBuilder\ListBuilder
+        arguments:
+          - '@doctrine.orm.entity_manager'
+          - '@form.factory'
+          - '@session'
+          - '@security.token_storage'
+
+    listbuilder.component.listbuilder.ListBuilderFactionchoice:
+        class: ListBuilderBundle\Component\ListBuilder\ListBuilderFactionchoice
+        arguments:
+          - '@doctrine.orm.entity_manager'
+          - '@form.factory'
+
+    listBuilderBundle.form.listFiguOptionsType:
+        class: ListBuilderBundle\Form\ListFiguOptionsType
+        arguments:
+          - '@doctrine.orm.entity_manager'
+        tags:
+          - { name: form.type }
+
+    listbuilder.component.listbuilder.handler:
+            class: ListBuilderBundle\Component\ListBuilder\ListBuilderHandler
+            arguments:
+              - '@doctrine.orm.entity_manager'
+              - '@form.factory'
+              - '@session'
+              - '@listbuilder.component.listbuilder.listbuilder'

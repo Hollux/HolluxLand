@@ -1,0 +1,47 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+
+{% block title %}Login{% endblock %}
+
+{% block principal %}
+
+
+    <h1>Login</h1>
+
+
+    {% if error %}
+        <div>
+            {{ error.messageKey|trans(error.messageData, 'security') }}
+        </div>
+    {% endif %}
+
+    <form action="{{ path('login') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="_password" />
+
+        <button type="submit">login</button>
+    </form>
+
+
+    {#<form action="{{ path('login') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="_username" value="{{ last_username }}" />
+        #}{#<label for="userlogin">Login :</label>
+        <input class="form-control" type="text" id="userlogin" name="_userlogin" value="{{ last_username }}"/>#}{#
+        <br>
+        <label for="password">Password:</label>
+        <input class="form-control" type="password" id="password" name="_password"/>
+        <br>
+        <button class="btn btn-success" type="submit">login</button>
+    </form>#}
+    <br>
+    <a href="{{ path('register') }}" class="btn btn-primary">Register</a>
+    </br>
+    <a href="{{ path('resetpassword') }}" class="btn btn-danger">Mot de passe oublié ?</a>
+
+
+
+{% endblock %}

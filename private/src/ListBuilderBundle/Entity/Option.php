@@ -1,0 +1,276 @@
+<?php
+
+namespace ListBuilderBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Options
+ *
+ * @ORM\Table(name="listbuilder_option")
+ * @ORM\Entity(repositoryClass="ListBuilderBundle\Repository\OptionsRepository")
+ */
+class Option
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="text")
+     */
+    private $content;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cost", type="integer")
+     */
+    private $cost;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="basic", type="integer")
+     */
+    private $basic;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Figurine", inversedBy="figurineoptions")
+     * @ORM\JoinTable(name="figurines_options")
+     */
+    private $figurines;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="List_Figurine", inversedBy="options", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="list_figurine_id", referencedColumnName="id", nullable=true, onDelete="set null")
+     */
+    private $list_figurines;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="OptionType", inversedBy="figoptions", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="optiontype_id", referencedColumnName="id", nullable=true, onDelete="set null")
+     */
+    private $optiontype;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->figurines = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->list_figurines = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Option
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set content
+     *
+     * @param string $content
+     *
+     * @return Option
+     */
+    public function setContent($content)
+    {
+        $this->content = $content;
+
+        return $this;
+    }
+
+    /**
+     * Get content
+     *
+     * @return string
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    /**
+     * Set cost
+     *
+     * @param integer $cost
+     *
+     * @return Option
+     */
+    public function setCost($cost)
+    {
+        $this->cost = $cost;
+
+        return $this;
+    }
+
+    /**
+     * Get cost
+     *
+     * @return integer
+     */
+    public function getCost()
+    {
+        return $this->cost;
+    }
+
+    /**
+     * Add figurine
+     *
+     * @param \ListBuilderBundle\Entity\Figurine $figurine
+     *
+     * @return Option
+     */
+    public function addFigurine(\ListBuilderBundle\Entity\Figurine $figurine)
+    {
+        $this->figurines[] = $figurine;
+
+        return $this;
+    }
+
+    /**
+     * Remove figurine
+     *
+     * @param \ListBuilderBundle\Entity\Figurine $figurine
+     */
+    public function removeFigurine(\ListBuilderBundle\Entity\Figurine $figurine)
+    {
+        $this->figurines->removeElement($figurine);
+    }
+
+    /**
+     * Get figurine
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getFigurines()
+    {
+        return $this->figurines;
+    }
+
+    /**
+     * Add listFigurine
+     *
+     * @param \ListBuilderBundle\Entity\List_Figurine $listFigurine
+     *
+     * @return Option
+     */
+    public function addListFigurine(\ListBuilderBundle\Entity\List_Figurine $listFigurine)
+    {
+        $this->list_figurines[] = $listFigurine;
+
+        return $this;
+    }
+
+    /**
+     * Remove listFigurine
+     *
+     * @param \ListBuilderBundle\Entity\List_Figurine $listFigurine
+     */
+    public function removeListFigurine(\ListBuilderBundle\Entity\List_Figurine $listFigurine)
+    {
+        $this->list_figurines->removeElement($listFigurine);
+    }
+
+    /**
+     * Get listFigurines
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getListFigurines()
+    {
+        return $this->list_figurines;
+    }
+
+    /**
+     * Set optiontype
+     *
+     * @param \ListBuilderBundle\Entity\OptionType $optiontype
+     *
+     * @return Option
+     */
+    public function setOptiontype(\ListBuilderBundle\Entity\OptionType $optiontype = null)
+    {
+        $this->optiontype = $optiontype;
+
+        return $this;
+    }
+
+    /**
+     * Get optiontype
+     *
+     * @return \ListBuilderBundle\Entity\OptionType
+     */
+    public function getOptiontype()
+    {
+        return $this->optiontype;
+    }
+
+    /**
+     * Set basic
+     *
+     * @param integer $basic
+     *
+     * @return Option
+     */
+    public function setBasic($basic)
+    {
+        $this->basic = $basic;
+
+        return $this;
+    }
+
+    /**
+     * Get basic
+     *
+     * @return integer
+     */
+    public function getBasic()
+    {
+        return $this->basic;
+    }
+}

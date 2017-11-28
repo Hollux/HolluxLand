@@ -1,0 +1,36 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    <h1>Page de TestCache</h1>
+
+    <script>
+        if(!localStorage.test) {//si la clef n'existe pas
+            localStorage.setItem("test", JSON.stringify("toto"));
+        }
+
+        var UnObject = {test:"Hollux", retest:"Albator"};
+        if(!localStorage.utilisateurs) {//si la clef n'existe pas
+            localStorage.setItem("utilisateurs", JSON.stringify(UnObject));
+        }
+        //console.log(UnObject);
+
+        //var unAutreObject = JSON.parse(localStorage.utilisateurs);
+
+        //console.log(unAutreObject);
+        localStorage.removeItem("factions");
+
+        //smashUp
+        var factions = ['alien', 'zombie', 'peuple fée', 'dinosaure', 'poney', 'chat'];
+        if(!localStorage.factions) {
+            localStorage.setItem("factions", JSON.stringify(factions));
+        }
+        console.log(factions[2]);
+
+        //localStorage.removeItem("test");
+        //localStorage.removeItem("utilisateurs");
+    </script>
+
+
+
+{% endblock %}

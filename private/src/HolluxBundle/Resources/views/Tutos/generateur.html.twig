@@ -1,0 +1,34 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block titleBase %} Generateur {% endblock %}
+
+{% block principal %}
+    <h1>Random Dash</h1>
+    <h3>Generateur d'excuse pour ne pas partir en déplacement.</h3>
+    <h3>Inspiré par Mme Dominique DAD.</h3>
+
+    <ul class="wrapper">
+        <li class="panel p1">Les billets de train sont trop chers</li>
+        <li class="panel p2">J'ai un rendez-vous</li>
+        <li class="panel p3">Je dois remplacer un collègue</li>
+        <li class="panel p4">Je suis en vacances</li>
+        <li class="panel p5">je suis surbooké</li>
+        <li class="panel p6">Ma fille est malade</li>
+        <li class="panel p7">Je ne me sens pas bien</li>
+        <li class="panel p8">La réponse 8</li>
+        <li class="panel p9">Mon horoscope m'a déconseillé de m'éloigner de plus de 100km de chez moi</li>
+        <li class="panel p10">Nous sommes en alerte terroriste</li>
+        <li class="panel p11">Je suis assigné à résidence par la DST</li>
+        <li class="panel p12">J'ai water poney</li>
+        <li class="panel p13">Ma grand-mère est morte ( maximum 2 utilisations)</li>
+    </ul>
+    <div id="submit" class="btn btn-primary">Generer</div>
+    <div id="stop" class="btn btn-primary">Arreter</div>
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('/scripts/generateur.js') }}"></script>
+{% endblock %}
+

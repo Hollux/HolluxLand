@@ -1,0 +1,320 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":HolluxBase:base.html.twig" %}
+
+{% block titleBase %}Create ListBuilder - {% endblock %}
+
+{% block principal %}
+    <div class="row">
+        <div class="col-md-3">
+            <div id="form">
+                {{ form_start(formFaction) }}
+                {{ form_widget(formFaction.listbuilderfaction) }}
+                {{ form_end(formFaction) }}
+            </div>
+            <div id="ajax">
+            </div>
+        </div>
+        <div class="col-md-9">
+            {{ form_start(form) }}
+            <div class="row">
+                <div class="col-md-6">{{ form_widget(form.title) }}</div>
+                <div class="col-md-4">{{ form_widget(form.type) }}</div>
+                <div class="col-md-2">{{ form_widget(form.isvisible) }}</div>
+            </div>
+            <br>
+            <div id="ajax2">
+                {{ include('ListBuilderBundle:ListBuilder:figurineview.html.twig', { 'list': list }) }}
+            </div>
+            <br>
+            {{ form_widget(form.content) }}
+
+            {{ form_row(form.submit) }}
+
+
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+    <div class="ajax3">
+
+    </div>
+
+    <!-- Modal -->
+    {#<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="min-width: 90%;">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>#}
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>
+
+        tinymce.init({
+            selector: '.wysiwyg',
+            themes: "modern",
+            height: 500,
+            a_plugin_option: true,
+            plugins: 'advlist autolink table link image lists charmap preview textcolor colorpicker',
+            toolbar: "undo, redo, bold, italic, underline, strikethrough, alignleft, aligncenter, alignright, alignjustify, fontselect, fontsizeselect, bullist, numlist, outdent, indent, blockquote,forecolor, backcolor"
+
+        });
+
+
+        var submit = function () {
+            var btn = jQuery('select[id^="select_faction_listbuilderfaction"]');
+            btn.on('change', function (event) {
+                event.preventDefault();
+                var form = jQuery('#form form');
+                jQuery.ajax({
+                    url: "{{ path('listbuilder_factionChoice') }}",
+                    data: form.serialize(),
+                    type: 'POST',
+                    success: function (msg) {
+                        jQuery('#ajax').html(msg);
+                        add();
+                    }
+                });
+            });
+        };
+        submit();
+
+        var add = function () {
+            jQuery('a[class^="add"]').each(function () {
+
+                jQuery(this).on('click', function (event) {
+                    event.preventDefault();
+                    var path = "{{ path('listbuilder_addFigurineToList', {
+                        "idList":  app.request.get('idlist'),
+                        "idFig": "id_to_replace",
+                    } ) }}";
+                    jQuery.ajax({
+                        url: path.replace("id_to_replace", jQuery(this).data('id')),
+                        type: 'POST',
+                        success: function (msg) {
+                            jQuery('#ajax2').html(msg);
+                        }
+                    });
+                });
+            });
+        };
+
+        var deletfig = function () {
+            var btnDeletFig = jQuery('a[id^="deletFig"]');
+            btnDeletFig.on('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                var path = $(deletfig).attr('href');
+                jQuery.ajax({
+                    url: path,
+                    type: 'POST',
+                    success: function () {
+                        jQuery('#modaldetails').modal('hide');
+                        jQuery.ajax({
+                            url: "{{ path('listbuilder_figurineview', {"idfig":  app.request.get('idlist')} ) }}",
+                            success: function (html) {
+                                jQuery('#ajax2').html(html);
+                            }
+                        });
+                    }
+                });
+            });
+        }
+
+
+            //submit form fig
+            var formFaction = function () {
+                var btnFormFig = jQuery('button[name^="list_figu_options[submit]"]');
+                btnFormFig.on('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    var formFaction = jQuery('form[name^="list_figu_options"]');
+                    var path = $(formFaction).attr('action');
+                    jQuery.ajax({
+                        url: path,
+                        data: formFaction.serialize(),
+                        type: 'POST',
+                        success: function () {
+                            jQuery('#modaldetails').modal('hide');
+                            jQuery.ajax({
+                                url: "{{ path('listbuilder_figurineview', {"idfig":  app.request.get('idlist')} ) }}",
+                                success: function (html) {
+                                    jQuery('#ajax2').html(html);
+                                }
+                            });
+                        }
+                    });
+                });
+            };
+
+            // BUTTON FIG LANCE FORM FIG
+            var figModal = function () {
+                jQuery('body').on('click', 'a.modalCar', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    var pathFig = $(this).attr('href');
+                    jQuery.ajax({
+                        url: pathFig,
+                        type: 'POST',
+                        success: function (msg) {
+                            var $div = jQuery('<div />').html(msg);
+                            $div.genModalBS({
+                                id: 'details',
+                                size: 'large',
+                                title: 'Détails',
+                                buttons: {
+                                    'Fermer': {action: 'close'}
+                                }
+                            });
+                            formFaction();
+                        }
+                    });
+                });
+            };
+            jQuery(function () {
+                figModal();
+            });
+
+            // /BUTTON FIG LANCE FORM FIG
+
+
+            //CROFTMAN MODAL VOLE
+
+            (function ($) {
+
+                $.fn.genModalBS = function (params) {
+
+                    var $content = this;
+                    var exist = false;
+                    var id = (params !== undefined && params.id !== undefined) ? 'modal' + params.id : uniqid();
+                    if ($('.automodal').length > 0) { // la modale existe
+                        exist = true;
+                        var $modal = $('.automodal').attr({id: id});
+                        var $modalDialog = $modal.children('.modal-dialog');
+                        var $modalContent = $modalDialog.children('.modal-content');
+                        var $modalBody = $modalContent.children('.modal-body').empty();
+                    } else {
+                        var $modal = $('<div />').addClass('automodal modal fade').attr({
+                            id: id,
+                            'aria-hidden': 'true'
+                        });
+                        var $modalDialog = $('<div />').addClass('modal-dialog');
+                        var $modalContent = $('<div />').addClass('modal-content');
+                        var $modalBody = $('<div />').addClass('modal-body');
+                    }
+
+                    if (params !== undefined) {
+
+                        if (params.title !== undefined & params.title !== null && params.title !== '') {
+
+                            if (exist && $modalContent.children('.modal-header').length > 0) {
+                                var $modalHeader = $modalContent.children('.modal-header').show();
+                                $modalHeader.children('h4').text(params.title);
+                            } else {
+                                var $btnHeader = $('<button />').attr({
+                                    'aria-hidden': 'true',
+                                    'data-dismiss': 'modal',
+                                    type: 'button'
+                                }).addClass('close').text('x');
+                                var $titleHeader = $('<h4 />').addClass('modal-title').text(params.title);
+                                var $modalHeader = $('<div />').addClass('modal-header').append($btnHeader).append($titleHeader);
+                            }
+
+                            if (!exist || $modalContent.children('.modal-header').length === 0) {
+                                $modalContent.prepend($modalHeader);
+                            }
+
+                        } else {
+                            if (exist) {
+                                $modalContent.children('.modal-header').hide();
+                            }
+                        }
+
+                        if (params.inputs !== undefined && params.inputs !== null) {
+                            var $form = gen_form(params.inputs, id, true);
+                            $modalBody.append($form);
+                        }
+
+                        $modalBody.append($content);
+                        if (!exist) {
+                            $modalContent.append($modalBody);
+                        }
+
+                        // On met les boutons dans le footer
+                        if (params.buttons !== undefined && params.buttons !== null && params.buttons !== '') {
+                            if (exist && $modalContent.children('.modal-footer').length > 0) {
+                                var $modalFooter = $modalContent.children('.modal-footer');
+                                $modalFooter.empty().show();
+                            } else {
+                                var $modalFooter = $('<div />').addClass('modal-footer');
+                            }
+
+                            $.each(params.buttons, function (k, v) {
+                                var text = k;
+                                var btnType = (v.type !== undefined) ? v.type : 'white';
+                                var $btn = $('<a />').addClass('btn btn-sm btn-' + btnType).text(text).attr('href', 'javascript:;');
+                                if (v.action === 'close') {
+                                    $btn.attr('data-dismiss', 'modal');
+                                }
+                                if (typeof v.action === 'function') {
+                                    $btn.on('click', v.action);
+                                }
+                                $modalFooter.append($btn);
+                            });
+                            if (!exist || $modalContent.children('.modal-footer').length === 0) {
+                                $modalContent.append($modalFooter);
+                            }
+                        } else {
+                            if (exist) {
+                                $modalContent.children('.modal-footer').hide();
+                            }
+                        }
+
+                        // Taille de la modale
+                        if (params.size !== undefined) {
+                            $modalDialog.removeClass().addClass('modal-dialog');
+                            if (params.size === 'large') {
+                                $modalDialog.addClass('modal-lg');
+                            } else if (params.size === 'small') {
+                                $modalDialog.addClass('modal-sm');
+                            }
+                        }
+
+                        if (!exist) {
+                            $modalDialog.append($modalContent);
+                            $modal.append($modalDialog);
+                            $('body').append($modal);
+                        }
+                        $('#' + id).modal();
+
+                        $('#' + id).on('hidden.bs.modal', function (e) {
+                            //$('#' + id).unbind();
+                            $('#' + id + ' .modal-body').empty();
+                            if (params.events !== undefined) {
+                                if (typeof params.events.close === 'function') {
+                                    params.events.close;
+                                }
+                            }
+                        });
+
+                        // Gestion des events (uniquement le onopen pour l'instant)
+                        if (params.events !== undefined) {
+                            if (typeof params.events.open === 'function') {
+                                $('#' + id).on('shown.bs.modal', params.events.open);
+                            }
+                        }
+                    }
+
+                    return this;
+                };
+            })(jQuery);
+
+
+        //CROFTMAN MODAL VOLE
+    </script>
+{% endblock %}

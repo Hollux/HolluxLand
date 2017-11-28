@@ -1,0 +1,11 @@
+<h4>{{ fig.name }}</h4>
+{{ form_start(figulistform, {'action': path('listbuilder_modallist_fig',
+    {"idlistfig": figulistform.vars.value.id} ), 'method': 'POST' }) }}
+    {{ form(figulistform) }}
+<a id="deletFig" href="{{ path('listbuilder_deletlist_fig',
+{"idlistfig": figulistform.vars.value.id}
+) }}" class="btn glyphicon glyphicon-trash">
+
+</a>
+{{ form_end(figulistform) }}
+

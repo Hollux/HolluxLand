@@ -1,0 +1,47 @@
+<script>
+    $( function(){
+        {% for boite in boites %}
+
+        $('[name^="smash_up[boites][{{ loop.index0 }}][select]"]').on('click', function () {
+
+            if ($(this).prop('checked')) {
+                $(this).parents('div:eq(0)').find(':checkbox').prop('checked', true);
+
+            } else {
+                $(this).parents('div:eq(0)').find(':checkbox').prop('checked', false);
+
+            }
+        })
+
+        {% endfor %}
+
+        $('#selectAll').on('click', function () {
+            if ($(this).prop('checked')) {
+                $('[name^="smash_up[boites]').each(function () {
+                    this.checked = true;
+                });
+            } else {
+                $('[name^="smash_up[boites]').each(function () {
+                    this.checked = false;
+                });
+            }
+        })
+
+        var submit = function () {
+            var btn = jQuery('button[name^="smash_up[submit]"]');
+            btn.on('click', function (event) {
+                event.preventDefault();
+                var form = jQuery('#form form');
+                jQuery.ajax({
+                    url: "{{ path('smashUp') }}",
+                    data: form.serialize(),
+                    type: 'POST',
+                    success: function (msg) {
+                        jQuery('#ajax').html(msg);
+                    }
+                });
+            });
+        };
+        submit();
+    });
+</script>

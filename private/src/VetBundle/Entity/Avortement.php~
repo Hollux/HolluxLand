@@ -1,0 +1,59 @@
+<?php
+
+namespace VetBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Avortement
+ * @ORM\Table(name="vet_anabel_avortement")
+ * @ORM\Entity(repositoryClass="VetBundle\Repository\AvortementRepository")
+ */
+class Avortement
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="BaseAvortement", inversedBy="avortement", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="baseavortement_id", referencedColumnName="id", nullable=true, onDelete="set null")
+     */
+    private $baseavortement;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Bacteriologie", inversedBy="avortement", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="bacteriologie_id", referencedColumnName="id", nullable=true, onDelete="set null")
+     */
+    private $bacteriologie;
+
+    /**
+     * @ORM\OneToOne(targetEntity="PCR", inversedBy="avortement", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="pcr_id", referencedColumnName="id", nullable=true, onDelete="set null")
+     */
+    private $pcr;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Mycologie", inversedBy="avortement", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="mycologie_id", referencedColumnName="id", nullable=true, onDelete="set null")
+     */
+    private $mycologie;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Serologie", inversedBy="avortement", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="serologie_id", referencedColumnName="id", nullable=true, onDelete="set null")
+     */
+    private $serologie;
+
+     /**
+     * @var string
+     * @ORM\Column(name="informationcomplementaire", type = "text", nullable = true)
+     */
+    private $informationcomplementaire;
+}

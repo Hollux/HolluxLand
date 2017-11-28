@@ -1,0 +1,30 @@
+{% extends app.request.isxmlhttprequest ? "ajax.html.twig" : ":HolluxBase:base.html.twig" %}
+
+{% block principal %}
+
+    <H1>CONTENU</H1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque dolore dolorum eaque, et fuga, harum
+        incidunt iure iusto laboriosam nesciunt odit officiis optio quaerat quasi, quidem sed tenetur voluptate?</p>
+
+    <h2>Modal</h2>
+    <!-- Button trigger modal -->
+
+
+    <a class="" href="{{ path('registerModal') }}" data-toggle="modal" data-target="#modal">Inscription</a>
+
+    <!-- Modal -->
+ <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+
+{% endblock %}

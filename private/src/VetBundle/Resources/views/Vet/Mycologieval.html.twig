@@ -1,0 +1,33 @@
+
+<h3>Mycologie</h3>
+ 
+    {% if val.mycologiemycologie and val.mycologiemycologie != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4">
+                <p><strong>mycologie</strong></p>
+            </div>
+            <div class="col-xs-8">
+                {{ val.mycologiemycologie }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.mycologieidentificationmycologie and val.mycologieidentificationmycologie != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>identification</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.mycologieidentificationmycologie }}
+            </div>
+        </div>
+    {% endif %}
+    {% if val.mycologieresultatquantitatifmycologie and val.mycologieresultatquantitatifmycologie != "Non testé" %}
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-1">
+                <p><strong>resultat quantitatif</strong></p>
+            </div>
+            <div class=" col-xs-7">
+                {{ val.mycologieresultatquantitatifmycologie }}
+            </div>
+        </div>
+    {% endif %}

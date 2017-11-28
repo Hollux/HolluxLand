@@ -1,0 +1,31 @@
+{% extends":HolluxBase:base.html.twig" %}
+
+
+{% block principal %}
+    <div class="testCav">
+        <ol class="testOL">
+            <li class="liCav"><a href="#">TestUn</a></li>
+            <li class="liCav"><a href="#">TestUn</a></li>
+            <li class="liCav"><a href="#">TestUn</a></li>
+            <li class="liCav"><a href="#">TestUn</a></li>
+            <li class="liCav"><a href="#">TestUn</a></li>
+            <li class="liCav"><a href="#">TestUn</a></li>
+        </ol>
+    </div>
+
+    <canvas id="canvas1" width="350" height="350">
+        Texte pour navigateur sans Canvas.
+    </canvas>
+
+    <script type="text/javascript">
+        var c = document.getElementById("canvas1");
+        var ctx = c.getContext("2d");
+
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect (10, 10, 55, 50);
+
+    </script>
+
+
+
+{% endblock %}

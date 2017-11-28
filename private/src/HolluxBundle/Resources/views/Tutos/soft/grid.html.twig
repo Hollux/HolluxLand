@@ -1,0 +1,216 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block titleBase %} Bootstrap, Kesako {% endblock %}
+
+{% block principal %}
+    <h1 class="text-center"><a href="http://getbootstrap.com/css/#grid" target="_blank">THE GRID !</a></h1>
+    <h2 class="text-center">De boostrap.</h2>
+
+    <p>Pour moi, le plus important et utile élément de bootstrap.</p>
+    <p>Simple dans sa complexité.</p>
+
+    <h3>Le Debut</h3>
+
+    <p>La base : une ligne, 12 colonnes à l’intérieur, le tout faisant 100% du parent (largeur).</p>
+    <p>On peut gérer la taille de nos éléments à travers ces 12 colonnes, une taille de 6 faisant donc 50% du parent
+        , 3, 25% etc.</p>
+
+    <h3>Responsive ?</h3>
+
+    <p>On complique un peu.</p>
+    <p>Un petit attribut en plus dans le grid system permet de gérer ces tailles en fonction de la taille de l’écran.</p>
+    <p>Exemple simple : Une des tailles d’écran type pc étant >= 1200px.</p>
+    <p>si je met un élément avec une taille de 6 et cette attribut >=1200px, mon bloque sera d’une taille de 50% mais
+        uniquement si l’écran de l’utilisateur est >= 1200px ! En dessous de cette taille il se remettra à 100%.</p>
+    <p>Deux contenu à 50% l’un à côté de l’autre passeront l’un en dessous de l’autre en dessous de 1200px.</p>
+    <p>Voilà déjà pas mal de théorie.</p>
+
+    <h3>Du vrai code maintenant :</h3>
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+<div class="row"{# style="margin-left: 0px;"#}>
+    <div class="col-lg-3 col-sm-6 bg-lightgrey" style="border-left: 10px white solid">
+        <p>Je vous ai compris !</p>
+        <p>Je sais ce qui s'est passé ici.</p>
+        <p>Je vois ce que vous avez voulu faire. </p>
+        <p>Je vois que la route que vous avez ouverte en Algérie,</p>
+        <p>c'est celle de la rénovation et de la fraternité.</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 ">
+        <img src="/img/tutos/article1.jpg" alt="imgArticle1">
+    </div>
+    <div class="col-lg-3 col-sm-6 bg-lightgrey"  style="border-left: 10px white solid">
+        <p>Tous les hommes libres, où qu'ils vivent, </p>
+        <p>sont des citoyens de Berlin. Par conséquent, </p>
+        <p>en tant qu'homme libre, je suis fier de prononcer ces mots :</p>
+        <p>Ich bin ein Berliner !</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 ">
+        <img src="/img/tutos/article2.jpg" alt="imgArticle2">
+    </div>
+</div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+<div class="row">
+    <div class="col-sm-2 text-center">
+        <img src="/img/tutos/logo1.jpg" alt="logo1">
+    </div>
+    <div class="col-sm-2 text-center">
+        <img src="/img/tutos/logo2.png" alt="logo2">
+    </div>
+    <div class="col-sm-2 text-center">
+        <img src="/img/tutos/logo3.png" alt="logo3">
+    </div>
+    <div class="col-sm-2 text-center">
+        <img src="/img/tutos/logo4.png" alt="logo4">
+    </div>
+    <div class="col-sm-2 text-center">
+        <img src="/img/tutos/logo5.png" alt="logo5">
+    </div>
+    <div class="col-sm-2 text-center">
+        <img src="/img/tutos/logo6.png" alt="logo6">
+    </div>
+</div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <p>Comme je vous est dis, bootstrap est la pour le responsive, mais concrètement , comment ? Et c'est quoi ce charabia de col ?</p>
+    <p>Le grid systeme c'est donc une div class row qui encadre chaque ligne.</p>
+    <p>Dedans, c'est des col-xx-y, xx étant l'une des 4 "tailles" d'écran, et y, un chiffre de 1 à 12.</p>
+    <p>Donc les tailles, je vous les donnes et j'explique.</p>
+    <p>- Ecran <strong>>= à 1200px</strong> on utiliser <strong>col-lg</strong></p>
+    <p>- Ecran <strong>>= à 992px</strong> on utiliser <strong>col-md</strong></p>
+    <p>- Ecran <strong>>= à 768px</strong> on utiliser <strong>col-sm</strong></p>
+    <p>- Ecran <strong>< à 768px</strong> on utiliser <strong>col-xs</strong></p>
+    <p>Ca veux dire que si je veux un design de deux images côtes à côtes au dessus de 768px D'ECRAN ( pas la div parent, l'écran !)
+    je dois faire un div row avec dedans deux div.col-sm-6 (la moitié de 12) avec les images à l'intérieur.</p>
+    <p>Bootstrap va ainsi régler à une taille de 6/12 chaque bloque par rapport à la div.row temps que l'écran fais plus de 768px.</p>
+    <p>En dessous de cette valeur bootstrap va passer à une taille des div col-sm-6 à 12/12 , l'équivalent d'un col-xs-12 pour chaque.</p>
+    <p>Un peu de technique expliquera les choses peut-être mieux que moi :</p>
+    <p>Le col-sm-6 met un float 50% avec un @query pour une page >= 768px et remet en normal donc en dehors de cette taille.</p>
+    <p>Le but au final c'est simple, vous mettez de l'information en ligne sur de grand écran, puis un peu moins en ligne sur des tablettes
+    et en colonnes sur des téléphones en quelques classes.</p>
+
+    <h3 class="text-center">Les 5 astuces pour un bon grid system.</h3>
+
+    <h4>1) Toujours mettre un ROW.</h4>
+    <p>Le row c'est l'élément qui va entourer chacune de vos lignes (ça veux dire rangée).</p>
+    <p>Il doit être dans un container ou un container fluid.</p>
+    <p>Mais surtout, il permet de gérer correctement votreintégration de la grille.
+        Sans le row votre grille va faire n'importe quoi et risque de déborder de toute part : </p>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+                    <div class="col-sm-3">
+                        <div class="bg-red">Contenu</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="bg-red">Contenu</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="bg-red">Contenu</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="bg-red">Contenu</div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="bg-green">Contenu</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="bg-green">Contenu</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="bg-green">Contenu</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="bg-green">Contenu</div>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <p>Si vous faites bien attention, vous verrez que sans le row, votre
+        contenu est réduit de par en par de 15px.</p>
+
+
+    <h4>2) Mettre des div.col dans le row, MINIMUM DEUX.</h4>
+    <p>Bah oui, en dessous de deux ca ne sers à rien d'utiliser le grid !</p>
+
+    <h4>3) Ne JAMAIS au grand JAMAIS mettre de col-xx-12.</h4>
+    <p>C'est inutile ! Je n'est encore jamais trouvé de raison décente pour l'utiliser
+        à moins de le mettre dans un exemple pour bien appuyer l'explication du grid
+        (ce que fait bootstrap). Vraiment, si quelqu'un me trouve un endroit où c'est
+        nécessaire je veux bien l'info car pour le moment je vois ça partout inutilement et ça me rends fou.</p>
+
+    <h4>5) Toujours garder en tête que son grid doit être sur 12 colonnes.</h4>
+    <p>Il faut bien faire attention à la découpe pour ne pas faire quelque chose
+        de bancale , ou qui serait décalée.</p>
+
+    <h5 class="text-center"><strong>Pas-centre</strong></h5>
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+<div class="row">
+    <div class="col-sm-5 text-center">
+        <img src="/img/tutos/g1.jpg" alt="g1">
+    </div>
+    <div class="col-sm-5 text-center">
+        <img src="/img/tutos/d1.jpg" alt="d1">
+    </div>
+</div>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <h5 class="text-center"><strong>Centre</strong></h5>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+<div class="row">
+    <div class="col-sm-5 text-center col-sm-offset-1">
+        <img src="/img/tutos/g2.jpg" alt="g2">
+    </div>
+    <div class="col-sm-5 text-center">
+        <img src="/img/tutos/d2.jpg" alt="d2">
+    </div>
+</div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <p>Voila voila, je ne pense pas avoir plus d'infos</p>
+    <p>La suite au prochain épisode.</p>
+
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

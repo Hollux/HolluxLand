@@ -1,0 +1,137 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block principal %}
+    <h1 class="text-center">Les Formulaires Symfony</h1>
+
+    <p>Les formulaires de Symfony ne se présentent pas comme un simple input HTML dont on récupèrerait les champs en POST.</p>
+
+    <h2 class="text-center">Partie 1 : Les TYPE</h2>
+
+    <h3>La base</h3>
+
+    <p>La base des form Symfony, c'est de créer des "Types" qui vont monter le formulaire.</p>
+    <p>À l'intérieur seront présentes toutes les informations nécessaire au formulaire : fonctionne avec ou sans les entity,
+        prend les class, le label, les vérifications, en somme énormément de paramètres.</p>
+    <br>
+    <p><a href="{{ path('formx', {'int':1}) }}" target="_blank">Formulaire1</a> : petit formulaire Nom / prénom .</p>
+
+    {{ form_start(form1) }}
+    {{ form_widget(form1) }}
+    <input type="submit" value="Create">
+    {{ form_end(form1) }}
+
+    <br>
+
+    <p>Donc un formType qu'est-ce que c'est ?</p>
+    <p>Une base identique à tous (abstract type etc etc).</p>
+    <p>Le builder et nos champs sont dans les "->add".</p>
+    <p>Les champs : nom, Type du champ (parmi les X disponibles, mais au besoin on peut créer le nôtre).</p>
+    <p>Et enfin des paramètres, beaucoup que l'on va pouvoir voir par la suite.</p>
+
+    <h3>Pimp My Form</h3>
+
+    <p>On va rajouter un peu de style et modifier quelques éléments de notre form.</p>
+    <p>Pour ça rien de plus simple, label, attributs, class, data, placeholder.</p>
+    <p>Chaque Type auquel le champ est attribué a sa propre liste d'options possibles + une base commune
+        <a href="https://symfony.com/doc/current/reference/forms/types/form.html" target="_blank">FormType</a>.</p>
+    <p>Exemple <a href="https://symfony.com/doc/current/reference/forms/types/text.html" target="_blank">TextType</a></p>
+
+    <p><a href="{{ path('formx', {'int':2}) }}" target="_blank">Formulaire2</a> : formulaire 1 pimpé</p>
+
+    {{ form_start(form2) }}
+    {{ form_widget(form2) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form2) }}
+
+    <br>
+
+    <p>N'hésitez pas à fouiller pour bien repérer tout ce qu'on a rajouté, et en rajouter encore vous-même.</p>
+
+    <h3>Form Entity</h3>
+
+    <p>En HTML, on fait les input etc pour remplir une entity, on est obligé de récupérer chaque donnée et de set.</p>
+    <p>Mais pas avec Symfony ! Le formulaire peut être directement lié à l'entity.</p>
+
+    <p>J'ai créé une entity "produit" qui contient : name, price, magasin, type (désolé pour le franglais)</p>
+
+    <p><a href="{{ path('formx', {'int':3}) }}" target="_blank">Formulaire3</a> :
+        Mettons un petit formulaire pour créer un nouveau produit</p>
+
+    {{ form_start(form3) }}
+    {{ form_widget(form3) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form3) }}
+
+    <br>
+
+    <p>J'ai aussi rajouté un élément intéressant pour forcer des types précis.</p>
+    <p>La précision est d'autant plus importante avec les formulaires dont on implique une entity, car
+        les champs doivent correspondre à l'entity, et le formulaire est soumis à certaines règles.</p>
+    <p>On peut facilement repérer tout un tas d'erreurs.</p>
+    <p><a href="{{ path('formx', {'int':4}) }}" target="_blank">Formulaire4</a> n'a pas le bon champs "name"</p>
+    <p>Ou <a href="{{ path('formx', {'int':5}) }}" target="_blank">Formulaire5</a> a un champs supplémentaire qui n'appartient pas à produit.</p>
+    <p>Ou encore un formulaire dont on aurait pas passé l'entity produit ressemblera
+        à n'importe quel autre, c'est à la sauvegarde de celui-ci que les ennuis vont commencer.</p>
+
+    <h3>Form Entities</h3>
+
+    <p>A partir de là on commence vraiment à s'amuser.</p>
+
+    <p>Pour cette partie, je vais créer l'entity produit2 et magasin</p>
+
+    <p><a href="{{ path('formx', {'int':6}) }}" target="_blank">Formulaire6</a> : Formulaire 3 avec ajout de l'entity magasin pour le champ magasin.</p>
+
+    {{ form_start(form6) }}
+    {{ form_widget(form6) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form6) }}
+
+    <br>
+
+    <p>À la création de ce formulaire je l'ai lié à l'entity Produit2, ce qu'on savait déjà faire.</p>
+    <p>Mais en plus dedans, le champs Magasin a été lié à l'entity Magasin.</p>
+    <p>C'est aussi modifiable, et malléable autant qu'on veut. Pensez toujours à regarder la documentation officielle.</p>
+    <p>Dans <a href="https://symfony.com/doc/current/reference/forms/types/entity.html" target="_blank">EntityType</a>
+        je fouille un peu et je trouve l'option 'query_builder' qui va me permettre de changer l'affichage du
+        <a href="{{ path('formx', {'int':7}) }}" target="_blank">Formulaire7</a>.</p><br />
+
+    <p>Encore un peu plus compliqué : maintenant on va essayer de mettre plusieurs Magasins pour un produit.</p>
+    <p>Pour ça j'ai encore créé un nouveau produit3 ainsi qu'un magasin2, qui seront en relation ManyToMany.Je vais ensuite utiliser les Collections
+        pour le <a href="{{ path('formx', {'int':8}) }}" target="_blank">Formulaire8</a></p>
+
+    {% form_theme form8 'jquery.collection.html.twig' %}
+    {{ form_start(form8) }}
+    {{ form_widget(form8) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form8) }}
+
+    <br>
+
+    <p>La collection est un vaste sujet, mais pour essayer de faire simple, c'est un include d'un autre formulaire
+        dans le formulaire.</p>
+    <p>Pour le gérer plus facilement et rajouter / modifier etc plus facilement j'ai fait appel à un vendor recommandé
+        par symfony : <a href="https://symfony-collection.fuz.org/symfony3/" target="_blank">Symfony Collection</a>.</p>
+    <p>Il est très vaste et très intéressant pour la gestion JS des collections, l'ajout / suppression etc de l'include directement
+        en page.</p>
+
+    <h3>Pour finir</h3>
+    <p>Nous avons vu là beaucoup de choses qui constituent les formulaires Symfony.</p>
+    <p>Le détail du traitement de données et le retour de ces formulaires sera vu une prochaine fois.</p>
+    <p>Si vous avez des choses que vous voulez essayer n'hésitez pas, le
+        <a href="{{ path('formx', {'int':0}) }}" target="_blank">Formulaire0</a> est là pour ça, ainsi que les autres.</p>
+    <p>Une sauvegarde de l'appbundle complet est présent dans la partie /save en cas de souci.</p>
+
+
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+    {# PARTIE SPECIFIQUE FORMULAIRE 8#}
+    <script src="{{ asset('scripts/jquery.collection.js') }}"></script>
+
+    <script type="text/javascript">
+        $('.my-selector').collection();
+    </script>
+    {# / PARTIE SPECIFIQUE FORMULAIRE 8#}
+{% endblock %}

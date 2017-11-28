@@ -1,0 +1,302 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block head %}<link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">{% endblock %}
+
+{% block principal %}
+    <h1 class="text-center"><a href="http://symfony.com/doc/current/forms.html">Les Formulaires Symfony</a></h1>
+
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <p>- Non, la je ne sais pas quoi dire.</p>
+        </div>
+    </div>
+    <p>Alors la prochaine fois kevin, profite en pour juste fermer ta gueule.</p>
+
+    <br>
+
+    <p>Les formulaires de symfony ne se présente pas comme un simple input html dont on récupèrerait les champs en POST.</p>
+    <p>Nan nan, vous allez commencer à voir le potentiel de symfony, et pleurer votre mère.</p>
+
+    <h2 class="text-center">Partie 1 : Les TYPE, et je ne parle pas des gens</h2>
+
+    <h3>La base</h3>
+
+    <p>La base des form Symfony c'est créer des "Types" qui vont monter (non, pas ta mère cette fois) le formulaire.</p>
+    <p>Dedans seront présent toutes les informations nécessaire au formulaire, fonctionne avec ou sans les entity,
+        prend les class, le label, les vérifications, énormément de paramètres un joyeux bordel qui vous semblera incompréhensible.</p>
+    <br>
+    <p><a href="{{ path('formx', {'int':1}) }}" target="_blank">Formulaire1</a> : petit formulaire pour les noob, Nom / prénom.</p>
+
+    {{ form_start(form1) }}
+    {{ form_widget(form1) }}
+    <input type="submit" value="Create">
+    {{ form_end(form1) }}
+
+    <p>La variable form à passer à la vue grâce au formFactory :</p>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-php">
+    $form1 = $this->formFactory->create(Form1Type::class);
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <p>Le fameux "Form1Type" qui nous interesse particulièrement.</p>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-php">
+    namespace Bundle\Form;
+
+    use Symfony\Component\Form\AbstractType;
+    use Symfony\Component\Form\FormBuilderInterface;
+    use Symfony\Component\Form\Extension\Core\Type;
+    use Symfony\Component\Validator\Constraints as Assert;
+
+    class Form1Type extends AbstractType
+    {
+        public function buildForm(FormBuilderInterface $builder, array $options)
+        {
+            $builder
+                ->add('prenom', Type\TextType::class)
+                ->add('nom', Type\TextType::class)
+            ;
+        }
+    }
+                </code>
+            </pre>
+        </div>
+    </div>
+    <br>
+
+    <p>Donc un formType c'est quoi ?</p>
+    <p>Une base identique à tous ( abstract type etc etc).</p>
+    <p>la fonction BuildForm, le builder. Et nos champs sont dans les "->add".</p>
+    <p>Les champs : nom, Type du champ ( parmis les X disponnibles, mais au besoin on peux créer le notre).</p>
+    <p>Et des paramètres, beaucoups que l'ont va pouvoir voir par la suite.</p>
+
+    <h3 class="pimpmyride">Pimp My Form</h3>
+
+    <p>Go pimper un peu ce form so 1990.</p>
+    <p>Pour ça rien de plus simple, label, attributs, class, data, placeholder.</p>
+    <p>Chaque Type auquel le champ est attribué à ça propre liste d'options possible + une base commune
+        <a href="https://symfony.com/doc/current/reference/forms/types/form.html" target="_blank">FormType</a>.</p>
+    <p>Exemple <a href="https://symfony.com/doc/current/reference/forms/types/text.html" target="_blank">TextType</a></p>
+
+    <p><a href="{{ path('formx', {'int':2}) }}" target="_blank">Formulaire2</a> : formulaire 1 version bonhomme</p>
+
+    {{ form_start(form2) }}
+    {{ form_widget(form2) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form2) }}
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-php">
+        $builder
+            ->add('prenom', Type\TextType::class,
+               ['label' => 'Ton prenom',
+                'attr' => ['class' => 'form-control',
+                            'data-fdp' => 'prenom connard',
+                            'placeholder' => 'mets ton blaz ici pd'],
+                'required' => false,
+               ])
+            ->add('nom', Type\TextType::class,
+                ['label' => 'Ton nom ! *',
+                    'attr' => ['class' => 'form-control',
+                        'data-fdp' => 'nom enfoiré'],
+                    'required' => true,
+                    'data' => 'Toretto'
+                ])
+        ;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <br>
+
+    <p>N'hésitez pas à fouiller pour bien comprendre tout ce que j'ai rajouté bande de salo.</p>
+
+    <h3>Form Entity</h3>
+
+    <p>En html, on fait les input etc et pour remplir une entity, obligé de récupérer chaque donner et de set.</p>
+    <p>Moi, ça me fais chier.</p>
+    <p>Mais pas avec symfony. Le formulaire peut être directement lié à l'entity.</p>
+
+    <p>J'ai créé une entity "produit" qui contient : name, price, magasin, type.</p>
+
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <p>- Et du coup ton franglais dégueulasse tu en fais quoi ?</p>
+        </div>
+    </div>
+    <p>Bah je te le met ou je pense.</p>
+    <br>
+
+    <p><a href="{{ path('formx', {'int':3}) }}" target="_blank">Formulaire3</a> :
+        Mettons un petit formulaire pour créer un nouveau produit</p>
+
+    {{ form_start(form3) }}
+    {{ form_widget(form3) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form3) }}
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-php">
+        $produit = new Produit();
+        $form3 = $this->formFactory->create(Form3Type::class, $produit);
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+		    <pre>
+			    <code class="language-php">
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        $builder
+            ->add('name', Type\TextType::class, ['attr' => ['class' => 'form-control']])
+            ->add('price', Type\IntegerType::class, ['attr' => ['class' => 'form-control']])
+            ->add('magasin', Type\TextType::class, ['attr' => ['class' => 'form-control']])
+            ->add('type', Type\ChoiceType::class, [
+                'attr' => ['class' => 'form-control'],
+                'placeholder' => '',
+                'choices' => [
+                    'cadavre' => 'viande',
+                    'poisson' => 'poisson',
+                    'fruits' => 'fruits',
+                    'xxxx' => 'legume',
+                    'pains' => 'pains',
+                    'frais' => 'frais',
+                    'truc glacé' => 'surgelés',
+                    'petits pains ou chocolatine ?' => 'epicerie',
+                    'bière' => 'boissons',
+                    'produits pour les filles' => 'hygiène',
+                    'future cadavre' => 'animalerie',
+                    'fringue' => 'textile']])
+        ;
+    }
+
+    public function configureOptions(OptionsResolver $resolver)
+    {
+        $resolver->setDefaults([
+            'data_class' => 'Bundle\Entity\Produit'
+        ]);
+    }
+			    </code>
+		    </pre>
+        </div>
+    </div>
+
+    <br>
+
+    <p>J'en est profité pour rajouter des infos afin de gérer les types.</p>
+    <p>La précision est d'autant plus importante avec les formulaires dont on implique une entity,
+        les champs doivent corréspondres à l'entity et le formulaire est soumis à certaines règles.</p>
+    <p>On peux facilement repérer tout un tas d'erreurs, pas le bon nom, champ rajouté sans qu'il fasse parti de l'entity etc.</p>
+    <p>Evidement ce formulaire pourrais ressembler à n'importe lequel sans l'entity, l'interet de cette entity nous la verrons
+        une autre fois dans le cour sur la sauvegarde de données.</p>
+
+    <h3>Form Entities</h3>
+
+    <p>A partir de la on commence vraiment à s'amuser.</p>
+    <p>Ceux qui sont trop bêtes n'hésitez pas à partir, vous avez déjà les éléments qui sont à votre porté.</p>
+
+    <p>Pour cette partie je vais créer l'entity produit2 et magasin</p>
+
+    <p><a href="{{ path('formx', {'int':6}) }}" target="_blank">Formulaire6</a> : Formulaire 3 avec ajout de l'entity magasin pour... bon fallait suivre.</p>
+
+    {{ form_start(form6) }}
+    {{ form_widget(form6) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form6) }}
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+		    <pre>
+			    <code class="language-php">
+     $builder
+            ->add('name', Type\TextType::class, ['attr' => ['class' => 'form-control']])
+            ->add('price', Type\IntegerType::class, ['attr' => ['class' => 'form-control']])
+            ->add('magasin', EntityType::class, [
+                'attr' => ['class' => 'form-control'],
+                'class' => 'Bundle\Entity\Magasin',
+                'placeholder' => ''])
+            ->add('type', Type\ChoiceType::class, [
+                'attr' => ['class' => 'form-control'],
+                'placeholder' => '',
+                'choices' => [
+                    'cadavre' => 'viande',
+                    'poisson' => 'poisson',
+                    'fruits' => 'fruits',
+                    'xxxx' => 'legume',
+                    'pains' => 'pains',
+                    'frais' => 'frais',
+                    'truc glacé' => 'surgelés',
+                    'petits pains ou chocolatine ?' => 'epicerie',
+                    'bière' => 'boissons',
+                    'produits pour les filles' => 'hygiène',
+                    'future cadavre' => 'animalerie',
+                    'fringue' => 'textile']])
+        ;
+    }
+			    </code>
+		    </pre>
+        </div>
+    </div>
+
+    <br>
+
+    <p>A la création de ce formulaire je l'ai lié à l'entity Produit2, ce qu'on savait déjà faire.</p>
+    <p>Mais en plus dedans, le champ Magasin à été lié à l'entity Magasin.</p>
+    <p>C'est aussi modifiable et maléable autant qu'on veux. Toujours penser à regarder la doc officiel.</p>
+    <p>Dans <a href="https://symfony.com/doc/current/reference/forms/types/entity.html" target="_blank">EntityType</a>
+        je fouille un peu et je trouve l'option 'query_builder' qui va me permettre de changer l'affichage du
+        <a href="{{ path('formx', {'int':7}) }}" target="_blank">Formulaire7</a></p>
+
+    <p>Encore un peu plus compliqué. On va essayer de mettre plusieurs Magasins pour un produit.</p>
+    <p>Pour ça j'ai encore créer un nouveau produit3 ainsi qu'un magasin2 qui seront en relation ManyToMany.</p>
+    <p>Et je vais utiliser les Collections pour le <a href="{{ path('formx', {'int':8}) }}" target="_blank">Formulaire8</a></p>
+
+    {% form_theme form8 'jquery.collection.html.twig' %}
+    {{ form_start(form8) }}
+    {{ form_widget(form8) }}
+    <input type="submit" value="Create" class="btn btn-success">
+    {{ form_end(form8) }}
+
+    <br>
+
+    <p>La collection est un vaste sujet, mais pour essayer de faire simple, c'est un include d'un autre formulaire
+        dans le formulaire.</p>
+    <p>Pour le gérer plus facilement et rajouter / modifier etc plus facilement j'ai fais appel à un vendor recommandé
+        par symfony : <a href="https://symfony-collection.fuz.org/symfony3/" target="_blank">Symfony Collection</a>.</p>
+    <p>Très interessant et très vaste pour la gestion JS des collections, l'ajout / suppression etc de l'include directement
+        en page.</p>
+
+    <h3>Pour finir</h3>
+    <p>Nous avons vu la beaucoup de chose qui constitu les formulaires symfony.</p>
+    <p>Le détail du traitement de donnés et le retour de ses formulaires sera vu une prochaine fois.</p>
+    <p>Si vous avez des choses que vous voulez essayer n'hésitez pas, Allez voir quelqu'un d'autre.</p>
+
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+    {# PARTIE SPECIFIQUE FORMULAIRE 8#}
+    <script src="{{ asset('scripts/jquery.collection.js') }}"></script>
+
+    <script type="text/javascript">
+        $('.my-selector').collection();
+    </script>
+    {# / PARTIE SPECIFIQUE FORMULAIRE 8#}
+{% endblock %}

@@ -1,0 +1,68 @@
+{% if data %}
+
+    {% for key, dat in data %}
+        <div class="row faction">
+            <div class="col-sm-2">
+                {{ key }}
+            </div>
+            {% for keyf, da in dat %}
+                {% if keyf != 'attr' %}
+                    <div class="col-sm-3">
+                        <button
+                                {% if dat.attr == 1 %}
+                                    disabled
+                                {% endif %}
+                                type="submit"
+                                joueur="{{ key }}"
+                                id="{{ keyf }}"
+                                faction="{{ da }}"
+                                name="reroll">
+                        <span class="glyphicon glyphicon-{{ dat.attr == 1 ? 'ban-circle' : 'retweet' }}">
+
+                        </span>
+                        </button>
+                        {{ da }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <br>
+    <script>
+
+
+
+        // sur le on : addEventListener
+        // sur le button, querySelector
+        $( function() {
+            console.log('inside')
+            var reroll = jQuery('button[name^="reroll"]');
+
+            reroll.on('click', function (eventRoll) {
+                eventRoll.preventDefault();
+                var data = {
+                    data: {{ data|json_encode|raw }},
+                    cibleJ: ($(this).attr('joueur')),
+                    cibleF: ($(this).attr('id')),
+                    factionOld: ($(this).attr('faction')),
+                    factions: {{ factions|json_encode|raw }}
+                };
+                jQuery.ajax({
+                    url: "{{ path('smashUpReroll') }}",
+                    data: data,
+                    type: 'POST',
+                    success: function (msg) {
+                        jQuery('#ajax').html(msg);
+                    }
+                });
+            });
+        });
+
+        /*
+         localStorage.removeItem("factions");
+         if(!localStorage.factions) {
+         localStorage.setItem("factions", JSON.stringify(factions));
+         }*/
+    </script>
+{% endif %}
+

@@ -1,0 +1,36 @@
+
+
+{#{% if message is not empty %}
+    <p class="{{ message.success == true ? 'bg-green' : 'bg-red' }}">{{ message.message }}</p>
+{% endif %}#}
+
+{% if app.request.isxmlhttprequest %}
+    <h1>create media</h1>
+
+    {{ form_start(form) }}
+
+    {{ form(form) }}
+
+    {{ form_end(form) }}
+
+{% else %}
+
+    <button type="button" id="openImage" class="btn btn-primary">Ouvrir image</button>
+
+    <script>
+    $(document).ready(function () {
+        $('#openImage').on('click', function () {
+            event.preventDefault();
+            jQuery.ajax({
+                url: "{{ path('createmedia') }}",
+                data: 'toto',
+                type: 'POST',
+                success: function (msg) {
+                    jQuery('#divOpenImage').html(msg);
+                }
+            })
+            ;
+        });
+    });
+    </script>
+{% endif %}

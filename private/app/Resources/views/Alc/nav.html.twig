@@ -1,0 +1,125 @@
+<nav class="">
+    <div class="haut flex">
+        <div class="one">
+            {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                <a href="{{ path('alchome') }}">
+                    <img src="/Alc/alcyon.jpg" alt="alt">
+                </a>
+            {% else %}
+                <a href="{{ path('alchome') }}">
+                    <div class="remplissage"></div>
+                </a>
+            {% endif %}
+        </div>
+        <div class="two">
+            <a href="#">
+                <img src="/Alc/ban.jpg" alt="alt">
+            </a>
+        </div>
+        <div class="three 100">
+            {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                <a href="{{ path('logout') }}">
+                    <img src="/Alc/dclient.jpg" alt="client">
+                </a>
+            {% else %}
+                <a href="{{ path('login') }}">
+                    <div class="remplissage"></div>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+
+    {% else %}
+        <div class="bas flex">
+            <div class="one">
+                <a href="{{ path('alchome') }}">
+                    <img src="/Alc/alcyon.jpg" alt="alt">
+                </a>
+            </div>
+            <div class="two">
+                <div class="flex h100 text-center">
+                    <a href="#" class="navA1">
+                        <p class="">VOTRE CENTRALE</p>
+                    </a>
+                    <a href="#" class="navA1">
+                        LES SERVICES
+                    </a>
+                    <a href="#" class="navA1">
+                        LES ETABLISSEMENTS
+                    </a>
+                    <a href="#" class="navA2">
+                        INTERNATIONAL
+                    </a>
+                    <a href="#" class="navA3">
+                        <img src="/Alc/mail.jpg" alt="mail">
+                    </a>
+                </div>
+
+            </div>
+            <div class="three 100">
+                <a href="{{ path('login') }}">
+                    <img src="/Alc/client.jpg" alt="client">
+                </a>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+
+    {% else %}
+    {% endif %}
+
+    <div class="tototo">
+
+        <div class="nav2 flexCol">
+            <a href="#" class="toto"><span class="glyphicon glyphicon-home"></span><span class="totoTxt"> ACCUEIL</span></a>
+            <a href="#" class="toto catalogue"><span class="glyphicon glyphicon-book"></span><span class="totoTxt"> CATALOGUE</span></a>
+            <div class="nav2b hover catalogueH"><h2>Catalogue</h2></div>
+            <a href="#" class="toto welcom"><span class="glyphicon glyphicon-book"></span><span
+                        class="totoTxt"> WELLCOM</span></a>
+            <div class="nav2b hover welcomH"><h2>welcom</h2></div>
+            <a href="#" class="toto stats"><span class="glyphicon glyphicon-book"></span><span
+                        class="totoTxt"> STATS</span></a>
+            <div class="nav2b hover statsH"><h2>stats</h2></div>
+            <a href="#" class="toto optiweb"><span class="glyphicon glyphicon-globe"></span><span class="totoTxt"> OPTIWEB</span></a>
+            <div class="nav2b hover optiwebH"><h2>optiweb</h2></div>
+            <a href="#" class="toto joker"><span class="glyphicon glyphicon-time"></span><span
+                        class="totoTxt"> JOKER</span></a>
+            <div class="nav2b hover jokerH"><h2>joker</h2></div>
+            <a href="#" class="toto sv"><span class="glyphicon glyphicon-book"></span><span
+                        class="totoTxt"> SV</span></a>
+            <div class="nav2b hover svH"><h2>sv</h2></div>
+            <a href="#" class="toto telecharger"><span class="glyphicon glyphicon-download-alt"></span><span
+                        class="totoTxt"> TELECHARGER</span></a>
+            <div class="nav2b hover telechargerH"><h2>telecharger</h2></div>
+            <a href="#" class="toto parutions"><span class="glyphicon glyphicon-book"></span><span class="totoTxt"> PARUTIONS</span></a>
+            <div class="nav2b hover parutionsH"><h2>parutions</h2></div>
+            <a href="#" class="toto nutrimedia"><span class="glyphicon glyphicon-book"></span><span class="totoTxt"> NUTRIMEDIA</span></a>
+            <div class="nav2b hover nutrimediaH"><h2>nutrimedia</h2></div>
+            <a href="#" class="toto privileges"><span class="glyphicon glyphicon-user"></span><span class="totoTxt"> PRIVILEGES</span></a>
+            <div class="nav2b hover privilegesH"><h2>privileges</h2></div>
+            <a href="#" class="toto sav"><span class="glyphicon glyphicon-phone"></span><span
+                        class="totoTxt"> SAV</span></a>
+            <div class="nav2b hover savH"><h2>sav</h2></div>
+            <a href="#" class="toto annonces"><span class="glyphicon glyphicon-list"></span><span class="totoTxt"> ANNONCES</span></a>
+            <div class="nav2b hover annoncesH"><h2>annonces</h2></div>
+            <a href="#" class="toto labo"><span class="glyphicon glyphicon-book"></span><span
+                        class="totoTxt"> LABO</span></a>
+            <div class="nav2b hover laboH"><h2>labo</h2></div>
+            <a href="#" class="toto services"><span class="glyphicon glyphicon-plus"></span><span class="totoTxt"> SERVICES+</span></a>
+            <div class="nav2b hover servicesH"><h2>services</h2></div>
+            <a href="#" class="toto2 menuHide"><span class="glyphicon glyphicon-minus"></span><span class="totoTxt"> REDUIRE LE MENU</span></a>
+        </div>
+    </div>
+
+    <div id="carousel" class="owl-carousel owl-theme">
+        <div class="item"><img src="/owl-carousel/carousel0.jpg" alt="alt"></div>
+        <div class="item"><img src="/owl-carousel/carousel1.jpg" alt="alt"></div>
+        <div class="item"><img src="/owl-carousel/carousel2.jpg" alt="alt"></div>
+        <div class="item"><img src="/owl-carousel/carousel3.jpg" alt="alt"></div>
+        <div class="item"><img src="/owl-carousel/carousel4.jpg" alt="alt"></div>
+    </div>
+    </div>
+
+</nav>

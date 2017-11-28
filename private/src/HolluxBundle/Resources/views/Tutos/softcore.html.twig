@@ -1,0 +1,6 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block principal %}
+    {% set referer = app.request.server.get('HTTP_REFERER')|default('/') %}
+    {{ referer }}
+{% endblock %}

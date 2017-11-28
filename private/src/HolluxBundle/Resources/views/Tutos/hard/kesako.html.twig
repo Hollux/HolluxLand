@@ -1,0 +1,129 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block titleBase %} Bootstrap, Kesako {% endblock %}
+
+{% block principal %}
+    <h1 class="text-center"><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></h1>
+    <h2 class="text-center">Expliqué par un con, pour des cons</h2>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <p> - Bootstrap tu dis ? Un piège à bottes ? Ton site est stupide ..</p>
+        </div>
+    </div>
+    <br>
+    <p>Bonjour à tous, effectivement, mon site est stupide, mais pour ceux que ça interesse vraiment :</p>
+    <p>Bootsrap est un framework qui a pour but le développement responsive.</p>
+    <p>Alors je vous vois venir avec vos questions inutiles, réglons les tout de suite.</p>
+    <div class="row">
+        {#temoin:
+        <li>
+            <div class="row">
+                <p class="col-sm-3"></p>
+                <p class="col-sm-9"></p>
+            </div>
+        </li>
+        #}
+        <p class="col-sm-3">- Par qui ?</p>
+        <a class="col-sm-9" href="https://twitter.com/" target="_blank">Twitter</a>
+    </div>
+    <div class="row">
+        <p class="col-sm-3">- Oui mais par qui ?</p>
+        <p class="col-sm-9">Mark Otto et Jacob Thornton</p>
+    </div>
+    <div class="row">
+        <p class="col-sm-3">- Oui mais par qui MAINTENANT ?</p>
+        <p class="col-sm-9">GitHub, c'est devenu public depuis aout 2011</p>
+    </div>
+    <div class="row">
+        <p class="col-sm-3">- Créé quand ?</p>
+        <p class="col-sm-9">Milieu 2010</p>
+    </div>
+    <div c
+         lass="row">
+        <p class="col-sm-3">- Pourquoi "bootstrap" ?</p>
+        <p class="col-sm-9">Vient du terme "bootstrapé" ou "assemblage d'élément distincts"</p>
+    </div>
+    <div class="row">
+        <p class="col-sm-3">- Et c'est tout de suite sorti en V3 ?</p>
+        <p class="col-sm-9">Ecoute non .. et on va arréter la !</p>
+    </div>
+    <p>Je n'est evidement pas été interviewer twitter pour ces informations, j'ai sâlement tout pompé sur internet,
+        et pour être totalement honnête je ne le savais pas avance ce tuto car le sujet c'est </p>
+    <h2 class="text-center">Bootstrap</h2>
+    <h3 class="text-center">Concrètement</h3>
+    <p>Il va fonctionner avec un CSS + un JS utilisant Jquery (google est votre ami pour
+        <a href="https://jquery.com/" target="_blank">Jquery</a>, là j'ai autre chose à foutre ).</p>
+    <p>Et voici l'information la plus importante :</p>
+    <p class="strong">Bootstrap fonctionne essentiellement avec des classes.</p>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+                    <p class="text-center">Ce texte est centré grâce à bootstrap.</p>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <p>Comme je viens de vous le montrer, la class "text-center" de bootstrap à pour attribut css "text-align:
+        center".</p>
+    <p>Alors on arrète de chouiner "bootstrap c'est trop duuuuure" ou "le responsive je comprend paaaaas".</p>
+    <p>On Ferme sa gueule, et on se lance.</p>
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col1.jpg" alt="col1"></div>
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col2.jpg" alt="col2"></div>
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col3.jpg" alt="col3"></div>
+                        <div class="col-lg-3 col-md-6"><img src="/img/tutos/col4.jpg" alt="col4"></div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <p>Exemple de design responsive, 4 images, sur un écran de plus de 1200px elles sont l'une à coté des autres.</p>
+    <p>Sur un écran entre 1200px et 900px c'est 2 par 2 et sur un écran inférieur à 900px on est sur les images une par
+        une.</p>
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                                      data-target="#myModal">
+                Modal Bootstrap
+            </button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Titre du modal</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Contenu du modal</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div></code>
+
+            </pre>
+        </div>
+    </div>
+    <p>Voila, trois petites exemples, on voit bien que les classes précises de bootstrap mettent tout en place.</p>
+    <br>
+    <p>Sur ce, j'en est marre</p>
+
+
+
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

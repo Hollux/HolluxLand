@@ -1,0 +1,67 @@
+{% extends":TutosHollux:base.html.twig" %}
+
+{% block titleBase %} Bootstrap, Kesako {% endblock %}
+
+{% block principal %}
+    <style>
+        .row div {
+            border: 1px solid lightgrey;
+        }
+    </style>
+
+
+    <div class="panel panel-code">
+        <div class="panel-heading">
+            <pre>
+                <code class="language-markup">
+
+<?php
+namespace NewsBundle\Controller;
+
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use HolluxBundle\Form;
+use Symfony\Component\Form\FormFactoryInterface;
+
+class NewsController extends Controller
+{
+    /**
+     * @Route("/news", name="news")
+     * @Template
+     */
+    public function newsAction()
+    {
+        return [];
+    }
+
+    /**
+     * @Route("/newsAdmin", name="newsAdmin")
+     * @Template
+     */
+    public function newsAdminAction()
+    {
+        return [];
+    }
+
+    /**
+     * @Route("/newsCreateEdit", name="newsCreateEdit")
+     * @Template
+     */
+    public function newsCreateEditAction()
+    {
+        return [];
+    }
+
+}
+
+                </code>
+            </pre>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    {{ parent() }}
+{% endblock %}

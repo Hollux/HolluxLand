@@ -1,0 +1,224 @@
+
+.flex {
+    display : flex;
+}
+
+.display {
+    display : inline-block;
+}
+
+img {
+    max-width : 100%
+}
+
+.padding15 {
+    padding : 0 15px;
+}
+
+.h100 {
+    height : 100%;
+}
+
+.flexCol {
+    display        : flex;
+    flex-direction : column;
+}
+
+/* COLOR *//* COLOR *//* COLOR */
+.white {
+    color : white;
+}
+
+.black {
+    color : black;
+}
+
+.turquoise {
+    color : #66CCCC;
+}
+
+/* /COLOR *//* /COLOR *//* /COLOR */
+
+/* NAV *//* NAV *//* NAV *//* NAV *//* NAV */
+/* NAV *//* NAV *//* NAV *//* NAV *//* NAV */
+/* NAV *//* NAV *//* NAV *//* NAV *//* NAV */
+/* NAV *//* NAV *//* NAV *//* NAV *//* NAV */
+/* NAV *//* NAV *//* NAV *//* NAV *//* NAV */
+
+/* ENFANTS */
+
+.three {
+    width            : 15%;
+    flex             : 1;
+    background-color : #144390;
+}
+
+.three > a {
+    width  : 100%;
+    height : 171px;
+}
+
+.two {
+    width : 65%;
+}
+
+.one {
+    width : 20%;
+}
+
+.one > a > img {
+    padding : 2%;
+}
+
+img {
+    width : 100%;
+}
+
+.navA1, .navA2, .navA3 {
+    font-size : 1em;
+}
+
+.vertical-align {
+    vertical-align : middle;
+}
+
+.navA1 {
+    width : 22%;
+    color : #144390;
+}
+
+.navA2 {
+    width      : 22%;
+    color      : white;
+    background : #144390;
+}
+
+.navA3 {
+    width : 12%;
+}
+
+.remplissage {
+    height : 100%;
+}
+
+/*/NAV*//*/NAV*//*/NAV*//*/NAV*//*/NAV*/
+
+/*NAV2*//*NAV2*//*NAV2*//*NAV2*//*NAV2*/
+
+/*/NAV2*//*/NAV2*//*/NAV2*//*/NAV2*//*/NAV2*/
+.nav2 {
+    background-color : #144390;
+    position         : absolute;
+    z-index          : 1;
+}
+
+.nav2b {
+    background-color : white;
+    z-index          : 1;
+    margin-top       : 26px;
+    height           : 364px;
+    width            : 1000px;
+}
+
+.catalogueH, .welcomH, .statsH, .optiwebH,
+.jokerH, .svH, .telechargerH, .parutionsH, .nutrimediaH, .privilegesH, .savH, .annoncesH, .servicesH, .laboH {
+    display : none;
+}
+
+.catalogue:hover ~ .catalogueH,
+.welcom:hover ~ .welcomH,
+.stats:hover ~ .statsH,
+.optiweb:hover ~ .optiwebH,
+.joker:hover ~ .jokerH,
+.sv:hover ~ .svH,
+.parutions:hover ~ .parutionsH,
+.telecharger:hover ~ .telechargerH,
+.nutrimedia:hover ~ .nutrimediaH,
+.privileges:hover ~ .privilegesH,
+.sav:hover ~ .savH,
+.annonces:hover ~ .annoncesH,
+.services:hover ~ .servicesH,
+.labo:hover ~ .laboH,
+.catalogueH:hover,
+.welcomH:hover,
+.statsH:hover,
+.optiwebH:hover,
+.jokerH:hover,
+.svH:hover,
+.parutionsH:hover,
+.telechargerH:hover,
+.nutrimediaH:hover,
+.privilegesH:hover,
+.savH:hover,
+.annoncesH:hover,
+.servicesH:hover,
+.laboH:hover {
+    display : block;
+}
+
+.catalogue:hover { }
+
+.toto, .toto2 {
+    font-size : 1em;
+    padding   : 3px 5px;
+}
+
+.toto {
+    color : white;
+}
+
+.toto2 {
+    background-color : #146090;
+    color            : white;
+}
+
+.toto:hover, .toto2:hover {
+    background-color : white;
+    color            : #144390;
+}
+
+.tototo {
+    display : flex;
+}
+
+.nav2b {
+    position    : absolute;
+    margin-left : 156px;
+}
+
+.marge {
+    margin-left : 24px;
+}
+
+/* /NAV *//* /NAV *//* /NAV *//* /NAV *//* /NAV */
+/* /NAV *//* /NAV *//* /NAV *//* /NAV *//* /NAV */
+/* /NAV *//* /NAV *//* /NAV *//* /NAV *//* /NAV */
+/* /NAV *//* /NAV *//* /NAV *//* /NAV *//* /NAV */
+/* /NAV *//* /NAV *//* /NAV *//* /NAV *//* /NAV */
+
+
+/* ====================
+//	     VET         //
+==================== */
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+.parentVet {
+    -moz-column-width: 13em;
+    -webkit-column-width: 30em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+
+}
+
+.enfantVet {
+    display: inline-block;
+    margin:  0.25rem;
+    padding:  1rem;
+    width:  100%;
+    background:  #efefef;
+}
+
+/* ====================
+//	     VET         //
+==================== */
