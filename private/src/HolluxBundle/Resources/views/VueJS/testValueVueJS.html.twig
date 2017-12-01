@@ -1,7 +1,7 @@
 {% extends":HolluxBase:base.html.twig" %}
 
 {% block head %}
-    <link  href="{{ asset('/library/Semantic-UI-CSS-master/semantic.css') }}"
+    <link  href="{{ asset('library/Semantic-UI-CSS-master/semantic.css') }}"
            media="print,screen" rel="stylesheet"/>
 
 {% endblock %}
@@ -21,11 +21,12 @@
 {% endblock %}
 
 {% block script %}
+
     parent()
     {# <script type="text/javascript" src="
  {{ asset('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/accordion.js') }}"></script>#}
-    <script type="text/javascript" src="{{ asset('/library/VueJS/vue.js') }}"></script>
-    {#<script type="text/javascript" src="{{ asset('/scripts/vueJS.js') }}"></script>#}
+    <script type="text/javascript" src="{{ asset('library/VueJS/vue.js') }}"></script>
+    {#<script type="text/javascript" src="{{ asset('scripts/vueJS.js') }}"></script>#}
 
     <script>
         let vue = new Vue({

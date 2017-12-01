@@ -239,7 +239,7 @@ img {
 /* BASEHollux */
 /* BASEHollux */
 body {
-  background: url("/img/BG3.jpg"); }
+  background: url("{{ asset('img/BG3.jpg') }}"); }
 
 .container {
   background-color: white;

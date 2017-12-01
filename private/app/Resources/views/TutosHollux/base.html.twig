@@ -5,12 +5,12 @@
 
     <meta charset="UTF-8">
     <!--    BOOTSTRAP -->
-    <link href="{{ asset('/bootstrap/css/bootstrap.min.css') }}" media="print,screen" rel="stylesheet"/>
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" media="print,screen" rel="stylesheet"/>
     <!--   CSS -->
     <!-- sans min -->
-    <link  href="{{ asset('/css/SASS/css/tutos.css') }}" media="print,screen" rel="stylesheet"/>
+    <link  href="{{ asset('css/SASS/css/tutos.css') }}" media="print,screen" rel="stylesheet"/>
     <!-- min -->
-    {#<link  href="{{ asset('/css/SASS/css/tuto.css') }}" media="print,screen" rel="stylesheet"/>#}
+    {#<link  href="{{ asset('css/SASS/css/tuto.css') }}" media="print,screen" rel="stylesheet"/>#}
 
     {% block head %}{% endblock %}
     <!--   viewport, pas de zoom -->
@@ -44,27 +44,27 @@
 <!--    POLICE -->
 <link  href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic') }}" rel='stylesheet' type='text/css'>
 <!-- DATATABLE CSS -->
-<link rel="stylesheet" href="{{ asset('/css/dataTable.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/dataTable.min.css') }}">
 <!--    JQUERY -->
-<script type="text/javascript" src="{{ asset('/scripts/jquery-3.1.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('scripts/jquery-3.1.1.min.js') }}"></script>
 <!--    BOOTSTRAP -->
-<script type="text/javascript" src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 <!-- BOOTSTRAP TOGGLE CSS -->
-<link href="{{ asset('/bootstrap/css/bootstrap-toggle.min.css') }}" rel="stylesheet">
+<link href="{{ asset('bootstrap/css/bootstrap-toggle.min.css') }}" rel="stylesheet">
 <!-- PRISM -->
-<link href="{{ asset('/prism/prism.css') }}" rel="stylesheet">
-<script type="text/javascript" src="{{ asset('/prism/prism.js') }}"></script>
-<script  type="text/javascript" src="{{ asset('/prism/prism-normalize-whitespace.js') }}"></script>
+<link href="{{ asset('prism/prism.css') }}" rel="stylesheet">
+<script type="text/javascript" src="{{ asset('prism/prism.js') }}"></script>
+<script  type="text/javascript" src="{{ asset('prism/prism-normalize-whitespace.js') }}"></script>
 <!-- Captcha -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 {% block script %}
     <!-- DATATABLE JS -->
-    <script type="text/javascript" src="{{ asset('/scripts/dataTable.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('scripts/dataTable.min.js') }}"></script>
     <!-- JS maison -->
-    <script type="text/javascript" src="{{ asset('/scripts/hollux.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/scripts/tutos.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('scripts/hollux.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('scripts/tutos.js') }}"></script>
 
 {% endblock %}
 </body>

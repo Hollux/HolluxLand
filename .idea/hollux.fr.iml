@@ -9,22 +9,18 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/private/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/perso/EXIT/alc/phpunit.phar/" />
           <root url="phar://$MODULE_DIR$/private/composer.phar/" />
           <root url="phar://$MODULE_DIR$/private/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/www/EXIT/alc/phpunit.phar/" />
-          <root url="phar://$MODULE_DIR$/www/EXIT/alc/composer.phar/" />
-          <root url="phar://$MODULE_DIR$/vendor.3.2/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
-          <root url="phar://$MODULE_DIR$/vendor.3.2/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+          <root url="phar://$MODULE_DIR$/private/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/perso/EXIT/alc/composer.phar/" />
         </CLASSES>
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/private/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/perso/EXIT/alc/phpunit.phar/" />
           <root url="phar://$MODULE_DIR$/private/composer.phar/" />
           <root url="phar://$MODULE_DIR$/private/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/www/EXIT/alc/phpunit.phar/" />
-          <root url="phar://$MODULE_DIR$/www/EXIT/alc/composer.phar/" />
-          <root url="phar://$MODULE_DIR$/vendor.3.2/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
-          <root url="phar://$MODULE_DIR$/vendor.3.2/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+          <root url="phar://$MODULE_DIR$/private/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/perso/EXIT/alc/composer.phar/" />
         </SOURCES>
       </library>
     </orderEntry>
