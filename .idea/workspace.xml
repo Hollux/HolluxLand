@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc7590e-6634-46c2-bd55-04170c647ea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hollux.fr.iml" afterPath="$PROJECT_DIR$/.idea/hollux.fr.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/testHolluxTrunk/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/Admin/base.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/Admin/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/Admin/footer.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/Admin/footer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/Croton/footer.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/Croton/footer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/Ecom/footer.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/Ecom/footer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/EdouardBase/base.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/EdouardBase/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/HolluxBase/base.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/HolluxBase/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/HolluxBase/footer.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/HolluxBase/footer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/HolluxBase/nav.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/HolluxBase/nav.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/app/Resources/views/TutosHollux/base.html.twig" afterPath="$PROJECT_DIR$/private/app/Resources/views/TutosHollux/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/competences.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/competences.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/infoPerso.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/infoPerso.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/poney.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/poney.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/testimg.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/testimg.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Crocon/croton.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Crocon/croton.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/editformtest.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/editformtest.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/formimbrique.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/formimbrique.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Jeux/jeux.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Jeux/jeux.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/SmashUp/smashUp.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/SmashUp/smashUp.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/generateur.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/generateur.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform2.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform2.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/formx2.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/formx2.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/grid.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/grid.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/kesako.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/kesako.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/enform.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/enform.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/enform2.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/enform2.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/formx2.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/formx2.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/grid.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/grid.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/kesako.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/kesako.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/VueJS/indexVueJS.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/VueJS/indexVueJS.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/VueJS/testValueVueJS.html.twig" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/VueJS/testValueVueJS.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/SASS/css/holluxSass.css" afterPath="$PROJECT_DIR$/www/css/SASS/css/holluxSass.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/SASS/css/holluxSass.css.modif" afterPath="$PROJECT_DIR$/www/css/SASS/css/holluxSass.css.modif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/scripts/hollux.js" afterPath="$PROJECT_DIR$/www/scripts/hollux.js" />
     </list>
     <ignored path="sfn2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,46 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="108" column="92" lean-forward="false" selection-start-line="108" selection-start-column="92" selection-end-line="108" selection-end-column="92" />
-              <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
-              <caret line="82" column="96" lean-forward="false" selection-start-line="82" selection-start-column="96" selection-end-line="82" selection-end-column="96" />
-              <caret line="62" column="96" lean-forward="false" selection-start-line="62" selection-start-column="96" selection-end-line="62" selection-end-column="96" />
-              <caret line="48" column="96" lean-forward="false" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
-              <caret line="34" column="96" lean-forward="false" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+            <state relative-caret-position="686">
+              <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="57" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/private/app/Resources/views/HolluxBase/nav.html.twig">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/private/testHolluxTrunk/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="holluxSass.css.modif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/SASS/css/holluxSass.css.modif">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="holluxSass.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/css/SASS/css/holluxSass.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="289" column="24" lean-forward="true" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="217" lean-forward="false" selection-start-line="0" selection-start-column="217" selection-end-line="0" selection-end-column="217" />
               <folding />
             </state>
           </provider>
@@ -190,15 +130,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/css/SASS/css/tutos.css" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Controller/VueJSController.php" />
         <option value="$PROJECT_DIR$/private/app/config/service.yml" />
         <option value="$PROJECT_DIR$/private/app/config/parametersPROD.yml" />
         <option value="$PROJECT_DIR$/private/app/config/parameters.yml.dist" />
@@ -248,6 +188,8 @@
         <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/kesako.html.twig" />
         <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/grid.html.twig" />
         <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/kesako.html.twig" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/private/testHolluxTrunk/test.html" />
       </list>
     </option>
   </component>
@@ -397,8 +339,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,86 +363,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SASS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SASS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="private" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -519,159 +381,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HolluxBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HolluxBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HolluxBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HolluxBase" />
+              <option name="myItemId" value="testHolluxTrunk" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -946,11 +656,12 @@
       <workItem from="1508767923457" duration="219000" />
       <workItem from="1512046897459" duration="3056000" />
       <workItem from="1512114909920" duration="2649000" />
+      <workItem from="1512461584538" duration="2018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1788815000" />
+    <option name="totallyTimeSpent" value="1790833000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -963,28 +674,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.49785176" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5021482" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5021482" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42857143" sideWeight="0.48549947" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.49785176" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.49785176" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21160042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5390625" sideWeight="0.49087003" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.49785176" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.496875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5390625" sideWeight="0.49087003" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.496875" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1020,21 +731,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7392">
-          <caret line="340" column="7" lean-forward="false" selection-start-line="340" selection-start-column="7" selection-end-line="340" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Controller/VueJSController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/SmashUp/smashUp.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1088,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
           <caret line="234" column="7" lean-forward="false" selection-start-line="234" selection-start-column="7" selection-end-line="234" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,39 +969,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/app/Resources/views/HolluxBase/nav.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="108" column="92" lean-forward="false" selection-start-line="108" selection-start-column="92" selection-end-line="108" selection-end-column="92" />
-          <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
-          <caret line="82" column="96" lean-forward="false" selection-start-line="82" selection-start-column="96" selection-end-line="82" selection-end-column="96" />
-          <caret line="62" column="96" lean-forward="false" selection-start-line="62" selection-start-column="96" selection-end-line="62" selection-end-column="96" />
-          <caret line="48" column="96" lean-forward="false" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
-          <caret line="34" column="96" lean-forward="false" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/SASS/css/holluxSass.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1409" lean-forward="false" selection-start-line="0" selection-start-column="1409" selection-end-line="0" selection-end-column="1409" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/SASS/css/holluxSass.css.modif">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,7 +999,6 @@
           <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,7 +1008,6 @@
           <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
           <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
           <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1023,6 @@
           <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="207" column="14" lean-forward="true" selection-start-line="207" selection-start-column="14" selection-end-line="207" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1403,7 +1062,6 @@
           <caret line="199" column="28" lean-forward="false" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
           <caret line="202" column="28" lean-forward="false" selection-start-line="202" selection-start-column="28" selection-end-line="202" selection-end-column="28" />
           <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,7 +1072,6 @@
           <caret line="78" column="93" lean-forward="false" selection-start-line="78" selection-start-column="93" selection-end-line="78" selection-end-column="93" />
           <caret line="77" column="93" lean-forward="false" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
           <caret line="76" column="93" lean-forward="false" selection-start-line="76" selection-start-column="93" selection-end-line="76" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,7 +1090,6 @@
           <caret line="65" column="47" lean-forward="false" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
           <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
           <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,14 +1100,58 @@
           <caret line="54" column="93" lean-forward="false" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
           <caret line="53" column="93" lean-forward="false" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
           <caret line="52" column="93" lean-forward="false" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/SASS/css/holluxSass.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="289" column="24" lean-forward="true" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
+          <caret line="289" column="24" lean-forward="false" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/SASS/css/holluxSass.css.modif">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/app/Resources/views/HolluxBase/nav.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="108" column="92" lean-forward="false" selection-start-line="108" selection-start-column="92" selection-end-line="108" selection-end-column="92" />
+          <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+          <caret line="82" column="96" lean-forward="false" selection-start-line="82" selection-start-column="96" selection-end-line="82" selection-end-column="96" />
+          <caret line="62" column="96" lean-forward="false" selection-start-line="62" selection-start-column="96" selection-end-line="62" selection-end-column="96" />
+          <caret line="48" column="96" lean-forward="false" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
+          <caret line="34" column="96" lean-forward="false" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="57" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/testHolluxTrunk/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="217" lean-forward="false" selection-start-line="0" selection-start-column="217" selection-end-line="0" selection-end-column="217" />
           <folding />
         </state>
       </provider>
