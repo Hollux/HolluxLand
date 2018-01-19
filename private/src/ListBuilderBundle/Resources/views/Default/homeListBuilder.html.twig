@@ -4,6 +4,11 @@
 
 {% block principal %}
     <H1>HOME ListBuilder</H1>
+
+    <a href="{{ path('listbuilder_create') }}">Créer une liste</a>
+    <br>
+    <a href="{{ path('listbuilder_edit', {'idlist' : 1 } ) }}">Ex, liste 1</a>
+
 {% endblock %}
 
 {% block script %}

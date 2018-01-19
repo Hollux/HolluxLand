@@ -41,6 +41,7 @@ class ListBuilderController extends Controller
         return ['lists' => $lists];
     }
 
+    //TODO Penser à delet les listes vides / shooter les robots etc
     /**
      * @Route("/create", name="listbuilder_create")
      * @Template
@@ -49,7 +50,7 @@ class ListBuilderController extends Controller
     {
         $newList = $this->handler->createList();
 
-        return $this->redirectToRoute('listBuilder_Edit', ['idlist' => $newList->getId()]);
+        return $this->redirectToRoute('listbuilder_edit', ['idlist' => $newList->getId()]);
     }
 
     /**
