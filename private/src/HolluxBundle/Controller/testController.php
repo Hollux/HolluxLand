@@ -54,4 +54,13 @@ class testController extends Controller
 
     }
 
+
+    /**
+    * @Route("/testAjax", name="testAjax")
+    */
+    public function testAjaxAction()
+    {
+        echo"toto";exit;
+    }
+
 }
