@@ -4,9 +4,10 @@ namespace EcomBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use EcomBundle\Entity\Produit;
 
-class LoadProduit extends AbstractFixture
+class LoadProduit extends AbstractFixture implements OrderedFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
@@ -108,9 +109,9 @@ class LoadProduit extends AbstractFixture
         $manager->flush();
     }
 
-/*  public function getOrder()
+    public function getOrder()
     {
-        return 1;
-    }*/
+        return 5;
+    }
 
 }

@@ -25,6 +25,7 @@ class SmashUpController extends Controller
      */
     public function smashUpAction()
     {
+
         $result               = $this->smashupHandler->process();
         $form                 = $result['form'];
         $data                 = $result['data'];

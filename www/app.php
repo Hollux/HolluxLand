@@ -1,4 +1,6 @@
 <?php
+
+echo ("test holluxland app.php");exit;
 use Symfony\Component\HttpFoundation\Request;
 
 ini_set('session.cookie_secure', '1');

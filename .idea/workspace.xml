@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc7590e-6634-46c2-bd55-04170c647ea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/testHolluxTrunk/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadUser.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/hollux.fr.iml" afterPath="$PROJECT_DIR$/.idea/hollux.fr.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/private/composer.lock" afterPath="$PROJECT_DIR$/private/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille1.php" afterPath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille1.php" />
+      <change beforePath="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille2.php" afterPath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille2.php" />
+      <change beforePath="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille3.php" afterPath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille3.php" />
+      <change beforePath="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille4.php" afterPath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille4.php" />
+      <change beforePath="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille5.php" afterPath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille5.php" />
+      <change beforePath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadProduit.php" afterPath="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadProduit.php" />
+      <change beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Controller/SmashUpController.php" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Controller/SmashUpController.php" />
+      <change beforePath="$PROJECT_DIR$/private/src/HolluxBundle/Form/Handler/SmashUpHandler.php" afterPath="$PROJECT_DIR$/private/src/HolluxBundle/Form/Handler/SmashUpHandler.php" />
+      <change beforePath="$PROJECT_DIR$/private/var/bootstrap.php.cache" afterPath="$PROJECT_DIR$/private/var/bootstrap.php.cache" />
+      <change beforePath="$PROJECT_DIR$/www/app.php" afterPath="$PROJECT_DIR$/www/app.php" />
+      <change beforePath="$PROJECT_DIR$/www/app_dev.php" afterPath="$PROJECT_DIR$/www/app_dev.php" />
     </list>
     <ignored path="sfn2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,38 +31,44 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/private/composer.json</pharConfigPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="sfn2" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="LoadBoiteSmashUp.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadBoiteSmashUp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="57" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/private/testHolluxTrunk/test.html">
+      <file leaf-file-name="SmashUpHandler.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Form/Handler/SmashUpHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="217" lean-forward="false" selection-start-line="0" selection-start-column="217" selection-end-line="0" selection-end-column="217" />
+            <state relative-caret-position="174">
+              <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -56,8 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fixture</find>
-      <find>public function setMail</find>
       <find>twig.extension</find>
       <find>name</find>
       <find>$request-&gt;headers</find>
@@ -86,6 +106,8 @@
       <find>BG3.jpg</find>
       <find>/img/</find>
       <find>bg3</find>
+      <find>namespace AppBundle</find>
+      <find>FixtureInterface</find>
     </findStrings>
     <replaceStrings>
       <replace>Option</replace>
@@ -94,9 +116,11 @@
       <replace>ListHelperBundle</replace>
       <replace>Component</replace>
       <replace>{{ asset('img/logoHollux3blanc.png') }}</replace>
+      <replace />
+      <replace>namespace EcomBundle</replace>
+      <replace>OrderedFixtureInterface</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>D:\Applis\wamp64\www\holluxfr\www\ecomOne</dir>
       <dir>D:\Applis\wamp64\www\holluxfr\private\ecomOne</dir>
       <dir>D:\Applis\wamp64\www\holluxfr\private\vendor\doctrine\orm\lib\Doctrine</dir>
       <dir>D:\Applis\wamp64\www\holluxfr\private\src\AppBundle</dir>
@@ -126,6 +150,7 @@
       <dir>D:\Applis\wamp64\www\holluxfr\private\src\AppBundle\Controller</dir>
       <dir>D:\Applis\wamp64\www\holluxfr</dir>
       <dir>D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Resources\views</dir>
+      <dir>$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -139,28 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/private/app/config/service.yml" />
-        <option value="$PROJECT_DIR$/private/app/config/parametersPROD.yml" />
-        <option value="$PROJECT_DIR$/private/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/private/composer.json" />
-        <option value="$PROJECT_DIR$/private/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/private/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/private/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/private/src/ListBuilderBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/private/src/UserBundle/Resources/views/DefaultUser/login.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Controller/TutosController.php" />
-        <option value="$PROJECT_DIR$/private/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/private/app/Resources/views/Admin/base.html.twig" />
-        <option value="$PROJECT_DIR$/private/app/Resources/views/EdouardBase/base.html.twig" />
-        <option value="$PROJECT_DIR$/private/app/Resources/views/HolluxBase/base.html.twig" />
-        <option value="$PROJECT_DIR$/private/app/Resources/views/TutosHollux/base.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/AppBundle/Resources/views/Pdf/viewpdf.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/editformtest.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/formimbrique.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/generateur.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform2.html.twig" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/formx2.html.twig" />
         <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/VueJS/testValueVueJS.html.twig" />
         <option value="$PROJECT_DIR$/private/vendor/coresphere/console-bundle/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/private/vendor/coresphere/console-bundle/Resources/views/Console/console.html.twig" />
@@ -175,7 +178,6 @@
         <option value="$PROJECT_DIR$/private/app/Resources/views/Ecom/footer.html.twig" />
         <option value="$PROJECT_DIR$/perso/EXIT/siteOLD/views/nav.phtml" />
         <option value="$PROJECT_DIR$/perso/EXIT/siteOLD/views/footer.phtml" />
-        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig" />
         <option value="$PROJECT_DIR$/www/css/SASS/css/holluxSass.css.modif" />
         <option value="$PROJECT_DIR$/www/css/SASS/css/holluxSass.css" />
         <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/competences.html.twig" />
@@ -190,6 +192,29 @@
         <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/kesako.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/private/testHolluxTrunk/test.html" />
+        <option value="$PROJECT_DIR$/www/pushsftp/trolol.html" />
+        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig" />
+        <option value="$PROJECT_DIR$/private/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadASmashUp.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadAUser.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille1.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille2.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille3.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille4.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadDepartementRegionVille5.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadUser.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadSmashUp.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadQuestion.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadJeux.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadFaction.php" />
+        <option value="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM/LoadBoiteSmashUp.php" />
+        <option value="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille1.php" />
+        <option value="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadProduit.php" />
+        <option value="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadBoiteSmashUp.php" />
+        <option value="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadUser.php" />
+        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Controller/SmashUpController.php" />
+        <option value="$PROJECT_DIR$/www/app_dev.php" />
+        <option value="$PROJECT_DIR$/private/src/HolluxBundle/Form/Handler/SmashUpHandler.php" />
       </list>
     </option>
   </component>
@@ -208,12 +233,58 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/private/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/private/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/private/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/private/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/private/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/private/vendor/ninsuo/symfony-collection" />
+      <path value="$PROJECT_DIR$/private/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/private/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/private/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/private/vendor/coresphere/console-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/private/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/private/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -343,79 +414,136 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holluxfr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHolluxTrunk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EcomBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EcomBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EcomBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ORM" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HolluxBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HolluxBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HolluxBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HolluxBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Handler" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HolluxLand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HolluxLand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="SearchEverywhereHistoryKey" value="homeus&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Resources/views/Default/homeUser.html.twig&#10;homen&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/NewsBundle/Resources/views/Default/homeNews.html.twig&#10;homene&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/NewsBundle/Resources/views/Default/homeNews.html.twig&#10;homeme&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/MediaBundle/Resources/views/Default/homeMedia.html.twig&#10;homeli&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/ListHelperBundle/Resources/views/Default/homeListHelper.html.twig&#10;homeho&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/HolluxBundle/Resources/views/Default/homeHollux.html.twig&#10;home&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/EcomBundle/Resources/views/Default/homeEcom.html.twig&#10;vetcommandfo&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Command/Handler/VetCommandForm.php&#10;pcrval&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Resources/views/Vet/PCRval.html.twig&#10;arr&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Component/AnabelArrays.php&#10;avortement&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Form/AvortementType.php&#10;vetcommandF&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Command/Handler/VetCommandForm.php&#10;hollux.sc&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/www/css/SASS/sass/holluxSass.scss&#10;avortementTy&#9;null&#9;null&#10;Anabe&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Form/AnabelType.php&#10;array&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Component/AnabelArrays.php&#10;vetCommT&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Command/Handler/VetCommandTwig.php&#10;vetCommandFo&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Command/Handler/VetCommandForm.php&#10;vetcommandR&#9;null&#9;null&#10;VetC&#9;null&#9;null&#10;vetCommand&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Command/VetCommand.php&#10;optionTy&#9;null&#9;null&#10;anabel&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/VetBundle/Entity/Anabel.php&#10;listBuilderFa&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/ListBuilderBundle/Component/ListBuilder/ListBuilderFactionchoice.php&#10;FactionChoi&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/ListBuilderBundle/Resources/views/ListBuilder/figuFactionChoice.html.twig&#10;base&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/app/Resources/views/HolluxBase/base.html.twig&#10;type&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/Admin/PortfolioBundle/Form/PortfolioType.php&#10;userType&#9;null&#9;null&#10;UserHandl&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Form/Handler/UserHandler.php&#10;User.php&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/HolluxBundle/Entity/User.php&#10;loadA&#9;null&#9;null&#10;SuperUser&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Entity/SuperUser.php&#10;profil&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Resources/views/DefaultUser/profil.html.twig&#10;user&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/HolluxBundle/Entity/User.php&#10;parameters&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/app/config/parameters.yml&#10;media&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/MediaBundle/Controller/MediaController.php&#10;userHan&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Form/Handler/UserHandler.php&#10;login&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Resources/views/DefaultUser/login.html.twig&#10;superUs&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Entity/SuperUser.php&#10;userH&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Form/Handler/UserHandler.php&#10;superMedia&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/MediaBundle/Entity/SuperMedia.php&#10;userHandl&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Form/Handler/UserHandler.php&#10;sec&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/app/config/security.yml&#10;loginli&#9;null&#9;null&#10;loginlister&#9;null&#9;null&#10;superUser&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Entity/SuperUser.php&#10;securit&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/app/config/security.yml&#10;userHandler&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Form/Handler/UserHandler.php&#10;registerTy&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Form/SuperRegisterType.php&#10;register&#9;FILE&#9;file://D:/Applis/wamp64/www/holluxfr/private/src/UserBundle/Resources/views/DefaultUser/register.html.twig" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Applis\wamp64\www\holluxfr\www\library\VueJS" />
-      <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Resources\views\Tutos" />
-      <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Resources\views\Tutos\soft" />
-      <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Resources\views\Tutossoft" />
-      <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Form" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Form\Handler" />
       <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Resources\views\Tutos" />
       <recent name="D:\Applis\wamp64\www\holluxfr\private\src\VetBundle\Command\Handler" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM" />
+      <recent name="$PROJECT_DIR$/private/src/AppBundle/Datafixtures/ORM" />
+      <recent name="D:\Applis\wamp64\www\holluxfr\www\library\VueJS" />
+      <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Resources\views\Tutos" />
+      <recent name="D:\Applis\wamp64\www\holluxfr\private\src\HolluxBundle\Resources\views\Tutos\soft" />
+    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.HolluxController.php">
-    <configuration default="false" name="HolluxController.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://ftp.cluster005.ovh.net/src/AppBundle/Controller/HolluxController.php">
-      <method />
-    </configuration>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="HolluxController.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://ftp.cluster005.ovh.net/src/AppBundle/Controller/HolluxController.php" />
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -443,15 +571,6 @@
       <PhpTestRunnerSettings />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
@@ -472,9 +591,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.HolluxController.php" />
-    </list>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.HolluxController.php" />
@@ -657,11 +781,15 @@
       <workItem from="1512046897459" duration="3056000" />
       <workItem from="1512114909920" duration="2649000" />
       <workItem from="1512461584538" duration="2018000" />
+      <workItem from="1518957891429" duration="7000" />
+      <workItem from="1518957917059" duration="11035000" />
+      <workItem from="1519051804938" duration="651000" />
+      <workItem from="1519119211129" duration="6782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1790833000" />
+    <option name="totallyTimeSpent" value="1809308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,17 +801,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.49785176" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5021482" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42857143" sideWeight="0.48549947" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.49785176" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21160822" sideWeight="0.5171674" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21160822" sideWeight="0.4828326" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49499285" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14147522" sideWeight="0.49785176" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27968526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5390625" sideWeight="0.49087003" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.49785176" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.496875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -691,15 +824,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5390625" sideWeight="0.49087003" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.496875" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -731,146 +861,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/SmashUp/smashUp.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/scripts/hollux.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/UserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/UserBundle/Resources/views/DefaultUser/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/UserBundle/Controller/DefaultUserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/UserBundle/Entity/SuperUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4136">
-          <caret line="190" column="36" lean-forward="false" selection-start-line="190" selection-start-column="36" selection-end-line="190" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Controller/TutosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="234" column="7" lean-forward="false" selection-start-line="234" selection-start-column="7" selection-end-line="234" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/SmashUp/smashupJS.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/app/Resources/views/EdouardBase/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/app/Resources/views/TutosHollux/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/AppBundle/Resources/views/Pdf/viewpdf.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/editformtest.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/FormTest/formimbrique.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/app/Resources/views/Admin/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/generateur.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="288" column="0" lean-forward="true" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/enform2.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/hard/formx2.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/VueJS/testValueVueJS.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -878,20 +868,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/vendor/coresphere/console-bundle/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/vendor/coresphere/console-bundle/Resources/views/Console/console.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/private/vendor/coresphere/console-bundle/Resources/views/base.html.twig" />
+    <entry file="file://$PROJECT_DIR$/private/vendor/coresphere/console-bundle/Resources/views/Console/console.html.twig" />
     <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Tutos/soft/enform.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -955,20 +933,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/perso/EXIT/siteOLD/views/nav.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perso/EXIT/siteOLD/views/footer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/perso/EXIT/siteOLD/views/nav.phtml" />
+    <entry file="file://$PROJECT_DIR$/perso/EXIT/siteOLD/views/footer.phtml" />
     <entry file="file://$PROJECT_DIR$/www/css/SASS/css/holluxSass.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1107,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="289" column="24" lean-forward="false" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1123,28 +1087,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="108" column="92" lean-forward="false" selection-start-line="108" selection-start-column="92" selection-end-line="108" selection-end-column="92" />
-          <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
-          <caret line="82" column="96" lean-forward="false" selection-start-line="82" selection-start-column="96" selection-end-line="82" selection-end-column="96" />
-          <caret line="62" column="96" lean-forward="false" selection-start-line="62" selection-start-column="96" selection-end-line="62" selection-end-column="96" />
-          <caret line="48" column="96" lean-forward="false" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
-          <caret line="34" column="96" lean-forward="false" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="57" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="840">
+          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="57" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1152,6 +1101,168 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="217" lean-forward="false" selection-start-line="0" selection-start-column="217" selection-end-line="0" selection-end-column="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/pushsftp/trolol.html" />
+    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Resources/views/Base/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="123" column="16" lean-forward="false" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="123" column="16" lean-forward="false" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadFaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadJeux.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadSmashUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Entity/BoiteSmashUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadDepartementRegionVille1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadProduit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding>
+            <element signature="e#46#95#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Controller/SmashUpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/EcomBundle/DataFixtures/ORM/LoadBoiteSmashUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/src/HolluxBundle/Form/Handler/SmashUpHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
           <folding />
         </state>
       </provider>

@@ -5,6 +5,55 @@
       <BehatSettings behat_path="$PROJECT_DIR$" />
     </behat_settings>
   </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/private/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/private/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/private/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/private/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/private/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/private/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/private/vendor/ninsuo/symfony-collection" />
+      <path value="$PROJECT_DIR$/private/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/private/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/private/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/private/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/private/vendor/coresphere/console-bundle" />
+      <path value="$PROJECT_DIR$/private/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/private/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/private/vendor/composer" />
+    </include_path>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />
   <component name="PhpUnit">
     <phpunit_settings>

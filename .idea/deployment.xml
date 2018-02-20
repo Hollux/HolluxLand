@@ -9,13 +9,7 @@
           </mappings>
           <excludedPaths>
             <excludedPath path="www\var\cache" />
-            <excludedPath path="www\app\config\parameters.yml" />
             <excludedPath local="true" path="$PROJECT_DIR$/private/vendor" />
-            <excludedPath local="true" path="$PROJECT_DIR$/private/app/config/parameters.yml" />
-            <excludedPath path="www\EXIT" />
-            <excludedPath path="www\sfn" />
-            <excludedPath path=".htaccess" />
-            <excludedPath local="true" path=".htaccess" />
           </excludedPaths>
         </serverdata>
       </paths>

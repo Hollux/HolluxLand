@@ -1,16 +1,16 @@
 <?php
-namespace AppBundle\DataFixtures\ORM;
+namespace EcomBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\Departement;
 use AppBundle\Entity\Region;
 use AppBundle\Entity\Ville;
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class LoadDepartementRegionVille3 extends AbstractFixture implements FixtureInterface, ContainerAwareInterface
+class LoadDepartementRegionVille4 extends AbstractFixture implements OrderedFixtureInterface, ContainerAwareInterface
 {
     private $container;
 
@@ -33,7 +33,7 @@ class LoadDepartementRegionVille3 extends AbstractFixture implements FixtureInte
                     $ligne = explode(";", $data[$c]);
 
                     if (isset($ligne[2])) {
-                        if ($ligne[1] >= 26 && $ligne[1] <= 52) {
+                        if ($ligne[1] >= 53 && $ligne[1] <= 73) {
                             if (!in_array('region' . $ligne[1], $region)) {
                                 if ($ligne[2] != " ") {
                                     $regi = new Region();
@@ -106,16 +106,16 @@ class LoadDepartementRegionVille3 extends AbstractFixture implements FixtureInte
                                 }
                             }
                         }
-
-
                     }
                 }
             }
             fclose($handle);
-
             $manager->flush();
-
         }
+    }
 
+    public function getOrder()
+    {
+        return 4;
     }
 }

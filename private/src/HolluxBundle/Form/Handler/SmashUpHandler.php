@@ -23,7 +23,7 @@ class SmashUpHandler
 	{
 		//recupere la base
 		$SmashUpRepository = $this->em->getRepository("HolluxBundle:SmashUp");
-		$base                 = $SmashUpRepository->findOneById(3);
+		$base                 = $SmashUpRepository->findAll()[0];
 		//creation du form avec base->collectionBoites->collectionFactions
 		$form = $this->formFactory->create(SmashUpType::class, $base);
 		//initialise Data / Factions
