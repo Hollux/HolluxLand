@@ -26,8 +26,10 @@ class LoadUser extends AbstractFixture implements OrderedFixtureInterface, Conta
 		$user1->setLogin('hollux');
 		$user1->setEmail('hollux@hotmail.fr');
 		$user1->setRoles('ROLE_ADMIN');
+        $this->addReference('holluxUser', $user1);
 		//     $user1->setInscriptionDate(time());
 		$manager->persist($user1);
+
 		$user2 = new User();
 		$user2->setName('Albator');
 		$user2->setPassword($this->container->get('security.encoder_factory')->getEncoder($user2)
@@ -37,7 +39,7 @@ class LoadUser extends AbstractFixture implements OrderedFixtureInterface, Conta
 		$user2->setRoles('ROLE_USER');
 		//     $user2->setInscriptionDate(time());
 		$manager->persist($user2);
-		$this->addReference('user1', $user1);
+		$this->addReference('user1', $user2);
 		$manager->flush();
 	}
 

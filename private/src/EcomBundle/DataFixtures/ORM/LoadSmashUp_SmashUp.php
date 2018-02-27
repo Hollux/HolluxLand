@@ -7,13 +7,12 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Routing\RouterInterface;
 use HolluxBundle\Entity\SmashUp;
 
-class LoadSmashUp extends AbstractFixture implements OrderedFixtureInterface
+class LoadSmashUpSmashUp extends AbstractFixture implements OrderedFixtureInterface
 {
 
 	public function load(ObjectManager $manager)
 	{
 		$base = new SmashUp();
-		$base->setId(3);
 		$manager->persist($base);
 		$this->addReference('base', $base);
 		$manager->flush();

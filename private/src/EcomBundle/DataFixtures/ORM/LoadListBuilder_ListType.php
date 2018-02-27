@@ -21,6 +21,7 @@ class LoadListBuilder_ListType extends AbstractFixture implements OrderedFixture
         {
             $type = new ListType();
             $type->setName($typec);
+            $this->addReference($typec, $type);
             $manager->persist($type);
         }
 

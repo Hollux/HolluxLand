@@ -111,6 +111,7 @@ class LoadListBuilder_Option extends AbstractFixture implements OrderedFixtureIn
                 $optionObj->addFigurine($this->getReference($fig));
             }
             $manager->persist($optionObj);
+            $this->addReference('objet_'.$option[0], $optionObj);
         }
 
         $manager->flush();

@@ -15,7 +15,7 @@ use UserBundle\Entity\SuperClass\Author;
  */
 class Liste
 {
-    use TimestampableEntity, Author;
+    use TimestampableEntity;
 
     /**
      * @var int

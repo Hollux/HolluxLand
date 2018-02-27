@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="5f9ca2af-894a-4ba3-9953-de37d678ba6a" name="Hollux" url="http://5.51.124.201/">
-        <fileTransfer host="5.51.124.201" port="22" rootFolder="/opt/lampp/htdocs/HolluxLand/" accessType="SFTP">
+        <fileTransfer host="5.51.124.201" port="22" rootFolder="/home/nucllux/www/HolluxLand/" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

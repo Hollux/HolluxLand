@@ -7,7 +7,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Routing\RouterInterface;
 use HolluxBundle\Entity\Jeux;
 
-class LoadJeux extends AbstractFixture implements OrderedFixtureInterface
+class LoadCineQuizzJeux extends AbstractFixture implements OrderedFixtureInterface
 {
 
 	public function load(ObjectManager $manager)

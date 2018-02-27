@@ -7,7 +7,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Routing\RouterInterface;
 use HolluxBundle\Entity\Faction;
 
-class LoadFaction extends AbstractFixture implements OrderedFixtureInterface
+class LoadSmashUpFaction extends AbstractFixture implements OrderedFixtureInterface
 {
 
 	public function load(ObjectManager $manager)

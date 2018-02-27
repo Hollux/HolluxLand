@@ -7,7 +7,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Routing\RouterInterface;
 use HolluxBundle\Entity\Question;
 
-class LoadQuestion extends AbstractFixture implements OrderedFixtureInterface
+class LoadCineQuizzQuestion extends AbstractFixture implements OrderedFixtureInterface
 {
 
 	public function load(ObjectManager $manager)

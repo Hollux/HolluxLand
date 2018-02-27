@@ -7,50 +7,50 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Routing\RouterInterface;
 use HolluxBundle\Entity\BoiteSmashUp;
 
-class LoadBoiteSmashUp extends AbstractFixture implements OrderedFixtureInterface
+class LoadSmashUpBoiteSmashUp extends AbstractFixture implements OrderedFixtureInterface
 {
 
 	public function load(ObjectManager $manager)
 	{
 		$boite1 = new BoiteSmashUp();
 		$boite1->setName('Boite de base');
-		$boite1->setBase($this->getReference('base'));
+		$boite1->setSmashUp($this->getReference('base'));
 		$manager->persist($boite1);
 		$boite2 = new BoiteSmashUp();
 		$boite2->setName('Meme pas mort');
-		$boite2->setBase($this->getReference('base'));
+		$boite2->setSmashUp($this->getReference('base'));
 		$manager->persist($boite2);
 		$boite3 = new BoiteSmashUp();
 		$boite3->setName('Cthulhu Fhtagn');
-		$boite3->setBase($this->getReference('base'));
+		$boite3->setSmashUp($this->getReference('base'));
 		$manager->persist($boite3);
 		$boite4 = new BoiteSmashUp();
 		$boite4->setName('Serie B');
-		$boite4->setBase($this->getReference('base'));
+		$boite4->setSmashUp($this->getReference('base'));
 		$manager->persist($boite4);
 		$boite5 = new BoiteSmashUp();
 		$boite5->setName('Monstres sacres');
-		$boite5->setBase($this->getReference('base'));
+		$boite5->setSmashUp($this->getReference('base'));
 		$manager->persist($boite5);
 		$boite6 = new BoiteSmashUp();
 		$boite6->setName('GBpGeek');
-		$boite6->setBase($this->getReference('base'));
+		$boite6->setSmashUp($this->getReference('base'));
 		$manager->persist($boite6);
 		$boite7 = new BoiteSmashUp();
 		$boite7->setName('Trop Minions');
-		$boite7->setBase($this->getReference('base'));
+		$boite7->setSmashUp($this->getReference('base'));
 		$manager->persist($boite7);
 		$boite8 = new BoiteSmashUp();
 		$boite8->setName('Munchkin');
-		$boite8->setBase($this->getReference('base'));
+		$boite8->setSmashUp($this->getReference('base'));
 		$manager->persist($boite8);
 		$boite9 = new BoiteSmashUp();
 		$boite9->setName("It's your fault");
-		$boite9->setBase($this->getReference('base'));
+		$boite9->setSmashUp($this->getReference('base'));
 		$manager->persist($boite9);
 		$boite10 = new BoiteSmashUp();
 		$boite10->setName("Cease and desist");
-		$boite10->setBase($this->getReference('base'));
+		$boite10->setSmashUp($this->getReference('base'));
 		$manager->persist($boite10);
 		$this->addReference('boite1', $boite1);
 		$this->addReference('boite2', $boite2);
